@@ -1,0 +1,1137 @@
+.landing_constractionStatus {
+    height: 770px;
+    background: #2c2c2c;
+    padding: 0 152px 0 172px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing_other-line,
+.landing_house-botLine,
+.landing_house-line,
+.landing_infrastructure-line,
+.landing_constractionStatus-line {
+    height: 1px;
+    width: 75px;
+    background: #464646;
+}
+
+.landing_other-titleText,
+.landing_house-botTitleText,
+.landing_house-titleText,
+.landing_infrastructure-titleText,
+.landing_constractionStatus-titleText {
+    font-weight: 800;
+    font-size: 12px;
+    color: #ab9060;
+    margin-left: 15px;
+}
+
+.landing_other-subtitle,
+.landing_intro-subtitle,
+.landing_house-botSubtitle,
+.landing_house-subtitle,
+.landing_infrastructure-subtitle,
+.landing_constractionStatus-text {
+    color: white;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 46px;
+}
+
+.landing_other-title,
+.landing_intro-BotTitle,
+.landing_house-botTitle,
+.landing_house-title,
+.landing_infrastructure-title,
+.landing_landing_constractionStatus-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.landing_landing_constractionStatus-title {
+    margin-top: 200px;
+}
+
+.landing_infrastructure-right {
+    margin-right: 152px;
+}
+
+.landing_intro-text,
+.landing_house-text,
+.landing_infrastructure-text {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 46px;
+}
+
+.landing_constractionStatus-image {
+    height: 474px;
+    width: 558px;
+    background-image: url(../../Images/constractionStatus.jpg);
+    margin-top: 200px;
+    box-shadow: 25px 25px 0px #222222;
+}
+
+.landing-itro-button,
+.landing-house-botButton,
+.landing-house-button,
+.landing-infrastructure-button,
+.landing_constractionStatus-button {
+    height: 40px;
+    width: 120px;
+    border: solid 2px white;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.landing-infrastructure-button {
+    width: 166px;
+}
+
+.landing-house-button {
+    width: 160px;
+}
+
+.landing-house-botButton {
+    width: 160px;
+}
+
+.landing_infrastructure {
+    height: 700px;
+    background: #222222;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.landing_infrastructure-image {
+    background-image: url(../../Images/infrastructureLanding.jpg);
+    width: 710px;
+    height: 700px;
+    position: absolute;
+    left: 0px;
+    top: 105px;
+}
+
+.landing_house {
+    height: 1350px;
+    background: #222222;
+}
+
+.landing_house-bottom,
+.landing_house-top {
+    display: flex;
+    position: relative;
+    height: 50%;
+}
+
+.landing_house-bottom {
+    justify-content: flex-end;
+}
+
+.landing_house-top {
+    padding-left: 172px;
+}
+
+.landing_house-topLeft {
+    margin-top: 120px;
+}
+
+.landing-house-topImage {
+    background-image: url(../../Images/houseTopLanding.jpg);
+    height: 700px;
+    width: 680px;
+}
+
+.landing-house-ArrowButton {
+    width: 92px;
+    height: 60px;
+    background: #ab9060;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.landing-house-ArrowButton:first-child:before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    bottom: -2px;
+    z-index: 99999;
+    height: 1px;
+    width: 80%;
+    border-bottom: 1px solid #bea474;
+}
+
+.landing-house-buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.landing-other-wrapper,
+.landing-house-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.landing-house-wrapper {
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+
+.landing-house-botImage {
+    background-image: url(../../Images/houseBotLanding.jpg);
+    width: 710px;
+    height: 702px;
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+}
+
+.landing_house-topRight {
+    margin-right: 152px;
+    margin-top: 200px;
+}
+
+.landing_intro {
+    height: 1300px;
+    background: #1c1c1c;
+}
+
+.landing_intro-top {
+    padding-left: 172px;
+    display: flex;
+    justify-content: space-between;
+    height: 42%;
+    position: relative;
+}
+
+.socialIcons_wrapper {
+    position: absolute;
+    left: 30px;
+    bottom: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.social-facebook {
+    background-image: url(../../Images/facebookIcon.svg);
+    height: 16px;
+    width: 8px;
+    cursor: pointer;
+}
+
+.social-instagram {
+    background-image: url(../../Images/instagramIcon.svg);
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.social-telegram {
+    background-image: url(../../Images/telegramIcon.svg);
+    height: 14px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.landing_intro-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+}
+
+.landing-intro-topImage {
+    background-image: url(../../Images/introTopLanding.jpg);
+    height: 590px;
+    width: 650px;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position-x: 130px;
+}
+
+.landing_intro-botImage {
+    background-image: url(../../Images/introBotLanding.jpg);
+    width: 710px;
+    height: 597px;
+    position: absolute;
+    left: 0;
+    top: -64px;
+}
+
+.landing_intro-topLeft {
+    margin-top: 50px;
+}
+
+.landing-intro-goDownButton {
+    margin-top: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    background: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.landing-intro-houseType {
+    z-index: 999;
+    position: absolute;
+    bottom: -20px;
+    right: 100px;
+    width: 890px;
+    height: 170px;
+    background: #222222;
+    display: flex;
+}
+
+.landing_intro-right {
+    margin-right: 130px;
+}
+
+.landing_intro-houseTypeItem {
+    padding: 0 15px 0 15px;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.landing_intro-houseTypeItem:hover {
+    background: #ab9060;
+}
+
+.landing_intro-houseTypeItem:hover .houseTypeTop-size {
+    color: white;
+}
+.landing_intro-houseTypeItem:hover .houseTypeTop-text {
+    color: white;
+}
+
+.houseTypeTop-text,
+.houseTypeTop-size {
+    color: #ab9060;
+}
+
+.houseTypeTop-size {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.landing_intro-houseTypeTop,
+.landing_intro-houseTypeBot {
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+
+.landing_intro-houseTypeBot {
+    justify-content: space-between;
+}
+
+.landing_intro-houseTypeTop {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.houseTypeBot-title {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+}
+
+.houseTypeBot-value {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+}
+
+.landing_intro-bottom {
+    height: 58%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.landing_other {
+    display: flex;
+    justify-content: space-between;
+    height: 640px;
+    background: #1c1c1c;
+}
+
+.landing_other-logo {
+    background-image: url(../../Images/otherLogo.svg);
+    height: 90px;
+    width: 90px;
+}
+
+.landing-other-left {
+    padding-left: 172px;
+    margin-top: 150px;
+}
+
+.landing-other-imageFirst {
+    background-image: url(../../Images/otherLandingFirst.jpg);
+    height: 350px;
+    width: 335px;
+    box-shadow: -50px 80px 1px #222222;
+}
+
+.landing-other-imageSecond {
+    background-image: url(../../Images/otherLandingSecond.jpg);
+    height: 350px;
+    width: 275px;
+    box-shadow: -50px 80px 1px #222222;
+}
+
+.landing-other-imageText {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.landing-other-projectBlock {
+    margin-bottom: 50px;
+}
+
+.landing-other-right {
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.landing-other-rightWrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.landing_gallery {
+    height: 800px;
+    background: #1c1c1c;
+    padding: 200px 0 0 172px;
+}
+
+.landing_news-header,
+.landing_gallery-header {
+    padding-right: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing_news-title,
+.landing_gallery-title {
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+}
+
+.landing_news-all,
+.landing_gallery-all {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.landing_news-wrapper,
+.landing_gallery-wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: solid 1px white;
+}
+
+.landing_news-wrapper:hover,
+.landing_gallery-wrapper:hover {
+    border-bottom: none;
+}
+
+.landing_news-arrowIcon,
+.landing_gallery-arrowIcon {
+    background-image: url(../../Images/galleryArrowLanding.svg);
+    height: 14px;
+    width: 22px;
+    margin-left: 15px;
+}
+
+.landing-gallery-progressLine {
+    position: relative;
+    height: 3px;
+    width: 1026px;
+    background: #222222;
+}
+
+.landing-gallery-currentProgress {
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    width: 272px;
+    height: 5px;
+    cursor: pointer;
+    background: #ab9060;
+}
+
+.landing-gallery-imagesWrapper {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery_nav-arrowRotate,
+.gallery_nav-arrow {
+    height: 20px;
+    width: 11px;
+    background-image: url(../../Images/galleryNavArrowLanding.svg);
+}
+
+.gallery_nav-arrowRotate {
+    margin-left: 15px;
+    background-image: url(../../Images/galleryNav2ArrowLanding.svg);
+}
+
+.landing-gallery-nav {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: #2c2c2c;
+    color: #ab9060;
+    position: absolute;
+    border-radius: 60px;
+    top: 30px;
+    left: 20px;
+}
+
+.landing-gallery-imageFirst {
+    background-image: url(../../Images/galleryFirstLanding.jpg);
+    height: 540px;
+    width: 426px;
+    margin-right: 20px;
+}
+
+.landing-gallery-imageSecond {
+    background-image: url(../../Images/gallerySecondLanding.jpg);
+    height: 540px;
+    width: 826px;
+    margin-right: 20px;
+}
+
+.landing-gallery-imageThird {
+    background-image: url(../../Images/galleryTHirdLanding.jpg);
+    height: 540px;
+    width: 111px;
+}
+
+.landing_news {
+    height: 600px;
+    padding-left: 172px;
+    background: #222222;
+    padding-top: 130px;
+}
+
+.landing_news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.landing_news-firstImage,
+.landing_news-secondImage,
+.landing_news-thirdImage {
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+}
+
+.landing_news-firstImage {
+    background-image: url(../../Images/newsFirstLanding.jpg);
+}
+
+.landing_news-secondImage {
+    background-image: url(../../Images/newsSecondLanding.jpg);
+}
+
+.landing_news-thirdImage {
+    background-image: url(../../Images/newsThirdLanding.jpg);
+}
+
+.landing_news-item .landing_news-arrowIcon {
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.landing_news-date {
+    font-size: 14px;
+    color: #ab9060;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.landing_news-text {
+    font-weight: 700;
+    font-size: 19px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.landing_news-itemWrapper {
+    margin-top: 60px;
+    padding-right: 152px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingMobile .landing-intro-goDownButton{
+    width:40px;
+    height: 40px;
+    margin-top:0;
+    margin-left: 24px;
+}
+
+.secondBlock-data .landing_intro-botImage{
+    height: 215px;
+    width: 270px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: unset;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.landingMobile .landing_other-subtitle, 
+.landingMobile .landing_intro-subtitle, 
+.landingMobile .landing_house-botSubtitle,
+.landingMobile .landing_house-subtitle, 
+.landingMobile .landing_infrastructure-subtitle, 
+.landingMobile .landing_constractionStatus-text{
+    font-size: 25px;
+    margin-left:10px;
+}
+
+.landingMobile .landing_intro-text, 
+.landingMobile .landing_house-text, 
+.landingMobile .landing_infrastructure-text{
+    font-size: 16px;
+    margin-left:10px;
+}
+
+.landingMobile .landing_other-titleText, 
+.landingMobile .landing_house-botTitleText, 
+.landingMobile .landing_house-titleText, 
+.landingMobile .landing_infrastructure-titleText, 
+.landingMobile .landing_constractionStatus-titleText{
+    font-size: 12px;
+}
+
+.landingMobile .landing_intro-subtitle{
+    margin-top: -27px;
+    width:240px;
+    margin-bottom:15px
+}
+
+.landingMobile .landing-itro-button{
+    margin-left: 10px;
+}
+
+.landingMobile .landing_intro-title{
+    font-size: 30px;
+}
+
+.landingMobile-itroImage{
+    background-image: url(../../Images/introTopLanding.jpg);
+    height: 376px;
+    width: 320px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.thirdBlock .landing-house-botImage{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 200px;
+    bottom: unset;
+    top: 50px;
+}
+
+.thirdBlock .landing_house-bottom{
+    justify-content: unset;
+    height: unset;
+}
+
+.landingMobile-secondBlock{
+    height: 850px;
+    background: #1c1c1c;
+    position: relative;
+    padding-top:35px
+}
+
+.thirdBlock .landing-house-topImage{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 210px;
+}
+
+.thirdBlock .landing-house-wrapper{
+    top: -40px   
+}
+
+.thirdBlock .landing_house-title{
+    margin-top: 110px
+}
+
+.landingMobile .landing_house-text
+{
+    width:265px
+}
+.thirdBlock .landing-house-button{
+    margin-left: 10px
+}
+.thirdBlock .landing-house-ArrowButton{
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+.thirdBlock .landing_house-top{
+    padding-left: 0;
+}
+
+.secondBlock-absolute{
+    position: absolute;
+    background: #222222;
+    top: -140px;
+    right: 0px;
+    width: 230px;
+    height: 250px;
+}
+.secondBlock-absolute .landing_intro-title{
+    margin: 25px 20px
+}
+
+.secondBlock-absolute .landing-house-button{
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.thirdBlock .landing_house-topRight{
+    margin-top: 300px;
+}
+
+.thirdBlock .landing-house-botButton{
+    margin-left: 10px;
+}
+
+.thirdBlock .landing_house-botLine{
+    width:40px;
+    margin-left: 10px;
+}
+
+.thirdBlock{
+    height: 1540px;
+    background: #222222
+}
+
+.fourthBlock{
+    height: 550px;
+}
+
+.fourthBlock .landing_constractionStatus-image{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 194px;
+    width: 218px;
+    margin-top: 40px;
+    box-shadow: 12px 12px 0px #222222;
+    margin-left:70px
+}
+
+.fourthBlock .landing_constractionStatus{
+    padding: 0;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: flex-start;
+}
+
+.fourthBlock .landing_landing_constractionStatus-title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.fourthBlock .landing_constractionStatus-button{
+    margin-left: 10px
+}
+
+.fifthBlock{
+    height: 850px;
+    background: #222222
+}
+
+.fifthBlock .landing_infrastructure-image{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 260px;
+    bottom: unset;
+    top: 35px;
+}   
+
+.fifthBlock .landing_infrastructure{
+    flex-direction: column;
+    height: unset;
+    align-items: flex-start;
+}
+
+.fifthBlock .landing_infrastructure-right{
+    margin-right:0;
+    margin-top:340px
+}
+
+.fifthBlock .landing_infrastructure-title{
+    margin-bottom:30px
+}
+
+.fifthBlock .landing_infrastructure-subtitle{
+    margin-bottom:26px
+}
+
+.fifthBlock .landing_infrastructure-text{
+    width: 280px;
+}
+
+.fifthBlock .landing-infrastructure-button{
+    margin-left: 10px
+}
+
+.sixthBlock{
+    height: 400px;
+    background: #1c1c1c
+}
+
+.sixthBlock .landing_gallery{
+    padding:0
+}
+
+.sixthBlock .landing_gallery-all{
+    font-size: 14px;
+}
+
+.sixthBlock .landing_news-header, 
+.sixthBlock .landing_gallery-header{
+    padding:0
+}
+
+.sixthBlock .landing_news-title, 
+.sixthBlock .landing_gallery-title{
+    font-size: 25px;
+}
+
+.sixthBlock .landing-gallery-nav{
+    display: none;
+}
+
+@media screen and (min-width: 1366px) {
+    .landing{
+        display: block;
+    }
+    .landingMobile{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+
+    .landing_intro-title {
+        font-size: 95px;
+    }
+    .landing_intro-top {
+        padding-left: 212px;
+    }
+    .landing-intro-houseType {
+        width: 1213px;
+        height: 240px;
+        bottom: -155px;
+    }
+    .houseTypeTop-size {
+        font-size: 40px;
+    }
+    .houseTypeTop-text {
+        font-size: 24px;
+    }
+    .houseTypeBot-value,
+    .houseTypeBot-title {
+        font-size: 16px;
+    }
+    .landing_intro-houseTypeItem {
+        padding: 0 35px 0 35px;
+    }
+    .landing_intro-houseTypeBot {
+        align-items: center;
+    }
+    .landing_intro-botImage {
+        top: 100px;
+        background-size: 80% 80%;
+        background-repeat: no-repeat;
+        width: 910px;
+        height: 797px;
+    }
+    .landing-house-topImage {
+        height: 850px;
+        width: 830px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing-intro-topImage {
+        background-position-x: 160px;
+        height: 750px;
+        width: 800px;
+    }
+    .landing_intro-right {
+        margin-right: 330px;
+    }
+    .landing_intro {
+        height: 1500px;
+    }
+    .landing_other-titleText,
+    .landing_house-botTitleText,
+    .landing_house-titleText,
+    .landing_infrastructure-titleText,
+    .landing_constractionStatus-titleText {
+        font-size: 14px;
+    }
+    .landing_other-subtitle,
+    .landing_intro-subtitle,
+    .landing_house-botSubtitle,
+    .landing_house-subtitle,
+    .landing_infrastructure-subtitle,
+    .landing_constractionStatus-text {
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .landing_intro-text,
+    .landing_house-text,
+    .landing_infrastructure-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .landing-itro-button,
+    .landing-house-botButton,
+    .landing-house-button,
+    .landing-infrastructure-button,
+    .landing_constractionStatus-button {
+        height: 60px;
+        width: 190px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+    .landing_house-top {
+        padding-left: 212px;
+    }
+    .landing-house-ArrowButton {
+        width: 132px;
+    }
+    .landing_house-topRight {
+        margin-right: 352px;
+        margin-top: 170px;
+    }
+    .landing-house-botImage{
+        width: 810px;
+        height: 802px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_house{
+        height: 1450px;
+    }
+    .landing_constractionStatus{
+        padding: 0 152px 0 212px;
+        height: 820px;
+    }
+    .landing_constractionStatus-image{
+        height: 624px;
+        margin-top: 50px;
+        width: 708px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_constractionStatus-text{
+        line-height: 50px;
+    }
+    .landing_infrastructure-right{
+        margin-right: 352px;
+    }
+    .landing_infrastructure-image{
+        width: 760px;
+        height: 750px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_infrastructure{
+        height: 800px;
+    }
+    .landing_news-title, 
+    .landing_gallery-title{
+        font-size: 45px;
+    }
+    .landing_news-all, 
+    .landing_gallery-all{
+        font-size: 20px;
+    }
+    .landing-gallery-imageThird{
+        height: 660px;
+        width: 231px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing-gallery-imageSecond{
+        height: 660px;
+        width: 946px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0
+    }
+    .landing-gallery-imageFirst{
+        margin: 0;
+        height: 660px;
+        width: 546px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_gallery{
+        height: 900px;
+        padding: 150px 0 0 172px;
+    }
+    .landing-gallery-nav{
+        width: 110px;
+        height: 110px;
+    }
+    .landing-gallery-progressLine{
+        width: 1516px;
+    }
+    .landing_news-text{
+        font-size: 28px;
+    }
+    .landing_news-firstImage, .landing_news-secondImage, .landing_news-thirdImage{
+        height: 400px;
+        width: 500px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+    .landing_news{
+        height: 800px;
+        padding-top: 100px;
+    }
+    .subscribe_text{
+        font-size: 45px;
+    }
+    .subscribe_button{
+        line-height: 60px;
+        font-size: 18px;
+        height: 60px;
+        width: 136px;
+    }
+    .subscribe_inputs input{
+        height: 58px;
+    }
+    .subscribe_inputs input::placeholder{
+        font-size: 16px;
+    }
+    .landing-other-left{
+        padding-left: 212px;
+        margin-top: 210px;
+    }
+    .landing-other-imageSecond{
+        height: 500px;
+        width: 425px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing-other-imageFirst{
+        height: 500px;
+        width: 485px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_other{
+        height: 800px;
+    }
+    .footer_sitemap-title, .footer_contact-title{
+        font-size: 20px;
+    }
+    .footer_sitemap-left, .footer_sitemap-right,
+    .footer_contact-text{
+        font-size: 16px;
+    }
+    .social-facebook{
+        width: 10px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .social-instagram{
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .social-telegram{
+        width: 19px;
+        height: 17px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .landing_landing_constractionStatus-title{
+        margin-top: 100px;
+    }
+    .landing-intro-goDownButton{
+        width: 90px;
+        height: 90px;
+    }
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .landing{
+        display: none;
+    }
+    .landingMobile{
+        display: block;
+    }
+}
