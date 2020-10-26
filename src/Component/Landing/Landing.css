@@ -840,12 +840,13 @@
 }
 
 .sixthBlock{
-    height: 400px;
+    height: 450px;
     background: #1c1c1c
 }
 
 .sixthBlock .landing_gallery{
-    padding:0
+    padding:0;
+    padding-top: 28px;
 }
 
 .sixthBlock .landing_gallery-all{
@@ -854,7 +855,8 @@
 
 .sixthBlock .landing_news-header, 
 .sixthBlock .landing_gallery-header{
-    padding:0
+    padding:0;
+    margin: 0 10px 0 10px
 }
 
 .sixthBlock .landing_news-title, 
@@ -864,6 +866,141 @@
 
 .sixthBlock .landing-gallery-nav{
     display: none;
+}
+
+.sixthBlock .landing-gallery-imageFirst{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 240px;
+    margin-left:10px;
+    margin-right:10px
+}
+
+.sixthBlock .landing-gallery-imageSecond{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 170px;
+    margin:0
+}
+
+.sixthBlock .landing-gallery-progressLine{
+    width:300px;
+    margin-left: 10px;
+}
+
+.sixthBlock .landing-gallery-currentProgress{
+    height: 3px;
+    width: 77px;
+    top: 0
+}
+
+.seventhBlock{
+    height: 1350px;
+    background: #222222
+}
+.seventhBlock .landing_news-itemWrapper{
+    flex-direction: column;
+    padding-right: 0;
+}
+
+.seventhBlock .landing_news{
+    padding-left:0;
+    padding-top:30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.seventhBlock .landing_news-title{
+    font-size: 25px;
+}
+
+.seventhBlock .landing_news-wrapper{
+    font-size: 14px;
+}
+
+.seventhBlock .landing_news-header{
+    padding-right: 0;
+}
+
+.seventhBlock .landing_news-date{
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.seventhBlock .landing_news-text{
+    margin-bottom: 30px;
+}
+
+.seventhBlock .landing_news-item{
+    margin-bottom: 50px
+}
+
+.ninthBlock{
+    height: 1100px;
+    background: #1c1c1c
+}
+
+.ninthBlock .landing_other{
+    flex-direction: column;
+}
+
+.ninthBlock .landing-other-left{
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.ninthBlock .ninthBlock-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    margin-bottom: 40px;
+}
+
+.ninthBlock .landing_other-logo{
+    width:60px;
+    height: 60px;
+    background-size: cover;
+}
+
+.ninthBlock .landing_other-subtitle{
+    margin-bottom:0;
+    margin-left:0
+}
+
+.ninthBlock .landing-other-wrapper{
+    display: none;
+}
+
+.ninthBlock .landing-other-rightWrapper{
+    margin-right: 10px;
+    flex-direction: column
+}
+
+.ninthBlock .landing-other-right{
+    width: 100%
+}
+
+.ninthBlock .landing-other-imageFirst{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 285px;   
+    box-shadow: -20px 70px 1px #222222;
+}
+
+.ninthBlock .landing-other-imageSecond{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 285px;   
+    box-shadow: -20px 70px 1px #222222;
+}
+
+.ninthBlock .landing-other-imageText{
+    font-size: 20px;
 }
 
 @media screen and (min-width: 1366px) {

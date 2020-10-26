@@ -511,6 +511,91 @@ class Landing extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <div className='seventhBlock'>
+                        <div className='landing_news'>
+                            <div className='landing_news-header'>
+                                <div className='landing_news-title'>Новини</div>
+                                <div className='landing_news-wrapper'>
+                                    <div className='landing_news-all'>Усі новини</div>
+                                    <div className='landing_news-arrowIcon' />
+                                </div>
+                            </div>
+                            <div className='landing_news-itemWrapper'>
+                                <div className='landing_news-item'>
+                                    <div className='landing_news-firstImage' />
+                                    <div className='landing_news-date'>20/08/2020</div>
+                                    <div className='landing_news-text'>
+                                        Зміни в графіку роботи відділу<br />
+                                продажів в День Незалежності
+                            </div>
+                                    <div className='landing_news-arrowIcon' />
+                                </div>
+                                <div className='landing_news-item'>
+                                    <div className='landing_news-secondImage' />
+                                    <div className='landing_news-date'>20/08/2020</div>
+                                    <div className='landing_news-text'>
+                                        Зміни в графіку роботи відділу<br />
+                                продажів в День Незалежності
+                            </div>
+                                    <div className='landing_news-arrowIcon' />
+                                </div>
+                                <div className='landing_news-item'>
+                                    <div className='landing_news-thirdImage' />
+                                    <div className='landing_news-date'>20/08/2020</div>
+                                    <div className='landing_news-text'>
+                                        Зміни в графіку роботи відділу<br />
+                                продажів в День Незалежності
+                            </div>
+                                    <div className='landing_news-arrowIcon' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='eighthBlock'>
+                        <Subscribe />
+                    </div>
+                    <div className='ninthBlock'>
+                        <div className='landing_other'>
+                            <div className='landing-other-left'>
+                                <div className='landing_other-title'>
+                                    <div className='landing_other-line' />
+                                    <div className='landing_other-titleText'>
+                                        ПРОЕКТИ
+                                    </div>
+                                </div>
+                                <div className='ninthBlock-wrapper'>
+                                    <div className='landing_other-subtitle'>
+                                        Інші проекти<br />
+                                        від забудовника<br />
+                                        Креатор-Буд
+                                    </div>
+                                    <div className='landing_other-logo' />
+                                </div>
+                            </div>
+                            <div className='landing-other-right'>
+                                <div className='landing-other-rightWrapper'>
+                                    <div className='landing-other-wrapper'>
+                                        <div className='landing-house-buttonWrapper'>
+                                            <div className='landing-house-ArrowButton'>
+                                                &#8594;
+                                            </div>
+                                            <div className='landing-house-ArrowButton'>
+                                                &#8592;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className='landing-other-projectBlock'>
+                                        <div className='landing-other-imageFirst' />
+                                        <div className='landing-other-imageText'>ЖК Creator City</div>
+                                    </div>
+                                    <div className='landing-other-projectBlock'>
+                                        <div className='landing-other-imageSecond' />
+                                        <div className='landing-other-imageText'>ЖК Науки 58</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </>
         )

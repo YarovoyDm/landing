@@ -30,7 +30,7 @@ class Footer extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div className='footer-right'>
                         <div className='footer_sitemap-title'>
                             Карта сайту
                         </div>

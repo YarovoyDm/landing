@@ -5,12 +5,12 @@ import './Header.css'
 
 class Header extends React.Component {
 
-    state={
+    state = {
         isHeaderMenuOpen: false
     }
 
     onMenuChange = () => {
-        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen})
+        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen })
     }
 
     render() {
@@ -54,22 +54,54 @@ class Header extends React.Component {
                         </div>
                         <div className='menu-right-button'>Замовити дзвінок</div>
                         <div className='menu-right-icons'>
-                            <div className='menu-right-wrap'><div className='menu-right-facebook'/></div>
-                            <div className='menu-right-wrap'><div className='menu-right-instagram'/></div>
-                            <div className='menu-right-wrap'><div className='menu-right-telegram'/></div>
+                            <div className='menu-right-wrap'><div className='menu-right-facebook' /></div>
+                            <div className='menu-right-wrap'><div className='menu-right-instagram' /></div>
+                            <div className='menu-right-wrap'><div className='menu-right-telegram' /></div>
                         </div>
+                    </div>
+                    <div className='header_menu_bottomMobile'>
+                        <div className='header_mobileContactTop'>
+                            <div className='menu-right-title'>Офіс продажу:</div>
+                            <div className='menu-right-text'>
+                                м. Київ, вул. Круглоуніверситетська, будинок 5-7
+                        </div>
+                        </div>
+                        <div className='header_mobileContactBot'>
+                            <div className='header_contactBot-left'>
+                                <div className='footer_contact-map'>Дивитись на карті</div>
+                                <div className='menu-right-text'>
+                                    krauss@gmail.com<br />
+                                    096 453 45 64
+                                </div>
+                            </div>
+                            <div>
+                                <div className='menu-right-icons'>
+                                    <div className='menu-right-wrap'><div className='menu-right-facebook' /></div>
+                                    <div className='menu-right-wrap'><div className='menu-right-instagram' /></div>
+                                    <div className='menu-right-wrap'><div className='menu-right-telegram' /></div>
+                                </div>
+                                <div className='menu-right-button'>Замовити дзвінок</div>
+                            </div>
+                        </div>
+                        <div className='header_closeButton' onClick={() => this.onMenuChange()}>&#10005;</div>
                     </div>
                 </div>
                 <Logo />
                 <div className="header_info">
                     <div className="header_info-address">
-                        <div className="header_info-location"/>Круглоуніверситетська, 5-7
+                        <div className="header_info-location" />Круглоуніверситетська, 5-7
                     </div>
+                    <div className="header_info-locationMobile" />
                     <div className="header_info-phone">
-                    <div className="header_info-phoneIcon"/>096 453 45 64
+                        <div className="header_info-phoneIcon" />096 453 45 64
                     </div>
+                    <div className="header_info-phoneIconMobile" />
                     <div className="header_menu-button" onClick={() => this.onMenuChange()}>
-                        1
+                        <div className="header_menu-linesWrapper">
+                            <div className="header_menu-line" />
+                            <div className="header_menu-line" />
+                            <div className="header_menu-shortLine" />
+                        </div>
                     </div>
                 </div>
             </div>

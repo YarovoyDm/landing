@@ -1,4 +1,4 @@
-.header{
+.header {
     height: 80px;
     background: #222222;
     display: flex;
@@ -9,21 +9,35 @@
     position: relative;
 }
 
-.header_info{
+.header_info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px
+    width: 500px;
 }
 
-.header_menu-button{
+.header_menu-linesWrapper{
+    height: 20px;
+    width:20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_menu-button {
     width: 80px;
     height: 80px;
-    background: #AB9060;
+    background: #ab9060;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    flex-direction: column;
 }
 
-.header_menu{
+.header_menu {
     opacity: 1;
     transition: all 0.2s;
     height: 100vh;
@@ -35,16 +49,16 @@
     display: flex;
 }
 
-.header_menu_left{
+.header_menu_left {
     width: 66%;
     height: 100%;
-    background: #AB9060;
+    background: #ab9060;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header_menu_right{
+.header_menu_right {
     position: relative;
     height: 100%;
     width: calc(100% - 66%);
@@ -55,33 +69,36 @@
     justify-content: center;
 }
 
-.menu-hide{
+.menu-hide {
     opacity: 0;
     transition: all 0.2s;
-    z-index: 0;
+    z-index: -1;
 }
 
-.header_info-location{
+.header_info-locationMobile,
+.header_info-location {
+    display: block;
     background-image: url(../../Images/locationIcon.svg);
     height: 14px;
-    width:10px;
+    width: 10px;
     margin-right: 15px;
 }
 
-.header_info-phoneIcon{
+.header_info-phoneIconMobile,
+.header_info-phoneIcon {
     background-image: url(../../Images/phoneIcon.svg);
     height: 14px;
-    width:14px;
+    width: 14px;
     margin-right: 15px;
 }
 
 .header_info-phone,
-.header_info-address{
+.header_info-address {
     display: flex;
     align-items: center;
 }
 
-.header_closeButton{
+.header_closeButton {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -94,28 +111,28 @@
     color: white;
 }
 
-.menu-right-title{
+.menu-right-title {
     color: #ddc291;
     font-size: 20px;
     font-weight: 700;
     margin-left: 111px;
     margin-bottom: 20px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-.menu-right-button{
-    width:150px;
+.menu-right-button {
+    width: 150px;
     height: 40px;
     border: solid 1px white;
     text-align: center;
-    line-height:40px;
+    line-height: 40px;
     cursor: pointer;
     margin-left: 111px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
-.menu-right-wrap{
-    width:40px;
+.menu-right-wrap {
+    width: 40px;
     height: 40px;
     border-radius: 40px;
     background: white;
@@ -125,47 +142,180 @@
     justify-content: center;
 }
 
-.menu-right-icons{
+.menu-right-icons {
     display: flex;
     margin-left: 111px;
-    align-items:center;
+    align-items: center;
     width: 150px;
-    margin-top:40px;
-    justify-content: space-between
+    margin-top: 40px;
+    justify-content: space-between;
 }
 
-.menu-right-facebook{
+.header_menu-line{
+    width: 20px;
+    height: 1px;
+    background: white;
+}
+
+.header_menu-shortLine{
+    width: 15px;
+    height: 1px;
+    background: white;
+}
+
+.menu-right-facebook {
     background-image: url(../../Images/headerFacebook.svg);
     height: 16px;
-    width:8px
+    width: 8px;
 }
 
-.menu-right-instagram{
+.menu-right-instagram {
     background-image: url(../../Images/headerInstagram.svg);
     height: 16px;
-    width:16px
+    width: 16px;
 }
 
-.menu-right-telegram{
+.menu-right-telegram {
     background-image: url(../../Images/headerTelegram.svg);
     height: 14px;
-    width: 16px
+    width: 16px;
 }
 
-.menu-right-text{
+.menu-right-text {
     font-size: 16px;
     color: white;
-    line-height:22px;
+    line-height: 22px;
     margin-left: 111px;
 }
 
-.header_menu_left  .footer_sitemap-item{
+.header_menu_left .footer_sitemap-item {
     font-size: 25px;
     margin-bottom: 40px;
 }
 
-@media screen and (min-width: 320px) {
-    .header{
+.header_info-locationMobile {
+    display: none;
+}
+
+.header_info-phoneIconMobile {
+    display: none;
+}
+
+.header_info-address {
+    display: flex;
+}
+.header_menu_bottomMobile {
+    display: none;
+}
+
+.header_menu_bottomMobile {
+    height: 230px;
+    background: #b89c6a;
+}
+
+.header_menu_right {
+    display: block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .header_menu_bottomMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .header_mobileContactTop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-right-button {
+        margin-left: 0;
+    }
+    .menu-right-icons {
+        margin: 0;
+    }
+    .header_mobileContactBot {
+        display: flex;
+    }
+    .menu-right-title {
+        margin-left: 10px;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .header .footer_contact-map {
+        margin-left: 10px;
+    }
+    .header_contactBot-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-right-text {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    .header_menu_right {
+        display: none;
+    }
+    .header {
         height: 50px;
+        padding-left: 10px;
+    }
+    .header_info-locationMobile {
+        display: block;
+    }
+
+    .header_info-phone {
+        display: none;
+    }
+    .header_info-phoneIconMobile {
+        display: block;
+    }
+    .header_info-address {
+        display: none;
+    }
+    .header_menu_left .footer_sitemap-item {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .header_menu-button {
+        height: 50px;
+    }
+    .header .logo {
+        display: block;
+        width: 42px;
+        margin-right: 50px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .header_info {
+        width: 240px;
+    }
+    .header_menu_left {
+        width: 100%;
+        height: 70%;
+    }
+    .header_menu_right {
+        width: 100%;
+    }
+    .header_menu {
+        flex-direction: column;
+    }
+    .header_closeButton{
+        top: 0;
+        right: 0;
+    }
+    .header .footer_sitemap-left,
+    .header .footer_sitemap-right {
+        line-height: 15px;
+    }
+    .header .footer_sitemap-left {
+        margin-right: 5px;
+    }
+    .header .footer_sitemap-info {
+        padding-top: 60px;
+        padding-left: 10px;
     }
 }
