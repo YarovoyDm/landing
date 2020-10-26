@@ -798,6 +798,14 @@
     margin-left: 10px
 }
 
+.landingMobile .landing_other-line,
+.landingMobile .landing_infrastructure-line,
+.landingMobile .landing_constractionStatus-line,
+.landingMobile .landing_house-line{
+    width:40px;
+    margin-left: 10px;
+}
+
 .fifthBlock{
     height: 850px;
     background: #222222
