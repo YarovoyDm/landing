@@ -1,0 +1,40 @@
+.slider {
+    width: 680px;
+}
+
+.slider .landing-house-botImage{
+    bottom: unset
+}
+
+.slider .swiper-container{
+    position: unset
+}
+
+.slider .swiper-button-prev,
+.slider .swiper-button-next{
+    width: 92px;
+    height: 60px;
+    background: #ab9060;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    bottom:60px; 
+    left:0;
+    cursor: pointer;
+}
+
+.slider .swiper-button-prev{
+    bottom: 0px
+}
+
+.slider .swiper-button-prev, 
+.slider .swiper-button-next{
+    top: unset;
+}
+
+.slider .swiper-button-next::after,
+.slider .swiper-button-prev::after {
+    transform: scale(0.5);
+}

@@ -1,13 +1,22 @@
 import React from 'react'
 import Subscribe from '../Subscribe/Subscribe';
+
 import './Landing.css'
 
 import { ReactComponent as Arrow } from '../../Images/downArrowLanding.svg';
+import Slider from '../Slider/Slider';
+
+const sliders = []
 
 class Landing extends React.Component {
+
+
+
     render() {
         return (
             <><div className='landing'>
+
+                {/* <Swiper tag='section' wrapperTag='ul' id='main'>{sliders}</Swiper> */}
                 <div className='landing_intro'>
                     <div className='landing_intro-top'>
                         <div className='socialIcons_wrapper'>
@@ -177,7 +186,7 @@ class Landing extends React.Component {
                                     &#8592;
                                 </div>
                             </div>
-                            <div className='landing-house-topImage' />
+                            <Slider />
                         </div>
                     </div>
                     <div className='landing_house-bottom'>
