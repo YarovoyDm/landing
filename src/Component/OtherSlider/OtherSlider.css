@@ -40,6 +40,13 @@
     position: unset;
 }
 
+@media screen and (min-width: 590px) and (max-width: 759px) {
+    .otherSlider{
+        width: 437px;
+    }
+    
+}
+
 @media screen and (min-width: 760px) and (max-width: 1023px) {
     .otherSlider .swiper-slide:nth-child(4n){
         opacity: 0;
