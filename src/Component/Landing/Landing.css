@@ -184,6 +184,10 @@
     z-index: -1;
 }
 
+.thirdBlock .slider {
+    width: 210px;
+}
+
 .landing-other-wrapper,
 .landing-house-wrapper {
     display: flex;
@@ -424,7 +428,7 @@
 }
 
 .landing-other-right {
-    width: 65%;
+    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -437,7 +441,7 @@
 }
 
 .landing_gallery {
-    height: 800px;
+    height: 650px;
     background: #1c1c1c;
     padding: 200px 0 0 172px;
 }
@@ -448,6 +452,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.landing_gallery-header {
+    margin-bottom: 40px;
 }
 
 .landing_news-title,
@@ -491,6 +499,7 @@
     height: 3px;
     width: 1026px;
     background: #222222;
+    display: none;
 }
 
 .landing-gallery-currentProgress {
@@ -617,14 +626,14 @@
     justify-content: space-between;
 }
 
-.landingMobile .landing-intro-goDownButton{
-    width:40px;
+.landingMobile .landing-intro-goDownButton {
+    width: 40px;
     height: 40px;
-    margin-top:0;
+    margin-top: 0;
     margin-left: 24px;
 }
 
-.secondBlock-data .landing_intro-botImage{
+.secondBlock-data .landing_intro-botImage {
     height: 215px;
     width: 270px;
     background-size: 100% 100%;
@@ -634,54 +643,54 @@
     margin-top: 70px;
 }
 
-.landingMobile .landing_other-subtitle, 
-.landingMobile .landing_intro-subtitle, 
+.landingMobile .landing_other-subtitle,
+.landingMobile .landing_intro-subtitle,
 .landingMobile .landing_house-botSubtitle,
-.landingMobile .landing_house-subtitle, 
-.landingMobile .landing_infrastructure-subtitle, 
-.landingMobile .landing_constractionStatus-text{
+.landingMobile .landing_house-subtitle,
+.landingMobile .landing_infrastructure-subtitle,
+.landingMobile .landing_constractionStatus-text {
     font-size: 25px;
-    margin-left:10px;
-}
-
-.landingMobile .landing_intro-text, 
-.landingMobile .landing_house-text, 
-.landingMobile .landing_infrastructure-text{
-    font-size: 16px;
-    margin-left:10px;
-}
-
-.landingMobile .landing_other-titleText, 
-.landingMobile .landing_house-botTitleText, 
-.landingMobile .landing_house-titleText, 
-.landingMobile .landing_infrastructure-titleText, 
-.landingMobile .landing_constractionStatus-titleText{
-    font-size: 12px;
-}
-
-.landingMobile .landing_intro-subtitle{
-    margin-top: -27px;
-    width:240px;
-    margin-bottom:15px
-}
-
-.landingMobile .landing-itro-button{
     margin-left: 10px;
 }
 
-.landingMobile .landing_intro-title{
+.landingMobile .landing_intro-text,
+.landingMobile .landing_house-text,
+.landingMobile .landing_infrastructure-text {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.landingMobile .landing_other-titleText,
+.landingMobile .landing_house-botTitleText,
+.landingMobile .landing_house-titleText,
+.landingMobile .landing_infrastructure-titleText,
+.landingMobile .landing_constractionStatus-titleText {
+    font-size: 12px;
+}
+
+.landingMobile .landing_intro-subtitle {
+    margin-top: -27px;
+    width: 240px;
+    margin-bottom: 15px;
+}
+
+.landingMobile .landing-itro-button {
+    margin-left: 10px;
+}
+
+.landingMobile .landing_intro-title {
     font-size: 30px;
 }
 
-.landingMobile-itroImage{
+.landingMobile-itroImage {
     background-image: url(../../Images/introTopLanding.jpg);
     height: 376px;
-    width: 320px;
+    width: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-.thirdBlock .landing-house-botImage{
+.thirdBlock .landing-house-botImage {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 240px;
@@ -690,52 +699,51 @@
     top: 50px;
 }
 
-.thirdBlock .landing_house-bottom{
+.thirdBlock .landing_house-bottom {
     justify-content: unset;
     height: unset;
 }
 
-.landingMobile-secondBlock{
+.landingMobile-secondBlock {
     height: 850px;
     background: #1c1c1c;
     position: relative;
-    padding-top:35px
+    padding-top: 35px;
 }
 
-.thirdBlock .landing-house-topImage{
+.thirdBlock .landing-house-topImage {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 220px;
     width: 210px;
 }
 
-.thirdBlock .landing-house-wrapper{
-    top: -40px   
+.thirdBlock .landing-house-wrapper {
+    top: -40px;
 }
 
-.thirdBlock .landing_house-title{
-    margin-top: 110px
+.thirdBlock .landing_house-title {
+    margin-top: 110px;
 }
 
-.landingMobile .landing_house-text
-{
-    width:265px
+.landingMobile .landing_house-text {
+    width: 265px;
 }
-.thirdBlock .landing-house-button{
-    margin-left: 10px
+.thirdBlock .landing-house-button {
+    margin-left: 10px;
 }
-.thirdBlock .landing-house-ArrowButton{
+.thirdBlock .landing-house-ArrowButton {
     width: 70px;
     height: 40px;
     line-height: 40px;
     font-size: 25px;
 }
 
-.thirdBlock .landing_house-top{
+.thirdBlock .landing_house-top {
     padding-left: 0;
 }
 
-.secondBlock-absolute{
+.secondBlock-absolute {
     position: absolute;
     background: #222222;
     top: -140px;
@@ -743,225 +751,230 @@
     width: 230px;
     height: 250px;
 }
-.secondBlock-absolute .landing_intro-title{
-    margin: 25px 20px
+.secondBlock-absolute .landing_intro-title {
+    margin: 25px 20px;
 }
 
-.secondBlock-absolute .landing-house-button{
+.secondBlock-absolute .landing-house-button {
     font-size: 14px;
     margin-left: 20px;
 }
 
-.thirdBlock .landing_house-topRight{
+.thirdBlock .landing_house-topRight {
     margin-top: 300px;
 }
 
-.thirdBlock .landing-house-botButton{
+.thirdBlock .landing-house-botButton {
     margin-left: 10px;
 }
 
-.thirdBlock .landing_house-botLine{
-    width:40px;
+.thirdBlock .landing_house-botLine {
+    width: 40px;
     margin-left: 10px;
 }
 
-.thirdBlock{
+.thirdBlock {
     height: 1540px;
-    background: #222222
+    background: #222222;
 }
 
-.fourthBlock{
+.fourthBlock {
     height: 550px;
 }
 
-.fourthBlock .landing_constractionStatus-image{
+.fourthBlock .landing_constractionStatus-image {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 194px;
     width: 218px;
     margin-top: 40px;
     box-shadow: 12px 12px 0px #222222;
-    margin-left:70px
+    margin-left: 70px;
 }
 
-.fourthBlock .landing_constractionStatus{
+.fourthBlock .landing_constractionStatus {
     padding: 0;
     flex-direction: column;
     justify-content: unset;
     align-items: flex-start;
 }
 
-.fourthBlock .landing_landing_constractionStatus-title{
+.fourthBlock .landing_landing_constractionStatus-title {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.fourthBlock .landing_constractionStatus-button{
-    margin-left: 10px
+.fourthBlock .landing_constractionStatus-button {
+    margin-left: 10px;
 }
 
 .landingMobile .landing_other-line,
 .landingMobile .landing_infrastructure-line,
 .landingMobile .landing_constractionStatus-line,
-.landingMobile .landing_house-line{
-    width:40px;
+.landingMobile .landing_house-line {
+    width: 40px;
     margin-left: 10px;
 }
 
-.fifthBlock{
+.fifthBlock {
     height: 850px;
-    background: #222222
+    background: #222222;
 }
 
-.fifthBlock .landing_infrastructure-image{
+.fifthBlock .landing_infrastructure-image {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 260px;
     height: 260px;
     bottom: unset;
     top: 35px;
-}   
+}
 
-.fifthBlock .landing_infrastructure{
+.fifthBlock .landing_infrastructure {
     flex-direction: column;
     height: unset;
     align-items: flex-start;
 }
 
-.fifthBlock .landing_infrastructure-right{
-    margin-right:0;
-    margin-top:340px
+.fifthBlock .landing_infrastructure-right {
+    margin-right: 0;
+    margin-top: 340px;
 }
 
-.fifthBlock .landing_infrastructure-title{
-    margin-bottom:30px
+.fifthBlock .landing_infrastructure-title {
+    margin-bottom: 30px;
 }
 
-.fifthBlock .landing_infrastructure-subtitle{
-    margin-bottom:26px
+.fifthBlock .landing_infrastructure-subtitle {
+    margin-bottom: 26px;
 }
 
-.fifthBlock .landing_infrastructure-text{
+.fifthBlock .landing_infrastructure-text {
     width: 280px;
 }
 
-.fifthBlock .landing-infrastructure-button{
-    margin-left: 10px
+.fifthBlock .landing-infrastructure-button {
+    margin-left: 10px;
 }
 
-.sixthBlock{
-    height: 450px;
-    background: #1c1c1c
+.sixthBlock {
+    height: 320px;
+    background: #1c1c1c;
 }
 
-.sixthBlock .landing_gallery{
-    padding:0;
+.sixthBlock .landing_gallery {
+    padding: 0;
     padding-top: 28px;
+    padding-left: 10px;
 }
 
-.sixthBlock .landing_gallery-all{
+.sixthBlock .landing_gallery-all {
     font-size: 14px;
 }
 
-.sixthBlock .landing_news-header, 
-.sixthBlock .landing_gallery-header{
-    padding:0;
-    margin: 0 10px 0 10px
+.sixthBlock .landing_news-header,
+.sixthBlock .landing_gallery-header {
+    padding: 0;
+    margin: 0 10px 0 10px;
 }
 
-.sixthBlock .landing_news-title, 
-.sixthBlock .landing_gallery-title{
+.sixthBlock .landing_gallery-header {
+    margin-bottom: 40px;
+}
+
+.sixthBlock .landing_news-title,
+.sixthBlock .landing_gallery-title {
     font-size: 25px;
 }
 
-.sixthBlock .landing-gallery-nav{
+.sixthBlock .landing-gallery-nav {
     display: none;
 }
 
-.sixthBlock .landing-gallery-imageFirst{
+.sixthBlock .landing-gallery-imageFirst {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 250px;
     width: 240px;
-    margin-left:10px;
-    margin-right:10px
-}
-
-.sixthBlock .landing-gallery-imageSecond{
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 250px;
-    width: 170px;
-    margin:0
-}
-
-.sixthBlock .landing-gallery-progressLine{
-    width:300px;
-    margin-left: 10px;
-}
-
-.sixthBlock .landing-gallery-currentProgress{
-    height: 3px;
-    width: 77px;
-    top: 0
-}
-
-.seventhBlock{
-    height: 1350px;
-    background: #222222
-}
-.seventhBlock .landing_news-itemWrapper{
-    flex-direction: column;
-    padding-right: 0;
-}
-
-.seventhBlock .landing_news{
-    padding-left:0;
-    padding-top:30px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.seventhBlock .landing_news-title{
-    font-size: 25px;
+.sixthBlock .landing-gallery-imageSecond {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 170px;
+    margin: 0;
 }
 
-.seventhBlock .landing_news-wrapper{
-    font-size: 14px;
+.sixthBlock .landing-gallery-progressLine {
+    width: 300px;
+    margin-left: 10px;
 }
 
-.seventhBlock .landing_news-header{
+.sixthBlock .landing-gallery-currentProgress {
+    height: 3px;
+    width: 77px;
+    top: 0;
+}
+
+.seventhBlock {
+    height: 1350px;
+    background: #222222;
+}
+.seventhBlock .landing_news-itemWrapper {
+    flex-direction: column;
     padding-right: 0;
 }
 
-.seventhBlock .landing_news-date{
+.seventhBlock .landing_news {
+    padding-left: 0;
+    padding-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.seventhBlock .landing_news-title {
+    font-size: 25px;
+}
+
+.seventhBlock .landing_news-wrapper {
+    font-size: 14px;
+}
+
+.seventhBlock .landing_news-header {
+    padding-right: 0;
+}
+
+.seventhBlock .landing_news-date {
     font-size: 12px;
     margin-top: 25px;
 }
 
-.seventhBlock .landing_news-text{
+.seventhBlock .landing_news-text {
     margin-bottom: 30px;
 }
 
-.seventhBlock .landing_news-item{
-    margin-bottom: 50px
+.seventhBlock .landing_news-item {
+    margin-bottom: 50px;
 }
 
-.ninthBlock{
+.ninthBlock {
     height: 1100px;
-    background: #1c1c1c
+    background: #1c1c1c;
 }
 
-.ninthBlock .landing_other{
+.ninthBlock .landing_other {
     flex-direction: column;
 }
 
-.ninthBlock .landing-other-left{
+.ninthBlock .landing-other-left {
     padding-left: 0;
     margin-top: 50px;
 }
 
-.ninthBlock .ninthBlock-wrapper{
+.ninthBlock .ninthBlock-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -969,61 +982,68 @@
     margin-bottom: 40px;
 }
 
-.ninthBlock .landing_other-logo{
-    width:60px;
+.ninthBlock .landing_other-logo {
+    width: 60px;
     height: 60px;
     background-size: cover;
 }
 
-.ninthBlock .landing_other-subtitle{
-    margin-bottom:0;
-    margin-left:0
+.ninthBlock .landing_other-subtitle {
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
-.ninthBlock .landing-other-wrapper{
+.ninthBlock .landing-other-wrapper {
     display: none;
 }
 
-.ninthBlock .landing-other-rightWrapper{
+.ninthBlock .landing-other-rightWrapper {
     margin-right: 10px;
-    flex-direction: column
+    flex-direction: column;
 }
 
-.ninthBlock .landing-other-right{
-    width: 100%
+.ninthBlock .landing-other-right {
+    width: 100%;
 }
 
-.ninthBlock .landing-other-imageFirst{
+.ninthBlock .landing-other-imageFirst {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 300px;
-    width: 285px;   
+    width: 285px;
     box-shadow: -20px 70px 1px #222222;
 }
 
-.ninthBlock .landing-other-imageSecond{
+.ninthBlock .landing-other-imageSecond {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 300px;
-    width: 285px;   
+    width: 285px;
     box-shadow: -20px 70px 1px #222222;
 }
 
-.ninthBlock .landing-other-imageText{
+.ninthBlock .landing-other-imageText {
     font-size: 20px;
 }
 
 @media screen and (min-width: 1366px) {
-    .landing{
+    .landing {
         display: block;
     }
-    .landingMobile{
+    .landingMobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .landing {
+        display: block;
+    }
+    .landingMobile {
         display: none;
     }
 }
 
 @media screen and (min-width: 1920px) {
-
     .landing_intro-title {
         font-size: 95px;
     }
@@ -1117,168 +1137,353 @@
         margin-right: 352px;
         margin-top: 170px;
     }
-    .landing-house-botImage{
+    .landing-house-botImage {
         width: 810px;
         height: 802px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing_house{
+    .landing_house {
         height: 1450px;
     }
-    .landing_constractionStatus{
+    .landing_constractionStatus {
         padding: 0 152px 0 212px;
         height: 820px;
     }
-    .landing_constractionStatus-image{
+    .landing_constractionStatus-image {
         height: 624px;
         margin-top: 50px;
         width: 708px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing_constractionStatus-text{
+    .landing_constractionStatus-text {
         line-height: 50px;
     }
-    .landing_infrastructure-right{
+    .landing_infrastructure-right {
         margin-right: 352px;
     }
-    .landing_infrastructure-image{
+    .landing_infrastructure-image {
         width: 760px;
         height: 750px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing_infrastructure{
+    .landing_infrastructure {
         height: 800px;
     }
-    .landing_news-title, 
-    .landing_gallery-title{
+    .landing_news-title,
+    .landing_gallery-title {
         font-size: 45px;
     }
-    .landing_news-all, 
-    .landing_gallery-all{
+    .landing_news-all,
+    .landing_gallery-all {
         font-size: 20px;
     }
-    .landing-gallery-imageThird{
+    .landing-gallery-imageThird {
         height: 660px;
         width: 231px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing-gallery-imageSecond{
+    .landing-gallery-imageSecond {
         height: 660px;
         width: 946px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        margin: 0
+        margin: 0;
     }
-    .landing-gallery-imageFirst{
+    .landing-gallery-imageFirst {
         margin: 0;
         height: 660px;
         width: 546px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing_gallery{
+    .landing_gallery {
         height: 900px;
         padding: 150px 0 0 172px;
     }
-    .landing-gallery-nav{
+    .landing-gallery-nav {
         width: 110px;
         height: 110px;
     }
-    .landing-gallery-progressLine{
+    .landing-gallery-progressLine {
         width: 1516px;
     }
-    .landing_news-text{
+    .landing_news-text {
         font-size: 28px;
     }
-    .landing_news-firstImage, .landing_news-secondImage, .landing_news-thirdImage{
+    .landing_news-firstImage,
+    .landing_news-secondImage,
+    .landing_news-thirdImage {
         height: 400px;
         width: 500px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         margin-bottom: 20px;
     }
-    .landing_news{
+    .landing_news {
         height: 800px;
         padding-top: 100px;
     }
-    .subscribe_text{
+    .subscribe_text {
         font-size: 45px;
     }
-    .subscribe_button{
+    .subscribe_button {
         line-height: 60px;
         font-size: 18px;
         height: 60px;
         width: 136px;
     }
-    .subscribe_inputs input{
+    .subscribe_inputs input {
         height: 58px;
     }
-    .subscribe_inputs input::placeholder{
+    .subscribe_inputs input::placeholder {
         font-size: 16px;
     }
-    .landing-other-left{
+    .landing-other-left {
         padding-left: 212px;
         margin-top: 210px;
     }
-    .landing-other-imageSecond{
+    .landing-other-imageSecond {
         height: 500px;
         width: 425px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing-other-imageFirst{
+    .landing-other-imageFirst {
         height: 500px;
         width: 485px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
-    .landing_other{
+    .landing_other {
         height: 800px;
     }
-    .footer_sitemap-title, .footer_contact-title{
+    .footer_sitemap-title,
+    .footer_contact-title {
         font-size: 20px;
     }
-    .footer_sitemap-left, .footer_sitemap-right,
-    .footer_contact-text{
+    .footer_sitemap-left,
+    .footer_sitemap-right,
+    .footer_contact-text {
         font-size: 16px;
     }
-    .social-facebook{
+    .social-facebook {
         width: 10px;
         height: 20px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    .social-instagram{
+    .social-instagram {
         width: 20px;
         height: 20px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    .social-telegram{
+    .social-telegram {
         width: 19px;
         height: 17px;
         background-repeat: no-repeat;
         background-size: 100% 100%;
     }
-    .landing_landing_constractionStatus-title{
+    .landing_landing_constractionStatus-title {
         margin-top: 100px;
     }
-    .landing-intro-goDownButton{
+    .landing-intro-goDownButton {
         width: 90px;
         height: 90px;
     }
-    
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px){
-    .landing{
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .landing {
         display: none;
     }
-    .landingMobile{
+    .landingMobile {
         display: block;
+    }
+}
+@media screen and (min-width: 600px) {
+    .landingMobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .landing-intro-topImage {
+        height: 460px;
+        width: 510px;
+    }
+    .landing_intro-title {
+        font-size: 30px;
+    }
+    .landing-intro-houseType {
+        display: none;
+    }
+    .landing_intro-top {
+        padding-left: 112px;
+    }
+    .landing_intro-botImage {
+        width: 450px;
+        height: 377px;
+        top: -90px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .landing_intro-right {
+        margin-right: 30px;
+        margin-top: 260px;
+    }
+    .landing-house-topImage {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 480px;
+    }
+    .landing-house-wrapper {
+        top: -40px;
+    }
+    .landing_house-topLeft {
+        margin-top: 490px;
+    }
+    .landing-house-botImage {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 360px;
+        height: 352px;
+    }
+    .landing_house-topRight {
+        margin-right: 22px;
+        margin-top: 270px;
+    }
+    .landing_constractionStatus-image {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        width: 558px;
+        margin-left: 40px;
+        height: 284px;
+    }
+    .landing_constractionStatus {
+        padding: 0 112px 0 112px;
+        height: 550px;
+    }
+    .landing_infrastructure-image {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 330px;
+        height: 320px;
+    }
+    .landing_infrastructure-right {
+        margin-right: 12px;
+    }
+    .landing_gallery {
+        padding: 90px 0 0 112px;
+    }
+    .landing_news-header,
+    .landing_gallery-header {
+        padding-right: 112px;
+    }
+    .landing_news {
+        padding-left: 112px;
+        height: 1240px;
+    }
+    .landing_news-itemWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landing_news-item {
+        margin-bottom: 30px;
+    }
+    .subscribe {
+        padding: 0 50px 0 50px;
+    }
+    .subscribe_inputs input {
+        width: 190px;
+    }
+    .subscribe_text {
+        font-size: 20px;
+    }
+    .landing_other {
+        height: 1510px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .landing-gallery-progressLine {
+        display: none;
+    }
+    .landing-other-rightWrapper {
+        flex-direction: column;
+    }
+    .landing-other-left {
+        padding-left: 112px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .landing-intro-houseType {
+        display: none;
+    }
+    .landing_intro-botImage {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 550px;
+        height: 497px;
+    }
+    .landing_intro-right {
+        margin-right: 20px;
+    }
+    .landing_house-top{
+        padding-left: 72px;
+    }
+    .landing-house-botImage{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 560px;
+    height: 532px;
+    }
+    .landing_house-topRight{
+        margin-right: 72px;
+    }
+    .landing_house-bottom{
+        height: 46%;
+    }
+    .landing_house{
+        height: 1180px;
+    }
+    .landing_infrastructure-image{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 510px;
+        height: 500px;
+    }
+    .landing_infrastructure-right{
+        margin-right: 72px;
+    }
+    .landing_gallery{
+        padding: 80px 0 0 72px;
+    }
+    .landing_news{
+        padding-left: 72px;
+        padding-top: 60px;
+    }
+    .landing_news-text{
+        font-size: 16px;
+    }
+    .landing_news-date{
+        font-size: 12px;
+    }
+    .landing_news-firstImage, .landing_news-secondImage, .landing_news-thirdImage{
+        height:  150px;
+    width: 250px;
+    }
+    .landing_other{
+        height: 970px;
+        flex-direction: column;
+        align-items: center;
     }
 }

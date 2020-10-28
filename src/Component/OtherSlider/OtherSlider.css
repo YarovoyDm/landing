@@ -1,0 +1,41 @@
+.otherSlider .swiper-slide{
+    margin-left: 50px;
+    width: 335px!important;
+}
+
+.otherSlider .slider{
+    width: 8px;
+}
+
+.otherSlider{
+    width: 800px;
+    position: relative;
+}
+
+.otherSlider .swiper-button-prev, 
+.otherSlider .swiper-button-next{
+    width: 92px;
+    height: 60px;
+    background: #ab9060;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    bottom: 87px;
+    left: -110px;
+    cursor: pointer;
+    top: unset;
+}
+
+.otherSlider .swiper-button-next::after, .otherSlider .swiper-button-prev::after{
+    transform: scale(0.5);
+}
+
+.otherSlider .swiper-button-prev{
+    bottom: 27px;
+}
+
+.otherSlider .swiper-container{
+    position: unset;
+}

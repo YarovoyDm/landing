@@ -80,3 +80,14 @@
     }
     
 }
+@media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .subscribe{
+        padding: 0 72px 0 72px;
+    }
+    .subscribe_text{
+        font-size: 30px;
+    }
+    .subscribe_inputs input{
+        width: 270px;
+    }
+}

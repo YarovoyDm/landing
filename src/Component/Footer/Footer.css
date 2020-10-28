@@ -127,4 +127,28 @@
         padding-bottom: 30px;
         margin-top: 20px
     }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .footer{
+        padding: 0 50px 0 50px;
+    }
+    .footer-right {
+        display: none;
+    }
+    .menu-right-text{
+        margin-left: 40px;
+    }
+    .menu-right-title{
+        margin-left:40px
+    }
+    .header_menu_left{
+        font-size: 18px;
+    }
+    .menu-right-button{
+        margin-left: 40px
+    }
+    .menu-right-icons{
+        margin-left: 40px
+    }
 }

@@ -5,6 +5,8 @@ import './Landing.css'
 
 import { ReactComponent as Arrow } from '../../Images/downArrowLanding.svg';
 import Slider from '../Slider/Slider';
+import Gallery from '../Gallery/Gallery';
+import OtherSlider from '../OtherSlider/OtherSlider';
 
 const sliders = []
 
@@ -262,7 +264,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                     <div>
-                        <div className='landing-gallery-imagesWrapper'>
+                        {/* <div className='landing-gallery-imagesWrapper'>
                             <div className='landing-gallery-nav'>
                                 <div className='gallery_nav-arrow' />
                                 <div className='gallery_nav-arrowRotate' />
@@ -270,7 +272,8 @@ class Landing extends React.Component {
                             <div className='landing-gallery-imageFirst' />
                             <div className='landing-gallery-imageSecond' />
                             <div className='landing-gallery-imageThird' />
-                        </div>
+                        </div> */}
+                        <Gallery />
                         <div>
                             <div className='landing-gallery-progressLine'>
                                 <div className='landing-gallery-currentProgress' />
@@ -333,26 +336,7 @@ class Landing extends React.Component {
                         <div className='landing_other-logo' />
                     </div>
                     <div className='landing-other-right'>
-                        <div className='landing-other-rightWrapper'>
-                            <div className='landing-other-wrapper'>
-                                <div className='landing-house-buttonWrapper'>
-                                    <div className='landing-house-ArrowButton'>
-                                        &#8594;
-                                </div>
-                                    <div className='landing-house-ArrowButton'>
-                                        &#8592;
-                                </div>
-                                </div>
-                            </div>
-                            <div className='landing-other-projectBlock'>
-                                <div className='landing-other-imageFirst' />
-                                <div className='landing-other-imageText'>ЖК Creator City</div>
-                            </div>
-                            <div className='landing-other-projectBlock'>
-                                <div className='landing-other-imageSecond' />
-                                <div className='landing-other-imageText'>ЖК Науки 58</div>
-                            </div>
-                        </div>
+                        <OtherSlider /> 
                     </div>
                 </div>
             </div>
@@ -415,16 +399,16 @@ class Landing extends React.Component {
                                 <div className='landing-house-button'>Обрати квартиру</div>
                             </div>
                             <div className='landing-house-wrapper'>
-                                <div className='landing-house-buttonWrapper'>
-                                    <div className='landing-house-ArrowButton'>
-                                        &#8594;
+                            <div className='landing-house-buttonWrapper'>
+                                <div className='landing-house-ArrowButton'>
+                                    &#8594;
                                 </div>
-                                    <div className='landing-house-ArrowButton'>
-                                        &#8592;
+                                <div className='landing-house-ArrowButton'>
+                                    &#8592;
                                 </div>
-                                </div>
-                                <div className='landing-house-topImage' />
                             </div>
+                            <Slider />
+                        </div>
                         </div>
                         <div className='landing_house-bottom'>
                             <div className='landing-house-botImage' />
@@ -504,14 +488,7 @@ class Landing extends React.Component {
                                 </div>
                             </div>
                             <div>
-                                <div className='landing-gallery-imagesWrapper'>
-                                    <div className='landing-gallery-nav'>
-                                        <div className='gallery_nav-arrow' />
-                                        <div className='gallery_nav-arrowRotate' />
-                                    </div>
-                                    <div className='landing-gallery-imageFirst' />
-                                    <div className='landing-gallery-imageSecond' />
-                                </div>
+                                <Gallery />
                                 <div>
                                     <div className='landing-gallery-progressLine'>
                                         <div className='landing-gallery-currentProgress' />

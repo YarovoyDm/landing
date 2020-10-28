@@ -38,3 +38,33 @@
 .slider .swiper-button-prev::after {
     transform: scale(0.5);
 }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .slider .swiper-button-prev, .slider .swiper-button-next{
+        width:72px;
+        height: 44px;
+    }
+    .slider .swiper-button-next{
+        bottom: 44px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+    .slider{
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .slider {
+        width: 480px;
+    }
+    .slider .landing-house-topImage{
+        background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    }
+    
+}
