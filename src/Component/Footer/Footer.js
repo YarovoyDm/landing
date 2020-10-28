@@ -8,7 +8,7 @@ class Footer extends React.Component {
             <div className='footer'>
                 <div className='footer_top'>
                     <Logo />
-                    <div>
+                    <div className='footer-left'>
                         <div className='footer_contact-title'>
                             Контакти
                         </div>

@@ -98,6 +98,10 @@
     height: 80px;
 }
 
+.footer-left{
+    width: 370px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
     .footer {
         padding: 0;
@@ -150,5 +154,15 @@
     }
     .menu-right-icons{
         margin-left: 40px
+    }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .footer{
+        padding: 0 32px 0 52px;
+        
+    }
+    .footer-left{
+        width: 370px;
     }
 }

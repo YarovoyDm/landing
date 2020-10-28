@@ -214,7 +214,7 @@
 }
 
 .header_menu_right {
-    display: block;
+    display: flex;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -317,5 +317,11 @@
     .header .footer_sitemap-info {
         padding-top: 60px;
         padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+    .header_menu_left .footer_sitemap-item{
+        font-size: 20px;
     }
 }

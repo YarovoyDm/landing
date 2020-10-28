@@ -1325,6 +1325,13 @@
     .landing_intro-top {
         padding-left: 112px;
     }
+    .landing-house-botImage{
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 297px;
+        bottom: -50px;
+    }
     .landing_intro-botImage {
         width: 450px;
         height: 377px;
@@ -1348,12 +1355,7 @@
     .landing_house-topLeft {
         margin-top: 490px;
     }
-    .landing-house-botImage {
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        width: 360px;
-        height: 352px;
-    }
+
     .landing_house-topRight {
         margin-right: 22px;
         margin-top: 270px;
@@ -1381,6 +1383,7 @@
     }
     .landing_gallery {
         padding: 90px 0 0 112px;
+        height: 500px;
     }
     .landing_news-header,
     .landing_gallery-header {
@@ -1389,6 +1392,7 @@
     .landing_news {
         padding-left: 112px;
         height: 1240px;
+        padding-top: 80px;
     }
     .landing_news-itemWrapper {
         flex-direction: column;
@@ -1407,7 +1411,7 @@
         font-size: 20px;
     }
     .landing_other {
-        height: 1510px;
+        height: 940px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1421,6 +1425,7 @@
     .landing-other-left {
         padding-left: 112px;
         margin-top: 80px;
+        margin-bottom: 50px;
     }
 }
 
@@ -1444,7 +1449,7 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 560px;
-    height: 532px;
+        height: 532px;
     }
     .landing_house-topRight{
         margin-right: 72px;
