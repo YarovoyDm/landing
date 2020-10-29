@@ -9,8 +9,15 @@ class Header extends React.Component {
         isHeaderMenuOpen: false
     }
 
+    componentDidMount(){
+        
+    }
+
     onMenuChange = () => {
-        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen })
+        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
+            this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+            this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'
+        })
     }
 
     render() {
