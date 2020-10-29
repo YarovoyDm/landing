@@ -15,6 +15,14 @@
     color: #e0e0e0;
 }
 
+.footer_contact-number{
+    cursor: pointer;
+}
+
+.footer_contact-number:hover{
+    text-decoration: underline;
+}
+
 .footer_top {
     margin-top: 61px;
     height: 307px;

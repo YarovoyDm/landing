@@ -25,7 +25,7 @@ class Footer extends React.Component {
                             </div>
                             <div className='footer_contact-text'>
                                 krauss@gmail.com <br />
-                                +38 096 456 76 45
+                                <div className='footer_contact-number'>+38 096 456 76 45</div>
                                 <div className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
                         </div>

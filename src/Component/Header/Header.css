@@ -96,6 +96,7 @@
 .header_info-address {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .header_closeButton {
