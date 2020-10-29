@@ -14,9 +14,10 @@ class Header extends React.Component {
     }
 
     onMenuChange = () => {
+        const isMobile = window.screen.width <= 768
         this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
             this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
-            this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'
+            if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
         })
     }
 
@@ -95,14 +96,18 @@ class Header extends React.Component {
                 </div>
                 <Logo />
                 <div className="header_info">
-                    <div className="header_info-address">
+                    <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
                         <div className="header_info-location" />Круглоуніверситетська, 5-7
-                    </div>
-                    <div className="header_info-locationMobile" />
-                    <div className="header_info-phone">
+                    </a>
+                    <a className="header_info-locationMobile" href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7'>
+                        <div />
+                    </a>
+                    <a href='tel:096 453 45 64' className="header_info-phone">
                         <div className="header_info-phoneIcon" />096 453 45 64
-                    </div>
-                    <div className="header_info-phoneIconMobile" />
+                    </a>
+                    <a className="header_info-phoneIconMobile"  href='tel:096 453 45 64'>
+                        <div />
+                    </a>
                     <div className="header_menu-button" onClick={() => this.onMenuChange()}>
                         <div className="header_menu-linesWrapper">
                             <div className="header_menu-line" />

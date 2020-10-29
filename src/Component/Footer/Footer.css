@@ -17,6 +17,7 @@
 
 .footer_contact-number{
     cursor: pointer;
+    color: white;
 }
 
 .footer_contact-number:hover{
@@ -73,9 +74,10 @@
 }
 
 .footer_contact-map {
-    width: 120px;
+    width: 140px;
     cursor: pointer;
     text-decoration: underline;
+    color: white;
 }
 
 .footer_contact-map:hover {
@@ -107,7 +109,7 @@
 }
 
 .footer-left{
-    width: 370px;
+    max-width: 720px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -172,5 +174,10 @@
     }
     .footer-left{
         width: 370px;
+    }
+}
+@media screen and (min-width: 1360px) {
+    .footer_contact-info{
+        justify-content: space-between;
     }
 }

@@ -16,7 +16,7 @@ class Footer extends React.Component {
                             <div className='footer_contact-text'>
                                 Офіс продажу: <br />
                                 м. Київ, вул. Круглоуніверситетська, 5-7 <br />
-                                <div className='footer_contact-map'>Дивитись на карті</div>
+                                <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='socialIcons_wrapper'>
                                     <div className='social-facebook' />
                                     <div className='social-instagram' />
@@ -25,7 +25,7 @@ class Footer extends React.Component {
                             </div>
                             <div className='footer_contact-text'>
                                 krauss@gmail.com <br />
-                                <div className='footer_contact-number'>+38 096 456 76 45</div>
+                                <a href='tel:096 453 45 64' className='footer_contact-number'>+38 096 456 76 45</a>
                                 <div className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
                         </div>
