@@ -273,6 +273,12 @@ class Landing extends React.Component {
                             <div className='landing-gallery-imageSecond' />
                             <div className='landing-gallery-imageThird' />
                         </div> */}
+                        <div className='landing-gallery-imagesWrapper'>
+                            <div className='landing-gallery-nav'>
+                                <div className='gallery_nav-arrow' />
+                                <div className='gallery_nav-arrowRotate' />
+                            </div>
+                            </div>
                         <Gallery />
                         <div>
                             <div className='landing-gallery-progressLine'>

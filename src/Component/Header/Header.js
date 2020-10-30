@@ -46,7 +46,7 @@ class Header extends React.Component {
                         </div>
                     </div>
                     <div className='header_menu_right'>
-                        <div className='header_closeButton' onClick={() => this.onMenuChange()}>&#10005;</div>
+                        <div className='header_closeButton' onClick={() => this.onMenuChange()}></div>
                         <div className='menu-right-title'>Офіс продажу:</div>
                         <div className='menu-right-text'>
                             09100 м. Київ,<br />
@@ -91,7 +91,7 @@ class Header extends React.Component {
                                 <div className='menu-right-button'>Замовити дзвінок</div>
                             </div>
                         </div>
-                        <div className='header_closeButton' onClick={() => this.onMenuChange()}>&#10005;</div>
+                        <div className='header_closeButton' onClick={() => this.onMenuChange()}></div>
                     </div>
                 </div>
                 <Logo />

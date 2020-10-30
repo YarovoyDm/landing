@@ -30,7 +30,7 @@
 }
 
 .landing_constractionStatus-titleText{
-    width:120px
+    width:122px
 }
 
 .landing_other-subtitle,
@@ -470,7 +470,7 @@
 }
 
 .landing_gallery {
-    height: 650px;
+    height: 750px;
     background: #1c1c1c;
     padding: 200px 0 0 172px;
 }
@@ -572,8 +572,9 @@
     color: #ab9060;
     position: absolute;
     border-radius: 60px;
-    top: 30px;
+    top: 60px;
     left: 20px;
+    z-index: 999;
 }
 
 .landing-gallery-imageFirst {
@@ -1042,7 +1043,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    width: 70%;
+    width: 76%;
 }
 
 .ninthBlock .landing_other-logo {
@@ -1264,7 +1265,7 @@
         background-repeat: no-repeat;
     }
     .landing_gallery {
-        height: 900px;
+        height: 1000px;
         padding: 150px 0 0 172px;
     }
     .landing-gallery-nav {

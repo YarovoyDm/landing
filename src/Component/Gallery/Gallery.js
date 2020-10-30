@@ -18,7 +18,7 @@ class Gallery extends React.Component {
         return (
             <div className='gallery'>
                 <Swiper
-                    spaceBetween={50}
+                    spaceBetween={150}
                     slidesPerView={3}
                     navigation={true}
                     scrollbar={{ draggable: true }}
@@ -26,10 +26,10 @@ class Gallery extends React.Component {
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-botImage' /></SwiperSlide>
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-botImage' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
                 </Swiper>
                 
