@@ -14,7 +14,7 @@ class Header extends React.Component {
     }
 
     onMenuChange = () => {
-        const isMobile = window.screen.width <= 768
+        const isMobile = window.screen.width <= 1024
         this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
             this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
             if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
@@ -76,7 +76,7 @@ class Header extends React.Component {
                         </div>
                         <div className='header_mobileContactBot'>
                             <div className='header_contactBot-left'>
-                                <div className='footer_contact-map'>Дивитись на карті</div>
+                                <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='menu-right-text'>
                                     krauss@gmail.com<br />
                                     096 453 45 64

@@ -4,9 +4,13 @@
 
 .slider .landing-house-botImage{
     bottom: unset;
-    height: 700px;
+    height: 500px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.slider .landing-house-botImage{
+    width:100%
 }
 
 .slider .swiper-container{
@@ -50,7 +54,12 @@
         height: 44px;
     }
     .slider .swiper-button-next{
-        bottom: 44px;
+        bottom: 84px;
+        left: -85px;
+    }
+    .slider .swiper-button-prev{
+        left: -85px;
+        bottom: 40px
     }
 
 }
@@ -65,6 +74,11 @@
     .slider {
         width: 480px;
     }
-
+    .slider .landing-house-topImage{
+        width:530px
+    }
+    
+}
+@media screen and (min-width: 1920px) {
     
 }

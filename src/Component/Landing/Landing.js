@@ -336,7 +336,7 @@ class Landing extends React.Component {
                         <div className='landing_other-logo' />
                     </div>
                     <div className='landing-other-right'>
-                        <OtherSlider /> 
+                        <OtherSlider />
                     </div>
                 </div>
             </div>
@@ -357,14 +357,16 @@ class Landing extends React.Component {
                             <div className='landing-house-button'>Обрати квартиру</div>
                         </div>
                         <div className="secondBlock-data">
-                            <div className='landing_intro-botImage' />
+                            
                             <div className='landing_intro-right'>
                                 <div className='landing_intro-BotTitle'>
                                     <div className='landing_house-line' />
                                     <div className='landing_house-titleText'>
                                         АКЦІЇ ТА ЗНИЖКИ
+                                    </div>
+                                    <div className='landing_house-line' />
                                 </div>
-                                </div>
+                                <div className='landing_intro-botImage' />
                                 <div className='landing_intro-subtitle'>
                                     Вигідні пропозиції<br />
                                 від забудовника
@@ -385,7 +387,19 @@ class Landing extends React.Component {
                                     <div className='landing_house-titleText'>
                                         БУДИНОК
                                 </div>
+                                <div className='landing_house-line' />
+                            </div>
+                            <div className='landing-house-wrapper'>
+                                <div className='landing-house-buttonWrapper'>
+                                    <div className='landing-house-ArrowButton'>
+                                        &#8594;
                                 </div>
+                                    <div className='landing-house-ArrowButton'>
+                                        &#8592;
+                                </div>
+                                </div>
+                                <Slider />
+                            </div>
                                 <div className='landing_house-subtitle'>
                                     Продумані планування
                             </div>
@@ -398,27 +412,19 @@ class Landing extends React.Component {
                             </div>
                                 <div className='landing-house-button'>Обрати квартиру</div>
                             </div>
-                            <div className='landing-house-wrapper'>
-                            <div className='landing-house-buttonWrapper'>
-                                <div className='landing-house-ArrowButton'>
-                                    &#8594;
-                                </div>
-                                <div className='landing-house-ArrowButton'>
-                                    &#8592;
-                                </div>
-                            </div>
-                            <Slider />
-                        </div>
+                            
                         </div>
                         <div className='landing_house-bottom'>
-                            <div className='landing-house-botImage' />
+                            <div className='landing_house-botTitle'>
+                                <div className='landing_house-botLine' />
+                                <div className='landing_house-botTitleText'>
+                                    ПРО КОМПЛЕКС
+                                </div>
+                                <div className='landing_house-botLine' />
+                            </div>
                             <div className='landing_house-topRight'>
-                                <div className='landing_house-botTitle'>
-                                    <div className='landing_house-botLine' />
-                                    <div className='landing_house-botTitleText'>
-                                        ПРО КОМПЛЕКС
-                                </div>
-                                </div>
+
+                                <div className='landing-house-botImage' />
                                 <div className='landing_house-botSubtitle'>
                                     Архітектура та якість<br />
                                 будівництва
@@ -434,34 +440,34 @@ class Landing extends React.Component {
                     </div>
                     <div className='fourthBlock'>
                         <div className='landing_constractionStatus'>
-                            <div className='landing_constractionStatus-image' />
-
                             <div className='landing_landing_constractionStatus-title'>
                                 <div className='landing_constractionStatus-line' />
                                 <div className='landing_constractionStatus-titleText'>
                                     ХІД БУДІВНИЦТВА
-                                    </div>
+                                </div>
+                                <div className='landing_constractionStatus-line' />
                             </div>
+                            <div className='landing_constractionStatus-image' />
                             <div className='landing_constractionStatus-text'>
                                 Статус Будівництва <br />
                                     ЖК Krauss
-                                </div>
+                            </div>
                             <div className='landing_constractionStatus-button'>
                                 Детальніше
                                 </div>
-
                         </div>
                     </div>
                     <div className='fifthBlock'>
                         <div className='landing_infrastructure'>
-                            <div className='landing_infrastructure-image' />
                             <div className='landing_infrastructure-right'>
                                 <div className='landing_infrastructure-title'>
                                     <div className='landing_infrastructure-line' />
                                     <div className='landing_infrastructure-titleText'>
                                         ІНФРАСТРУКТУРА ПОРЯД
-                            </div>
+                                    </div>
+                                    <div className='landing_infrastructure-line' />
                                 </div>
+                                <div className='landing_infrastructure-image' />
                                 <div className='landing_infrastructure-subtitle'>
                                     Все необхідне поруч
                         </div>
@@ -548,6 +554,7 @@ class Landing extends React.Component {
                                     <div className='landing_other-titleText'>
                                         ПРОЕКТИ
                                     </div>
+                                    <div className='landing_other-line' />
                                 </div>
                                 <div className='ninthBlock-wrapper'>
                                     <div className='landing_other-subtitle'>

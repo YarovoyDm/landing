@@ -55,3 +55,13 @@
         width: 614px;
     }
 }
+@media screen and (min-width: 1920px){
+    .otherSlider .swiper-slide{
+        margin-right: 160px!important;
+        margin-left: 90px;
+    }
+    .otherSlider{
+        width:1160px
+    }
+    
+}

@@ -20,11 +20,12 @@ class Slider extends React.Component {
                     spaceBetween={50}
                     slidesPerView={1}
                     navigation={true}
+                    // scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-botImage' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
                     <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
                 </Swiper>
                 

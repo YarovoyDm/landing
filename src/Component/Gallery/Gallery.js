@@ -21,6 +21,7 @@ class Gallery extends React.Component {
                     spaceBetween={50}
                     slidesPerView={3}
                     navigation={true}
+                    scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >

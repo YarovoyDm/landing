@@ -26,6 +26,11 @@
     font-size: 12px;
     color: #ab9060;
     margin-left: 15px;
+    margin-right: 15px;
+}
+
+.landing_constractionStatus-titleText{
+    width:120px
 }
 
 .landing_other-subtitle,
@@ -50,9 +55,12 @@
     align-items: center;
     margin-bottom: 50px;
 }
+.landingMobile .landing_intro-BotTitle{
+    margin-top:80px
+}
 
 .landing_landing_constractionStatus-title {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .landing_infrastructure-right {
@@ -73,7 +81,7 @@
     height: 474px;
     width: 558px;
     background-image: url(../../Images/constractionStatus.jpg);
-    margin-top: 200px;
+    margin-top: 100px;
     box-shadow: 25px 25px 0px #222222;
 }
 
@@ -186,6 +194,20 @@
 
 .thirdBlock .slider {
     width: 210px;
+    height: 260px;
+    position: relative;
+}
+
+.thirdBlock .landing_house-botTitle{
+    margin-top: 80px;
+}
+
+.thirdBlock .landing_house-topLeft{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%
 }
 
 .landing-other-wrapper,
@@ -314,6 +336,13 @@
 
 .landing_intro-right {
     margin-right: 130px;
+}
+
+.landingMobile .landing_intro-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0
 }
 
 .landing_intro-houseTypeItem {
@@ -640,8 +669,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: unset;
-    margin-bottom: 40px;
-    margin-top: 70px;
+    margin-bottom: 60px;
 }
 
 .landingMobile .landing_other-subtitle,
@@ -651,14 +679,18 @@
 .landingMobile .landing_infrastructure-subtitle,
 .landingMobile .landing_constractionStatus-text {
     font-size: 25px;
-    margin-left: 10px;
+    text-align: center;
 }
 
 .landingMobile .landing_intro-text,
 .landingMobile .landing_house-text,
 .landingMobile .landing_infrastructure-text {
     font-size: 16px;
-    margin-left: 10px;
+}
+
+.landingMobile .landing_intro-text{
+    text-align: center;
+    width: 60%;
 }
 
 .landingMobile .landing_other-titleText,
@@ -695,14 +727,18 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 240px;
-    height: 200px;
+    height: 220px!important;
     bottom: unset;
+    position: unset;
+    margin-bottom: 30px;
     top: 50px;
 }
 
 .thirdBlock .landing_house-bottom {
     justify-content: unset;
-    height: unset;
+    height: 50%;
+    flex-direction: column;
+    align-items:center
 }
 
 .landingMobile-secondBlock {
@@ -720,15 +756,16 @@
 }
 
 .thirdBlock .landing-house-wrapper {
-    top: -40px;
+    position: unset
 }
 
 .thirdBlock .landing_house-title {
-    margin-top: 110px;
+    margin-top: 50px;
 }
 
 .landingMobile .landing_house-text {
-    width: 265px;
+    width: 70%;
+    text-align: center;
 }
 .thirdBlock .landing-house-button {
     margin-left: 10px;
@@ -762,7 +799,12 @@
 }
 
 .thirdBlock .landing_house-topRight {
-    margin-top: 300px;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .thirdBlock .landing-house-botButton {
@@ -775,7 +817,7 @@
 }
 
 .thirdBlock {
-    height: 1540px;
+    height: 1590px;
     background: #222222;
 }
 
@@ -788,16 +830,18 @@
     background-repeat: no-repeat;
     height: 194px;
     width: 218px;
-    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     box-shadow: 12px 12px 0px #222222;
-    margin-left: 70px;
+    
 }
 
 .fourthBlock .landing_constractionStatus {
+    height: 560px;
     padding: 0;
     flex-direction: column;
     justify-content: unset;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .fourthBlock .landing_landing_constractionStatus-title {
@@ -813,8 +857,12 @@
 .landingMobile .landing_infrastructure-line,
 .landingMobile .landing_constractionStatus-line,
 .landingMobile .landing_house-line {
-    width: 40px;
-    margin-left: 10px;
+    
+    max-width: 80px;
+}
+
+.landingMobile .landing_infrastructure-line{
+    width: 48px;
 }
 
 .fifthBlock {
@@ -828,22 +876,29 @@
     width: 260px;
     height: 260px;
     bottom: unset;
+    position: unset;
     top: 35px;
+    margin-bottom: 30px;
 }
 
 .fifthBlock .landing_infrastructure {
     flex-direction: column;
     height: unset;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .fifthBlock .landing_infrastructure-right {
     margin-right: 0;
-    margin-top: 340px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fifthBlock .landing_infrastructure-title {
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .fifthBlock .landing_infrastructure-subtitle {
@@ -851,7 +906,8 @@
 }
 
 .fifthBlock .landing_infrastructure-text {
-    width: 280px;
+    width: 240px;
+    text-align: center;
 }
 
 .fifthBlock .landing-infrastructure-button {
@@ -926,6 +982,7 @@
 }
 .seventhBlock .landing_news-itemWrapper {
     flex-direction: column;
+    align-items: center;
     padding-right: 0;
 }
 
@@ -962,25 +1019,30 @@
 }
 
 .ninthBlock {
-    height: 1100px;
+    height: 1130px;
     background: #1c1c1c;
 }
 
 .ninthBlock .landing_other {
     flex-direction: column;
+    height: 1100px;
 }
 
 .ninthBlock .landing-other-left {
     padding-left: 0;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .ninthBlock .ninthBlock-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px 0 10px;
     margin-bottom: 40px;
+    width: 70%;
 }
 
 .ninthBlock .landing_other-logo {
@@ -999,8 +1061,8 @@
 }
 
 .ninthBlock .landing-other-rightWrapper {
-    margin-right: 10px;
     flex-direction: column;
+    align-items:center
 }
 
 .ninthBlock .landing-other-right {
@@ -1313,6 +1375,7 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
+
     .landing-intro-topImage {
         height: 460px;
         width: 510px;
@@ -1431,6 +1494,9 @@
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .landing-other-left{
+        padding-left:0px
+    }
     .landing-intro-houseType {
         display: none;
     }
