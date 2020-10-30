@@ -11,10 +11,6 @@
   width: calc(100% / 5);
 }
 
-.vertical-line:first-child{
-  left: 172px
-}
-
-.vertical-line:second-child{
-  
+body{
+  font-family: Gilroy
 }

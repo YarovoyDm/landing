@@ -287,6 +287,9 @@
     font-weight: 700;
     font-size: 60px;
     color: white;
+    font-family: Gilroy-bold;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .landing-intro-topImage {
