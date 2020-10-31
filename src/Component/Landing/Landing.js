@@ -24,7 +24,7 @@ class Landing extends React.Component {
                         <div className='socialIcons_wrapper'>
                             <div className='social-facebook' />
                             <div className='social-instagram' />
-                            <div className='social-telegram' />
+                            <a href='https://t.me/kreator_bud' className='social-telegram' />
                         </div>
                         <div className='landing_intro-topLeft'>
                             <div className='landing_intro-title'>

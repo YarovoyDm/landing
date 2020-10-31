@@ -15,12 +15,12 @@ class Footer extends React.Component {
                         <div className='footer_contact-info'>
                             <div className='footer_contact-text'>
                                 Офіс продажу: <br />
-                                м. Київ, вул. Круглоуніверситетська, 5-7 <br />
+                                м. Київ, <br />вул. Круглоуніверситетська, 5-7 <br />
                                 <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='socialIcons_wrapper'>
                                     <div className='social-facebook' />
                                     <div className='social-instagram' />
-                                    <div className='social-telegram' />
+                                    <a href='https://t.me/kreator_bud' className='social-telegram' />
                                 </div>
                             </div>
                             <div className='footer_contact-text'>
