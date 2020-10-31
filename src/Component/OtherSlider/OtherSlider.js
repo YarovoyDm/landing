@@ -17,28 +17,33 @@ class OtherSlider extends React.Component {
     render() {
         return (<div className='otherSlider'>
             <Swiper
-                spaceBetween={50}
+                spaceBetween={150}
                 slidesPerView={2}
                 navigation={true}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
-                <SwiperSlide><div className='landing-other-projectBlock'>
+                <SwiperSlide><a href='https://creatorcity.com.ua/' className='landing-other-projectBlock'>
                     <div className='landing-other-imageFirst' />
                     <div className='landing-other-imageText'>ЖК Creator City</div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className='landing-other-projectBlock'>
+                </a></SwiperSlide>
+                <SwiperSlide><a href='http://nauki58.com.ua/' className='landing-other-projectBlock'>
                     <div className='landing-other-imageSecond' />
                     <div className='landing-other-imageText'>ЖК Науки 58</div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className='landing-other-projectBlock'>
+                </a></SwiperSlide>
+                <SwiperSlide><a href='https://creatorcity.com.ua/' className='landing-other-projectBlock'>
                     <div className='landing-other-imageFirst' />
                     <div className='landing-other-imageText'>ЖК Creator City</div>
-                </div></SwiperSlide>
-                <SwiperSlide><div className='landing-other-projectBlock'>
+                </a></SwiperSlide>
+                <SwiperSlide><a href='http://nauki58.com.ua/' className='landing-other-projectBlock'>
                     <div className='landing-other-imageSecond' />
                     <div className='landing-other-imageText'>ЖК Науки 58</div>
-                </div></SwiperSlide>
+                </a></SwiperSlide>
+                <SwiperSlide><a href='https://creatorcity.com.ua/' className='landing-other-projectBlock'>
+                    <div className='landing-other-imageFirst' />
+                    <div className='landing-other-imageText'>ЖК Creator City</div>
+                </a></SwiperSlide>
+                
             </Swiper>
 
         </div>

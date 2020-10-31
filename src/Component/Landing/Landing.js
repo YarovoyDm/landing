@@ -28,11 +28,11 @@ class Landing extends React.Component {
                         </div>
                         <div className='landing_intro-topLeft'>
                             <div className='landing_intro-title'>
-                                ART<br />
-                                OF PERFECT<br />
-                                LIVING
+                                МИСТЕЦТВО<br />
+                                БУТИ<br />
+                                ОСОБИСТІСТЮ
                             </div>
-                            <div className='landing-house-button'>Обрати квартиру</div>
+                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
                             <div className='landing-intro-goDownButton'>
                                 <Arrow />
                             </div>
@@ -109,7 +109,7 @@ class Landing extends React.Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='landing_intro-houseTypeItem'>
+                                {/* <div className='landing_intro-houseTypeItem'>
                                     <div className='landing_intro-houseTypeTop'>
                                         <div className='houseTypeTop-size'>2х рівневі</div>
                                         <div className='houseTypeTop-text'>квартири</div>
@@ -132,7 +132,7 @@ class Landing extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className='landing-intro-topImage' />
@@ -151,10 +151,10 @@ class Landing extends React.Component {
                                 від забудовника
                             </div>
                             <div className='landing_intro-text'>
-                                Дізнайтеся про найвигідніші умови купівлі вашої<br />
-                                майбутньої оселі в житловому комплексі &#171;Krauss&#187;<br />
+                                Дізнайтеся про найвигідніші умови купівлі<br /> вашої
+                                майбутньої оселі в житловому комплексі<br /> &#171;Krauss Gallery&#187;
                             </div>
-                            <div className='landing-itro-button'>Детальніше</div>
+                            {/* <div className='landing-itro-button'>Детальніше</div> */}
                         </div>
                     </div>
                 </div>
@@ -171,13 +171,12 @@ class Landing extends React.Component {
                                 Продумані планування
                             </div>
                             <div className='landing_house-text'>
-                                Задавати тон і ритм, але зливатися з музикою<br />
-                                архітектури. Жити у серці мегаполісу і бачити<br />
-                                землю до самого горизонту. Бути помітною<br />
-                                постаттю, але розчинятися в просторі, наповненому<br />
-                                світлом
+                                Жити з комфортом у центрі улюбленого міста<br />
+                                Отримувати максимум задоволення від життя в<br />
+                                квартирах зі зручними плануваннями, високими<br />
+                                стелями та панорамними вікнами.<br />
                             </div>
-                            <div className='landing-house-button'>Обрати квартиру</div>
+                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
                         </div>
                         <div className='landing-house-wrapper'>
                             <div className='landing-house-buttonWrapper'>
@@ -205,11 +204,11 @@ class Landing extends React.Component {
                                 будівництва
                             </div>
                             <div className='landing_house-text'>
-                                Ми зводимо житловий комплекс &#171;Krauss&#187;<br />
-                                За сучасними технологіями будівництва<br />
-                                з використанням матеріалів високої якості<br />
+                            Ми будуємо житловий комплекс <br />&#171;Krauss Gallery&#187;
+                                    за сучасними технологіями<br /> будівництва з
+                                    використанням матеріалів<br /> високої якості<br />
                             </div>
-                            <div className='landing-house-botButton'>Більше інформації</div>
+                            {/* <div className='landing-house-botButton'>Більше інформації</div> */}
                         </div>
                     </div>
                 </div>
@@ -223,11 +222,11 @@ class Landing extends React.Component {
                         </div>
                         <div className='landing_constractionStatus-text'>
                             Статус Будівництва <br />
-                            ЖК Krauss
+                            ЖК Krauss Gallery
                         </div>
-                        <div className='landing_constractionStatus-button'>
+                        {/* <div className='landing_constractionStatus-button'>
                             Детальніше
-                        </div>
+                        </div> */}
                     </div>
                     <div className='landing_constractionStatus-image' />
                 </div>
@@ -244,15 +243,14 @@ class Landing extends React.Component {
                             Все необхідне поруч
                         </div>
                         <div className='landing_infrastructure-text'>
-                            Ми знаємо, що ваш найцінніший ресурс - це час<br />
-                            Саме тому житловий комплекс &#171;Krauss&#187; матиме<br />
-                            власну розвинену інфраструктуру на перших<br />
-                            поверхах, а все необхідне для життя, роботи та<br />
-                            відпочинку розташоване в пішій доступності<br />
+                            Все, що потрібно для вашої зручності<br /> знаходиться
+                            всередині будинку або<br /> в кількох хвилинах пішки.
+                            <br />Від великих торгово-розважальних<br /> центрів
+                            до невеликих затишних кав'ярень<br />
                         </div>
-                        <div className='landing-infrastructure-button'>
+                        {/* <div className='landing-infrastructure-button'>
                             Більше інформації
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className='landing_gallery'>
@@ -287,7 +285,7 @@ class Landing extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className='landing_news'>
+                {/* <div className='landing_news'>
                     <div className='landing_news-header'>
                         <div className='landing_news-title'>Новини</div>
                         <div className='landing_news-wrapper'>
@@ -324,7 +322,7 @@ class Landing extends React.Component {
                             <div className='landing_news-arrowIcon' />
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <Subscribe />
                 <div className='landing_other'>
                     <div className='landing-other-left'>
@@ -337,7 +335,7 @@ class Landing extends React.Component {
                         <div className='landing_other-subtitle'>
                             Інші проекти<br />
                             від забудовника<br />
-                            Креатор-Буд
+                            &#171;Креатор-Буд&#187;
                         </div>
                         <div className='landing_other-logo' />
                     </div>
@@ -356,11 +354,11 @@ class Landing extends React.Component {
                         </div>
                         <div className='secondBlock-absolute'>
                             <div className='landing_intro-title'>
-                                ART<br />
-                                OF PERFECT<br />
-                                LIVING
+                                МИСТЕЦТВО<br />
+                                БУТИ<br />
+                                ОСОБИСТІСТЮ
                             </div>
-                            <div className='landing-house-button'>Обрати квартиру</div>
+                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
                         </div>
                         <div className="secondBlock-data">
                             
@@ -381,7 +379,7 @@ class Landing extends React.Component {
                                     Дізнайтеся про найвигідніші умови купівлі вашої<br />
                                 майбутньої оселі в житловому комплексі &#171;Krauss&#187;<br />
                                 </div>
-                                <div className='landing-itro-button'>Детальніше</div>
+                                {/* <div className='landing-itro-button'>Детальніше</div> */}
                             </div>
                         </div>
                     </div>
@@ -410,13 +408,12 @@ class Landing extends React.Component {
                                     Продумані планування
                             </div>
                                 <div className='landing_house-text'>
-                                    Задавати тон і ритм, але зливатися з музикою<br />
-                                архітектури. Жити у серці мегаполісу і бачити<br />
-                                землю до самого горизонту. Бути помітною<br />
-                                постаттю, але розчинятися в просторі, наповненому<br />
-                                світлом
+                                    Жити з комфортом у центрі улюбленого міста<br />
+                                    Отримувати максимум задоволення від життя в<br />
+                                    квартирах зі зручними плануваннями, високими<br />
+                                    стелями та панорамними вікнами.<br />
                             </div>
-                                <div className='landing-house-button'>Обрати квартиру</div>
+                                {/* <div className='landing-house-button'>Обрати квартиру</div> */}
                             </div>
                             
                         </div>
@@ -436,11 +433,11 @@ class Landing extends React.Component {
                                 будівництва
                             </div>
                                 <div className='landing_house-text'>
-                                    Ми зводимо житловий комплекс &#171;Krauss&#187;<br />
-                                За сучасними технологіями будівництва<br />
-                                з використанням матеріалів високої якості<br />
+                                    Ми будуємо житловий комплекс &#171;Krauss Gallery&#187;<br />
+                                    за сучасними технологіями будівництва з<br />
+                                    використанням матеріалів високої якості<br />
                                 </div>
-                                <div className='landing-house-botButton'>Більше інформації</div>
+                                {/* <div className='landing-house-botButton'>Більше інформації</div> */}
                             </div>
                         </div>
                     </div>
@@ -456,11 +453,11 @@ class Landing extends React.Component {
                             <div className='landing_constractionStatus-image' />
                             <div className='landing_constractionStatus-text'>
                                 Статус Будівництва <br />
-                                    ЖК Krauss
+                                    ЖК Krauss Gallery
                             </div>
-                            <div className='landing_constractionStatus-button'>
+                            {/* <div className='landing_constractionStatus-button'>
                                 Детальніше
-                                </div>
+                                </div> */}
                         </div>
                     </div>
                     <div className='fifthBlock'>
@@ -478,15 +475,14 @@ class Landing extends React.Component {
                                     Все необхідне поруч
                         </div>
                                 <div className='landing_infrastructure-text'>
-                                    Ми знаємо, що ваш найцінніший ресурс - це час<br />
-                            Саме тому житловий комплекс &#171;Krauss&#187; матиме<br />
-                            власну розвинену інфраструктуру на перших<br />
-                            поверхах, а все необхідне для життя, роботи та<br />
-                            відпочинку розташоване в пішій доступності<br />
+                                    Все, що потрібно для вашої зручності знаходиться<br />
+                                    всередині будинку або в кількох хвилинах пішки.<br />
+                                    Від великих торгово-розважальних центрів<br />
+                                    до невеликих затишних кав'ярень<br />
                                 </div>
-                                <div className='landing-infrastructure-button'>
+                                {/* <div className='landing-infrastructure-button'>
                                     Більше інформації
-                        </div>
+                        </div> */}
                             </div>
                         </div>
                     </div>
@@ -509,7 +505,7 @@ class Landing extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='seventhBlock'>
+                    {/* <div className='seventhBlock'>
                         <div className='landing_news'>
                             <div className='landing_news-header'>
                                 <div className='landing_news-title'>Новини</div>
@@ -548,7 +544,7 @@ class Landing extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className='eighthBlock'>
                         <Subscribe />
                     </div>
@@ -565,8 +561,8 @@ class Landing extends React.Component {
                                 <div className='ninthBlock-wrapper'>
                                     <div className='landing_other-subtitle'>
                                         Інші проекти<br />
-                                        від забудовника<br />
-                                        Креатор-Буд
+                                        від забудовника<br />                                        
+                                        &#171;Креатор-Буд&#187;
                                     </div>
                                     <div className='landing_other-logo' />
                                 </div>
@@ -583,14 +579,14 @@ class Landing extends React.Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='landing-other-projectBlock'>
+                                    <a a href='https://creatorcity.com.ua/' className='landing-other-projectBlock'>
                                         <div className='landing-other-imageFirst' />
                                         <div className='landing-other-imageText'>ЖК Creator City</div>
-                                    </div>
-                                    <div className='landing-other-projectBlock'>
+                                    </a>
+                                    <a href='http://nauki58.com.ua/' className='landing-other-projectBlock'>
                                         <div className='landing-other-imageSecond' />
                                         <div className='landing-other-imageText'>ЖК Науки 58</div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>

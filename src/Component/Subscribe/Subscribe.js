@@ -10,9 +10,9 @@ class Subscribe extends React.Component {
                 </div>
                 <div className='subscribe_inputs'>
                     <input placeholder='Ваш Email' />
-                    <div className='subscribe_button'>
+                    {/* <div className='subscribe_button'>
                         Підписатись
-                </div>
+                </div> */}
                 </div>
             </div>
         )

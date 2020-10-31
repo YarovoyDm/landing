@@ -14,11 +14,11 @@ class Header extends React.Component {
     }
 
     onMenuChange = () => {
-        const isMobile = window.screen.width <= 1024
-        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
-            this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
-            if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
-        })
+        // const isMobile = window.screen.width <= 1024
+        // this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
+        //     this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+        //     if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
+        // })
     }
 
     render() {
