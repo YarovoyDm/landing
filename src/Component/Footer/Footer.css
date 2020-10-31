@@ -113,6 +113,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
+    .footer_contact-text:first-child{
+        margin-right: 0;
+    }
     .footer {
         padding: 0;
         padding-left: 10px;

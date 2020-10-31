@@ -34,7 +34,8 @@
 }
 
 .landing_constractionStatus-titleText{
-    width:122px
+    width:122px;
+    text-align: center;
 }
 
 .landing_other-subtitle,
@@ -203,7 +204,7 @@
 }
 
 .thirdBlock .landing_house-botTitle{
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .thirdBlock .landing_house-topLeft{
@@ -757,7 +758,7 @@
 }
 
 .landingMobile-secondBlock {
-    height: 850px;
+    height: 730px;
     background: #1c1c1c;
     position: relative;
     padding-top: 35px;
@@ -803,6 +804,8 @@
     right: 0px;
     width: 230px;
     height: 250px;
+    display: flex;
+    align-items: center;
 }
 .secondBlock-absolute .landing_intro-title {
     margin: 25px 20px;
@@ -828,16 +831,16 @@
 
 .thirdBlock .landing_house-botLine {
     width: 40px;
-    margin-left: 10px;
+
 }
 
 .thirdBlock {
-    height: 1590px;
+    height: 1380px;
     background: #222222;
 }
 
 .fourthBlock {
-    height: 550px;
+    height: 460px;
 }
 
 .fourthBlock .landing_constractionStatus-image {
@@ -881,7 +884,7 @@
 }
 
 .fifthBlock {
-    height: 850px;
+    height: 710px;
     background: #222222;
 }
 
@@ -1578,5 +1581,11 @@
         height: 970px;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and(min-width: 2560px){
+    .landing_gallery{
+        height: 1300px;
     }
 }

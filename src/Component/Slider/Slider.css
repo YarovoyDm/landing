@@ -30,6 +30,7 @@
     bottom:60px; 
     left:0;
     cursor: pointer;
+    outline: none
 }
 
 .slider .swiper-button-prev{
