@@ -80,6 +80,9 @@
     left: 55px;
     top: 44px;
     z-index: 9999;
+    -webkit-tap-highlight-color: rgb(255 255 255 / 0);
+    -moz-tap-highlight-color: rgb(255 255 255 / 0);
+    -ms-tap-highlight-color: rgb(255 255 255 / 0);
 }
 
 .gallery .swiper-button-prev {
@@ -88,6 +91,9 @@
     z-index: 9999;
     height: 65px;
     width: 36px;
+    -webkit-tap-highlight-color: rgb(255 255 255 / 0);
+    -moz-tap-highlight-color: rgb(255 255 255 / 0);
+    -ms-tap-highlight-color: rgb(255 255 255 / 0);
 }
 
 
