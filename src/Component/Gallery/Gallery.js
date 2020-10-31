@@ -9,6 +9,13 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 
+import gallery1 from '../../Images/gallery1.jpg'
+import gallery2 from '../../Images/gallery2.jpg'
+import gallery3 from '../../Images/gallery3.jpg'
+import gallery4 from '../../Images/gallery4.jpg'
+import gallery5 from '../../Images/gallery5.jpg'
+
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 class Gallery extends React.Component {
@@ -18,18 +25,18 @@ class Gallery extends React.Component {
         return (
             <div className='gallery'>
                 <Swiper
-                    spaceBetween={0}
+                    spaceBetween={50}
                     slidesPerView={2}
                     navigation={true}
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><div className='landing-house-gallery1' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-gallery2' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-gallery3' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-gallery4' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-gallery5' /></SwiperSlide>
+                    <SwiperSlide><img src={gallery1}width="700"  height="500"></img></SwiperSlide>
+                    <SwiperSlide><img src={gallery2}width="450"  height="500"/></SwiperSlide>
+                    <SwiperSlide><img src={gallery3}width="450"  height="500" /></SwiperSlide>
+                    <SwiperSlide><img src={gallery4}width="650"  height="500" /></SwiperSlide>
+                    <SwiperSlide><img src={gallery5}width="550"  height="500" /></SwiperSlide>
                 </Swiper>
                 
             </div>
