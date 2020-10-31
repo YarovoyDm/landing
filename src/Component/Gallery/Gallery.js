@@ -22,10 +22,11 @@ class Gallery extends React.Component {
 
 
     render() {
+        const isMobile = window.screen.width >= 360 && window.screen.width <= 425
         return (
             <div className='gallery'>
                 <Swiper
-                    spaceBetween={50}
+                    spaceBetween={isMobile ? 100 : 50}
                     slidesPerView={2}
                     navigation={true}
                     scrollbar={{ draggable: true }}
