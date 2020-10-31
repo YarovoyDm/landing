@@ -1,42 +1,80 @@
-.gallery{
+.gallery {
     position: relative;
 }
 
-.gallery .swiper-scrollbar-drag{
+.gallery .swiper-scrollbar-drag {
     height: 5px;
     cursor: pointer;
     background: #ab9060;
 }
 
+.landing-house-gallery1,
+.landing-house-gallery2,
+.landing-house-gallery3,
+.landing-house-gallery4,
+.landing-house-gallery5 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.landing-house-gallery1 {
+    background-image: url(../../Images/gallery1.jpg);
+    width: 500px;
+    height: 370px;
+}
+
+.landing-house-gallery2 {
+    background-image: url(../../Images/gallery2.jpg);
+    width: 500px;
+    height: 370px;
+}
+
+.landing-house-gallery3 {
+    background-image: url(../../Images/gallery3.jpg);
+    width: 500px;
+    height: 370px;
+}
+
+.landing-house-gallery4 {
+    background-image: url(../../Images/gallery4.jpg);
+    width: 500px;
+    height: 370px;
+}
+
+.landing-house-gallery5 {
+    background-image: url(../../Images/gallery5.jpg);
+    width: 500px;
+    height: 370px;
+}
+
 .gallery .landing-house-botImage,
-.gallery .landing-house-topImage{
+.gallery .landing-house-topImage {
     height: 400px;
     width: 390px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
-.gallery .swiper-container{
-    position: unset
+.gallery .swiper-container {
+    position: unset;
 }
 
-.gallery .swiper-container-horizontal > .swiper-scrollbar{
+.gallery .swiper-container-horizontal > .swiper-scrollbar {
     bottom: -30px;
     width: 85%;
     background: #222222;
 }
 
-.gallery .landing-house-botImage{
+.gallery .landing-house-botImage {
     position: unset;
 }
 
 .gallery .swiper-button-prev:after,
-.gallery .swiper-button-next:after{
-    content: '';
-
+.gallery .swiper-button-next:after {
+    content: "";
 }
 
-.gallery .swiper-button-next{
+.gallery .swiper-button-next {
     height: 65px;
     width: 36px;
     left: 55px;
@@ -44,93 +82,142 @@
     z-index: 9999;
 }
 
-.gallery .swiper-button-prev{
+.gallery .swiper-button-prev {
     left: 30px;
     top: 20px;
     z-index: 9999;
     height: 65px;
-    width: 36px
+    width: 36px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px){
-    .gallery .swiper-container-horizontal > .swiper-scrollbar{
-        width: 95%
+
+@media screen and (width: 320px){
+    /* .gallery .swiper-container {
+        width: 160%!important;
+    } */
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .gallery .swiper-container-horizontal > .swiper-scrollbar {
+        width: 95%;
     }
-    .gallery .landing-house-botImage, .gallery .landing-house-topImage{
+    .gallery .landing-house-botImage,
+    .gallery .landing-house-topImage {
         height: 170px;
-    width: 140px;
+        width: 140px;
     }
-    .gallery .swiper-container{
+    .gallery .swiper-container {
         height: 170px;
+       
+    }
+    
+
+    .gallery .swiper-slide{
+        width:180px!important
+    }
+    .landing-house-gallery1,
+    .landing-house-gallery2,
+    .landing-house-gallery3,
+    .landing-house-gallery4,
+    .landing-house-gallery5 {
+        width: 170px;
+    height: 120px;
     }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1023px) {
-    .gallery .landing-house-botImage, .gallery .landing-house-topImage{
+    .gallery .landing-house-botImage,
+    .gallery .landing-house-topImage {
         height: 320px;
         width: 230px;
     }
+    .landing-house-gallery1,
+    .landing-house-gallery2,
+    .landing-house-gallery3,
+    .landing-house-gallery4,
+    .landing-house-gallery5 {
+        width:300px;
+        height: 200px;
+    }
 }
-@media screen and (min-width: 1023px){
-
+@media screen and (min-width: 1023px) {
 }
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
-    .gallery .landing-house-botImage, .gallery .landing-house-topImage{
+    .gallery .landing-house-botImage,
+    .gallery .landing-house-topImage {
         height: 370px;
         width: 280px;
     }
-    .gallery .swiper-container-horizontal > .swiper-scrollbar{
-        width:90%
+    .gallery .swiper-container-horizontal > .swiper-scrollbar {
+        width: 90%;
+    }
+    .landing-house-gallery1,
+    .landing-house-gallery2,
+    .landing-house-gallery3,
+    .landing-house-gallery4,
+    .landing-house-gallery5 {
+        width:400px;
+        height: 300px;
     }
 }
 @media screen and (min-width: 1360px) and (max-width: 1919px) {
-    .gallery .landing-house-topImage   {
-        height: 500px;   
+    .gallery .landing-house-topImage {
+        height: 500px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .gallery .swiper-button-prev, .gallery .swiper-button-next{
+    .gallery .swiper-button-prev,
+    .gallery .swiper-button-next {
         display: none;
     }
-    .landing-gallery-nav{
+    .landing-gallery-nav {
         display: none;
     }
 }
 
 @media screen and (width: 1440px) {
-    .gallery .swiper-button-prev, .gallery .swiper-button-next{
+    .gallery .swiper-button-prev,
+    .gallery .swiper-button-next {
         height: 70px;
-    width: 40px;
+        width: 40px;
     }
-    .gallery .swiper-button-prev{
+    .gallery .swiper-button-prev {
         left: 22px;
         top: 42px;
     }
-    .gallery .swiper-button-next{
+    .gallery .swiper-button-next {
         left: 56px;
         top: 42px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    .gallery .landing-house-topImage   {
+    .landing-house-gallery1,
+    .landing-house-gallery2,
+    .landing-house-gallery3,
+    .landing-house-gallery4,
+    .landing-house-gallery5 {
+        width:800px;
+        height: 570px;
+    }
+    .gallery .landing-house-topImage {
         height: 700px;
         width: 549px;
     }
-    .gallery .swiper-container-horizontal > .swiper-scrollbar{
-        width: 88%
+    .gallery .swiper-container-horizontal > .swiper-scrollbar {
+        width: 88%;
     }
-    .gallery .swiper-button-prev, .gallery .swiper-button-next{
+    .gallery .swiper-button-prev,
+    .gallery .swiper-button-next {
         height: 100px;
         width: 60px;
     }
-    .gallery .swiper-button-prev{
+    .gallery .swiper-button-prev {
         left: 22px;
         top: 47px;
     }
-    .gallery .swiper-button-next{
+    .gallery .swiper-button-next {
         left: 69px;
-    top: 47px;
+        top: 47px;
     }
 }

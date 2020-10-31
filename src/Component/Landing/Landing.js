@@ -48,10 +48,10 @@ class Landing extends React.Component {
                                                 Площа
                                             </div>
                                             <div className='houseTypeBot-value'>
-                                                від 50.5 м&#178;
+                                                від 50.95 м&#178;
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className='price'>
                                             <div className='houseTypeBot-title'>
                                                 Ціна за м&#178;
                                             </div>
@@ -72,10 +72,10 @@ class Landing extends React.Component {
                                                 Площа
                                             </div>
                                             <div className='houseTypeBot-value'>
-                                                від 76.8 м&#178;
+                                                від 56.85 м&#178;
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className='price'>
                                             <div className='houseTypeBot-title'>
                                                 Ціна за м&#178;
                                             </div>
@@ -96,10 +96,10 @@ class Landing extends React.Component {
                                                 Площа
                                             </div>
                                             <div className='houseTypeBot-value'>
-                                                від 80.6 м&#178;
+                                                від 260.84 м&#178;
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className='price'>
                                             <div className='houseTypeBot-title'>
                                                 Ціна за м&#178;
                                             </div>
