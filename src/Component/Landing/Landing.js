@@ -22,9 +22,9 @@ class Landing extends React.Component {
                 <div className='landing_intro'>
                     <div className='landing_intro-top'>
                         <div className='socialIcons_wrapper'>
-                            <div className='social-facebook' />
-                            <div className='social-instagram' />
-                            <a href='https://t.me/kreator_bud' className='social-telegram' />
+                            <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='social-facebook' />
+                            <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='social-instagram' />
+                            <a target='_blank' href='https://t.me/kreator_bud' className='social-telegram' />
                         </div>
                         <div className='landing_intro-topLeft'>
                             <div className='landing_intro-title'>

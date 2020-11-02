@@ -19,9 +19,9 @@ class Footer extends React.Component {
                                 м. Київ, <br />вул. Дегтярівська, 17-19 <br />
                                 <a href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='socialIcons_wrapper'>
-                                    <div className='social-facebook' />
-                                    <div className='social-instagram' />
-                                    <a href='https://t.me/kreator_bud' className='social-telegram' />
+                                    <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='social-facebook' />
+                                    <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='social-instagram' />
+                                    <a target='_blank' href='https://t.me/kreator_bud' className='social-telegram' />
                                 </div>
                             </div>
                             <div className='footer_contact-text'>
