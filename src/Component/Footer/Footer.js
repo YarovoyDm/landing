@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 import Logo from '../Logo/Logo'
 import './Footer.css'
 
@@ -25,7 +26,7 @@ class Footer extends React.Component {
                             </div>
                             <div className='footer_contact-text'>
                                 sales_manager@creatorcity.com.ua <br />
-                                <a href='tel:044 294 81 65' className='footer_contact-number'>044 294 81 65</a>
+                                <a href='tel:044 294 81 65' className={cn('footer_contact-number ' + 'ad_saver_phone')}>044 294 81 65</a>
                                 <div className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
                         </div>
