@@ -377,7 +377,7 @@ class Landing extends React.Component {
                             </div>
                                 <div className='landing_intro-text'>
                                     Дізнайтеся про найвигідніші умови купівлі вашої<br />
-                                майбутньої оселі в житловому комплексі &#171;Krauss&#187;<br />
+                                майбутньої оселі в житловому комплексі &#171;Krauss Gallery&#187;<br />
                                 </div>
                                 {/* <div className='landing-itro-button'>Детальніше</div> */}
                             </div>
