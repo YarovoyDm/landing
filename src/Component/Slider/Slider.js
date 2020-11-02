@@ -24,9 +24,9 @@ class Slider extends React.Component {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
-                    <SwiperSlide><div className='landing-house-topImage' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-planing1' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-planing2' /></SwiperSlide>
+                    <SwiperSlide><div className='landing-house-planing3' /></SwiperSlide>
                 </Swiper>
                 
             </div>

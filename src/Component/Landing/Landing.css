@@ -135,7 +135,7 @@
 }
 
 .landing_house {
-    height: 1350px;
+    height: 1090px;
     background: #222222;
 }
 
@@ -225,7 +225,7 @@
 .landing-house-wrapper {
     position: absolute;
     right: 0;
-    top: -90px;
+    top: 20px;
 }
 
 .landing-house-botImage {
@@ -1226,7 +1226,7 @@
         background-repeat: no-repeat;
     }
     .landing_house {
-        height: 1450px;
+        height: 1400px;
     }
     .landing_constractionStatus {
         padding: 0 152px 0 212px;
@@ -1380,6 +1380,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
+    .landingMobile .landing_house-subtitle{
+        margin-top:-60px
+    }
     .landing {
         display: none;
     }

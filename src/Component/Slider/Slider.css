@@ -1,5 +1,5 @@
 .slider {
-    width: 680px;
+    width: 600px;
 }
 
 .slider .landing-house-botImage{
@@ -33,6 +33,26 @@
     outline: none
 }
 
+.slider .landing-house-planing1{
+    background-image: url(../../Images/planing1.jpg);
+    
+}
+.slider .landing-house-planing2{
+    background-image: url(../../Images/planing2.jpg);
+}
+.slider .landing-house-planing3{
+    background-image: url(../../Images/planing3.jpg);
+}
+
+.slider .landing-house-planing1,
+.slider .landing-house-planing2,
+.slider .landing-house-planing3{
+width: 600px;
+height: 350px;
+background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 .slider .swiper-button-prev{
     bottom: 0px
 }
@@ -55,25 +75,67 @@
         height: 44px;
     }
     .slider .swiper-button-next{
-        bottom: 84px;
+        bottom: 174px;
         left: -85px;
     }
     .slider .swiper-button-prev{
         left: -85px;
-        bottom: 40px
+        bottom: 130px
     }
-
+    .slider{
+        width:220px
+    }
+    .slider .landing-house-planing1, .slider .landing-house-planing2, .slider .landing-house-planing3{
+        width: 220px;
+    height: 130px;
+    }
+    .slider .swiper-slide:nth-child(1){
+        width:220px!important
+    }
+    .slider .swiper-slide:nth-child(2){
+        width:220px!important
+    }
+    .slider .swiper-slide:nth-child(3){
+        width:220px!important;
+    }
 }
+
 
 @media screen and (min-width: 760px) and (max-width: 1023px) {
+
     .slider{
-        width: 480px;
+        width:450px
+    }
+    .slider .landing-house-planing1, .slider .landing-house-planing2, .slider .landing-house-planing3{
+        width: 450px;
+    height: 250px;
+    }
+    .slider .swiper-slide:nth-child(1){
+        width:450px!important
+    }
+    .slider .swiper-slide:nth-child(2){
+        width:450px!important
+    }
+    .slider .swiper-slide:nth-child(3){
+        width:450px!important;
     }
 }
-
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
     .slider {
-        width: 480px;
+        width: 400px;
+    }
+    .slider .landing-house-planing1, .slider .landing-house-planing2, .slider .landing-house-planing3{
+        width: 400px;
+    height: 250px;
+    }
+    .slider .swiper-slide:nth-child(1){
+        width:400px!important
+    }
+    .slider .swiper-slide:nth-child(2){
+        width:400px!important
+    }
+    .slider .swiper-slide:nth-child(3){
+        width:400px!important;
     }
     .slider .landing-house-topImage{
         width:530px
@@ -81,5 +143,20 @@
     
 }
 @media screen and (min-width: 1920px) {
-    
+    .slider {
+        width: 900px;
+    }
+    .slider .landing-house-planing1, .slider .landing-house-planing2, .slider .landing-house-planing3{
+        width: 900px;
+    height: 550px;
+    }
+    .slider .swiper-slide:nth-child(1){
+        width:900px!important
+    }
+    .slider .swiper-slide:nth-child(2){
+        width:900px!important
+    }
+    .slider .swiper-slide:nth-child(3){
+        width:900px!important;
+    }
 }
