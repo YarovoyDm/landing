@@ -71,7 +71,7 @@ class Header extends React.Component {
                         <div className='header_mobileContactTop'>
                             <div className='menu-right-title'>Офіс продажу:</div>
                             <div className='menu-right-text'>
-                                м. Київ, вул. Круглоуніверситетська, будинок 5-7
+                                м. Київ, вул. Дегтярівська, будинок 17-19
                         </div>
                         </div>
                         <div className='header_mobileContactBot'>
@@ -96,16 +96,16 @@ class Header extends React.Component {
                 </div>
                 <Logo />
                 <div className="header_info">
-                    <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
-                        <div className="header_info-location" />Круглоуніверситетська, 5-7
+                    <a href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className="header_info-address">
+                        <div className="header_info-location" />Дегтярівська, 17-19
                     </a>
                     <a className="header_info-locationMobile" href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7'>
                         <div />
                     </a>
                     <a href='tel:096 453 45 64' className="header_info-phone">
-                        <div className="header_info-phoneIcon" />096 453 45 64
+                        <div className="header_info-phoneIcon" />044 294 81 65
                     </a>
-                    <a className="header_info-phoneIconMobile"  href='tel:096 453 45 64'>
+                    <a className="header_info-phoneIconMobile"  href='tel:0442948165'>
                         <div />
                     </a>
                     <div className="header_menu-button" onClick={() => this.onMenuChange()}>
