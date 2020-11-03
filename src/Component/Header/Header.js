@@ -97,8 +97,8 @@ class Header extends React.Component {
                 </div>
                 <Logo />
                 <div className="header_info">
-                    <a href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className="header_info-address">
-                        <div className="header_info-location" />Дегтярівська, 17-19
+                    <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
+                        <div className="header_info-location" />Круглоуніверситетська, 5-7
                     </a>
                     <a className="header_info-locationMobile" href='https://maps.google.com/maps?q=Дегтярівська, 17-19'>
                         <div />

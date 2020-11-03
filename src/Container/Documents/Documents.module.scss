@@ -1,0 +1,225 @@
+.documents{
+    padding: 120px 192px 10px 212px;
+    background: #222222;
+    position: relative;
+    .docImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        background-size: cover;
+    }
+    .title{
+        font-size: 45px;
+        color: white
+    }
+    .docText{
+        font-size: 28px;
+        color: white;
+    }
+    .docItem{
+        width: 910px;
+        display: flex;
+        border-bottom: solid 1px #464646;
+        height: 120px;
+        cursor: pointer;
+        align-items: center
+    }
+    .docItem:nth-child(4){
+        border-bottom: none
+    }
+    .infoBlock{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .itemWrapper{
+        display: flex;
+        align-items: flex-start
+    }
+    .docIcon{
+        background-image: url(../../Images/docDownload.svg);
+        width: 22px;
+        height: 17px;
+        background-repeat: no-repeat;
+        margin-right: 20px;
+    }
+    .breadcrumbs{
+        display:flex;
+        align-items: center;
+        width: 380px;
+        justify-content: space-between;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .breadcrumbsLine{
+        width: 160px;
+        height: 1px;
+        background: #464646
+    }
+    .breadcrumbsWrapper{
+        display:flex;
+        width: 200px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .goToMainPage,
+    .currentPage{
+        font-size: 14px;
+    }
+    .goToMainPage{
+        color: #606060;
+        cursor: pointer;
+        text-decoration: none
+    }
+    .currentPage,
+    .spread{
+        color: white
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .documents{
+        padding: 80px 10px 10px 10px;
+        .infoBlock{
+            flex-direction: column
+        }
+        .docItem{
+            width: 100%;
+        }
+        .docImage{
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .title{
+            font-size: 25px;
+            margin-bottom: 20px
+        }
+        .docText{
+            font-size: 18px;
+            width: 100%
+        }
+        .breadcrumbs{
+            width: 200px;
+            left: 10px;
+        }
+        .goToMainPage,
+        .currentPage{
+            font-size: 12px;
+        }
+        .breadcrumbsLine{
+            width: 40px
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .documents{
+        padding: 120px 40px 10px 40px;
+        .docImage{
+            height: 240px;
+        }
+        .infoBlock{
+            flex-direction: column
+        }
+        .title{
+            margin-bottom: 60px
+        }
+        .docText{
+            font-size: 24px;
+        }
+        .docItem{
+            width: 100%;
+        }
+        .breadcrumbsLine{
+            width: 90px
+        }
+        .breadcrumbs{
+            width: 280px;
+            left: 38px;
+        }
+        .goToMainPage,
+        .currentPage{
+            font-size: 12px;
+        }
+        .breadcrumbsWrapper{
+            width: 180px
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .documents{
+        padding: 120px 100px 10px 100px;
+        .docImage{
+            height: 280px
+        }
+        .docText{
+            font-size: 18px
+        }
+        .tite{
+            font-size: 35px
+        }
+        .docItem{
+            width: 470px
+        }
+        .docs{
+            margin-top: -20px
+        }
+        .docIcon{
+            margin-right: 10px;
+        }
+        .breadcrumbs{
+            width: 320px;
+            left: 100px;
+        }
+        .breadcrumbsLine{
+            width: 100px
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .documents{
+        padding: 120px 152px 10px 172px;
+        .breadcrumbsWrapper{
+            width: 160px;
+        }
+        .goToMainPage,
+        .currentPage{
+            font-size: 12px;
+        }
+        .breadcrumbs{
+            width: 300px
+        }
+        .breadcrumbsLine{
+            width: 110px
+        }
+        .docImage{
+            height: 400px;
+        }
+        .title{
+            font-size: 35px
+        }
+        .docText{
+            font-size: 18px
+        }
+        .docItem{
+            width: 610px;
+            height: 100px
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .documents{
+        .breadcrumbs{
+            width: 380px
+        }
+        .breadcrumbsLine{
+            width: 160px
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
+import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo'
 import './Footer.css'
 
@@ -47,7 +48,7 @@ class Footer extends React.Component {
                             <div className='footer_sitemap-right'>
                                 <div className='footer_sitemap-item'>Паркінг</div>
                                 <div className='footer_sitemap-item'>Комерційна нерухомість</div>
-                                <div className='footer_sitemap-item'>Документи</div>
+                                <Link to='/documents' className='footer_sitemap-item'>Документи</Link>
                                 <div className='footer_sitemap-item'>Умови придбання</div>
                                 <div className='footer_sitemap-item'>Новини та акції</div>
                                 <div className='footer_sitemap-item'>Контакти</div>
