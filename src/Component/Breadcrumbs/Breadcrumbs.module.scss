@@ -1,0 +1,99 @@
+.breadcrumbs{
+    display:flex;
+    align-items: center;
+    width: 380px;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.breadcrumbsLine{
+    width: 160px;
+    height: 1px;
+    background: #464646
+}
+.breadcrumbsWrapper{
+    display:flex;
+    width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.goToMainPage,
+.currentPage{
+    font-size: 14px;
+}
+.goToMainPage{
+    color: #606060;
+    cursor: pointer;
+    text-decoration: none
+}
+.currentPage,
+.spread{
+    color: white
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .breadcrumbs{
+        width: 200px;
+        left: 10px;
+    }
+    .goToMainPage,
+    .currentPage{
+        font-size: 12px;
+    }
+    .breadcrumbsLine{
+        width: 40px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .breadcrumbsLine{
+        width: 90px
+    }
+    .breadcrumbs{
+        width: 280px;
+        left: 38px;
+    }
+    .goToMainPage,
+    .currentPage{
+        font-size: 12px;
+    }
+    .breadcrumbsWrapper{
+        width: 180px
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .breadcrumbs{
+        width: 320px;
+        left: 100px;
+    }
+    .breadcrumbsLine{
+        width: 100px
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .breadcrumbsWrapper{
+        width: 160px;
+    }
+    .goToMainPage,
+    .currentPage{
+        font-size: 12px;
+    }
+    .breadcrumbs{
+        width: 300px
+    }
+    .breadcrumbsLine{
+        width: 110px
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .breadcrumbs{
+        width: 380px
+    }
+    .breadcrumbsLine{
+        width: 160px
+    }
+}
