@@ -6,6 +6,7 @@ import Footer from './Component/Footer/Footer';
 import Landing from './Component/Landing/Landing';
 import Documents from './Container/Documents/Documents';
 import Parking from './Container/Parking/Parking';
+import Contacts from './Container/Contacts/Contacts';
 
 class App extends React.Component {
   render() {
@@ -16,6 +17,7 @@ class App extends React.Component {
           <Route path='/' exact={true} component={Landing} />
           <Route path='/documents' component={Documents} />
           <Route path='/parking' component={Parking} />
+          <Route path='/contacts' component={Contacts} />
         </Switch>
         <Footer />
         

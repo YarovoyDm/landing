@@ -51,7 +51,7 @@ class Footer extends React.Component {
                                 <Link to='/documents' className='footer_sitemap-item'>Документи</Link>
                                 <div className='footer_sitemap-item'>Умови придбання</div>
                                 <div className='footer_sitemap-item'>Новини та акції</div>
-                                <div className='footer_sitemap-item'>Контакти</div>
+                                <Link to='/contacts' className='footer_sitemap-item'>Контакти</Link>
                             </div>
                         </div>
                     </div>
