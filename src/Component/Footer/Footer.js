@@ -27,7 +27,7 @@ class Footer extends React.Component {
                             </div>
                             <div className='footer_contact-text'>
                                 sales_manager@creatorcity.com.ua <br />
-                                <a href='tel:044 294 81 65' className={cn('footer_contact-number ' + 'ad_saver_phone')}>044 294 81 65</a>
+                                <a href='tel:+38 (044) 299 56 62' className={cn('footer_contact-number ' + 'ad_saver_phone')}>+38 (044) 299 56 62</a>
                                 <div className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
                         </div>
