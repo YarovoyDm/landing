@@ -18,7 +18,7 @@ class Footer extends React.Component {
                             <div className='footer_contact-text'>
                                 Офіс продажу: <br />
                                 м. Київ, <br />вул. Дегтярівська, 17-19 <br />
-                                <a href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className='footer_contact-map'>Дивитись на карті</a>
+                                <a target='_blank' href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='socialIcons_wrapper'>
                                     <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='social-facebook' />
                                     <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='social-instagram' />

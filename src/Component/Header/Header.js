@@ -97,13 +97,13 @@ class Header extends React.Component {
                 </div>
                 <Logo />
                 <div className="header_info">
-                    <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
+                    <a target='_blank' href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
                         <div className="header_info-location" />Круглоуніверситетська, 5-7
                     </a>
                     <a className="header_info-locationMobile" href='https://maps.google.com/maps?q=Дегтярівська, 17-19'>
                         <div />
                     </a>
-                    <a href='tel:096 453 45 64' className={cn("header_info-phone "  + "ad_saver_phone")}>
+                    <a href='tel:044 294 81 65' className={cn("header_info-phone "  + "ad_saver_phone")}>
                         <div className="header_info-phoneIcon" />044 294 81 65
                     </a>
                     <a className="header_info-phoneIconMobile"  href='tel:0442948165'>
