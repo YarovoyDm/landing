@@ -1,0 +1,60 @@
+.terms{
+    padding: 120px 192px 10px 212px;
+    background: #222222;
+    position: relative;
+    .termsImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        background-size: cover;
+    }
+    .termsTextWrapper{
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .termsTitle{
+        font-size: 45px;
+        color: white
+    }
+    .termsText{
+        font-size: 28px;
+        width: 60%;
+        color: white
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .terms{
+        .termsImage{
+            height: 120px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .terms{
+        .termsImage{
+            height: 240px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .terms{
+        .termsImage{
+            height: 280px
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .terms{
+        .termsImage{
+            height: 400px;
+        }
+    }
+}

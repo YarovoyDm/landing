@@ -7,6 +7,7 @@ import Landing from './Component/Landing/Landing';
 import Documents from './Container/Documents/Documents';
 import Parking from './Container/Parking/Parking';
 import Contacts from './Container/Contacts/Contacts';
+import TermsOfPurchase from './Container/TermsOfPurchase/TermsOfPurchase';
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route path='/documents' component={Documents} />
           <Route path='/parking' component={Parking} />
           <Route path='/contacts' component={Contacts} />
+          <Route path='/terms-of-purchase' component={TermsOfPurchase} />
         </Switch>
         <Footer />
         

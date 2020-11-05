@@ -29,11 +29,12 @@ class Gallery extends React.Component {
                     spaceBetween={isMobile ? 100 : 50}
                     slidesPerView={2}
                     navigation={true}
+                    zoom
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><img src={gallery1}width="700"  height="500"></img></SwiperSlide>
+                    <SwiperSlide zoom={true}><img src={gallery1}width="700"  height="500"></img></SwiperSlide>
                     <SwiperSlide><img src={gallery2}width="450"  height="500"/></SwiperSlide>
                     <SwiperSlide><img src={gallery3}width="450"  height="500" /></SwiperSlide>
                     <SwiperSlide><img src={gallery4}width="650"  height="500" /></SwiperSlide>
