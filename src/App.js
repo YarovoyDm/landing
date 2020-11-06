@@ -8,6 +8,7 @@ import Documents from './Container/Documents/Documents';
 import Parking from './Container/Parking/Parking';
 import Contacts from './Container/Contacts/Contacts';
 import TermsOfPurchase from './Container/TermsOfPurchase/TermsOfPurchase';
+import ConstructionProgress from './Container/ConstructionProgress/ConstructionProgress';
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
           <Route path='/parking' component={Parking} />
           <Route path='/contacts' component={Contacts} />
           <Route path='/terms-of-purchase' component={TermsOfPurchase} />
+          <Route path='/construction-progress' component={ConstructionProgress}/>
         </Switch>
         <Footer />
         

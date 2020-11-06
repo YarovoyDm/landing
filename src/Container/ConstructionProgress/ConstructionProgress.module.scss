@@ -1,0 +1,302 @@
+.constructionProgress{
+    padding: 120px 192px 130px 212px;
+    background: #1c1c1c;
+    position: relative;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:180px;
+        .topLeft{
+            display: flex;
+            flex-direction: column;
+        }
+        .leftTitle{
+            font-size: 45px;
+            color: white;
+            margin-bottom:40px
+        }
+        .leftText{
+            font-size: 24px;
+            color: white;
+            width: 540px;
+            margin-bottom:70px
+        }
+        .leftButtons{
+            display: flex;
+            align-items:center;
+        }
+        .video{
+            width:800px;
+            height: 638px;
+            cursor: pointer;
+        }
+        .cameraButton{
+            width:115px;
+            height: 60px;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            line-height:60px;
+            border: solid 1px white;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 30px;
+            }
+        }
+    }
+    
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .otherWrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+        .date{
+            font-size: 14px;
+            color:#ab9060;
+            margin-bottom:20px
+        }
+        .otherTitle{
+            font-size: 28px;
+            color: white;
+            margin-bottom:40px
+        }
+        .otherImage{
+            background-image: url(../../Images/constractionStatus.jpg);
+            width:460px;
+            height: 340px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+        }
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            cursor: pointer;
+        }
+        .arrow{
+            background-image: url(../../Images/galleryArrowLanding.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 24px;
+            width: 38px;
+        }
+        .moreButton{
+            font-size: 16px;
+            color: white;
+            width:175px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            border: solid 1px white;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .constructionProgress{
+        padding: 120px 100px 60px 100px;
+        .top{
+            .video{
+                width: 400px;
+                height: 310px;
+            }
+            .leftTitle{
+                font-size: 35px;
+            }
+            .leftText{
+                font-size: 18px;
+            }
+            .leftText{
+                width:350px
+            }
+        }
+        .bottom{
+            .otherImage{
+                height: 206px;
+                width:255px
+            }
+            .otherTitle{
+                font-size: 24px;
+                width: 240px;
+            }
+            .arrow{
+                height: 20px;
+                width: 30px;
+            }
+            .date{
+                font-size: 12px;
+            }
+            .moreButton{
+                width:157px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .constructionProgress{
+        padding: 80px 10px 50px 10px;
+        .top{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom:80px;
+            .video{
+                width:100%;
+                height: 300px;
+            }
+            .leftTitle{
+                font-size: 25px;
+            }
+            .leftText{
+                font-size: 16px;
+                width:100%
+            }
+            .leftButtons{
+                margin-bottom:50px
+            }
+            .cameraButton{
+                width:83px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+            }
+        }
+        .bottom{
+            .otherWrapper{
+                flex-direction: column;
+                justify-content: space-between;
+                margin-bottom: 50px;
+            }
+            .item{
+                margin-bottom:40px
+            }
+            .otherTitle{
+                font-size: 20px;
+                margin-bottom:20px
+            }
+            .date{
+                font-size: 12px;
+            }
+            .otherImage{
+                width: 100%;
+                height: 260px;
+            }
+            .arrow{
+                width:22px;
+                height: 14px;
+            }
+            .moreButton{
+                width:137px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .constructionProgress{
+        padding: 90px 40px 50px 40px;
+        .top{
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom:80px;
+            .video{
+                width:100%;
+                height: 600px;
+            }
+            .leftTitle{
+                font-size: 35px;
+            }
+            .leftText{
+                font-size: 18px;
+                width:400px
+            }
+            .leftButtons{
+                margin-bottom:50px
+            }
+            .cameraButton{
+                width:103px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+        }
+        .bottom{
+            .item:nth-child(3n){
+                display: none;
+            }
+            .otherTitle{
+                font-size: 24px;
+            }
+            .date{
+                font-size: 12px;
+            }
+            .otherImage{
+                width: 330px;
+                height: 260px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .constructionProgress{
+        padding: 120px 152px 130px 172px;
+        .top{
+            .video{
+                width: 500px;
+                height: 410px;
+            }
+            .leftTitle{
+                font-size: 35px;
+            }
+            .leftText{
+                font-size: 18px;
+            }
+            .cameraButton{
+                width:103px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+            .leftText{
+                width:450px
+            }
+        }
+        .bottom{
+            .otherImage{
+                height: 256px;
+                width:315px
+            }
+            .otherTitle{
+                font-size: 24px;
+            }
+            .arrow{
+                height: 20px;
+                width: 30px;
+            }
+            .date{
+                font-size: 12px;
+            }
+            .moreButton{
+                width:157px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+            }
+        }
+    }
+}
