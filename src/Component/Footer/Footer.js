@@ -46,12 +46,12 @@ class Footer extends React.Component {
                                 <div className='footer_sitemap-item'>Забудовник</div>
                             </div>
                             <div className='footer_sitemap-right'>
-                                <div to='/parking' className='footer_sitemap-item'>Паркінг</div> {/**/}
+                                <Link to='/parking' className='footer_sitemap-item'>Паркінг</Link> {/**/}
                                 <div className='footer_sitemap-item'>Комерційна нерухомість</div>
-                                <div to='/documents' className='footer_sitemap-item'>Документи</div>{/**/}
-                                <div to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</div>{/**/}
+                                <Link to='/documents' className='footer_sitemap-item'>Документи</Link>{/**/}
+                                <Link to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</Link>{/**/}
                                 <div className='footer_sitemap-item'>Новини та акції</div>
-                                <div to='/contacts' className='footer_sitemap-item'>Контакти</div>{/**/}
+                                <Link to='/contacts' className='footer_sitemap-item'>Контакти</Link>{/**/}
                             </div>
                         </div>
                     </div>

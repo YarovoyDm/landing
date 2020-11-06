@@ -1,8 +1,8 @@
-.terms{
+.terms {
     padding: 120px 192px 10px 212px;
     background: #222222;
     position: relative;
-    .termsImage{
+    .termsImage {
         width: 100%;
         background-image: url(../../Images/docImage.jpg);
         height: 500px;
@@ -10,51 +10,400 @@
         margin-bottom: 80px;
         background-size: cover;
     }
-    .termsTextWrapper{
+    .termsTextWrapper {
         display: flex;
-        align-items:flex-start;
+        align-items: flex-start;
         justify-content: space-between;
         width: 100%;
     }
-    .termsTitle{
+    .termsTitle {
         font-size: 45px;
-        color: white
+        color: white;
     }
-    .termsText{
+    .termsText {
         font-size: 28px;
         width: 60%;
-        color: white
+        color: white;
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px){
-    .terms{
-        .termsImage{
+.feedback {
+    height: 650px;
+    padding: 120px 192px 10px 212px;
+    background: #2c2c2c;
+
+    textarea,
+    input {
+        outline: none;
+    }
+    .feedbackTitle {
+        font-size: 30px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .feedbackForm {
+        display: flex;
+        justify-content: space-between;
+    }
+    .inputName {
+        width: 585px;
+        height: 50px;
+        background: #3e3e3e;
+        border: none;
+        padding-left: 25px;
+        margin-bottom: 25px;
+        color: white;
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            opacity: 0.5;
+        }
+    }
+    .rightShortInputs {
+        widows: 610px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+    .inputEmail,
+    .inputPhone {
+        width: 265px;
+        padding-left: 25px;
+        color: white;
+        height: 50px;
+        background: #3e3e3e;
+        border: none;
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            opacity: 0.5;
+        }
+    }
+    .inputPhone {
+        margin-right: 25px;
+    }
+    .rightMessage {
+        resize: none;
+        color: white;
+        margin-bottom: 35px;
+        width: 585px;
+        height: 110px;
+        padding-left: 25px;
+        padding-top: 15px;
+        background: #3e3e3e;
+        border: none;
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 500;
+            color: white;
+            opacity: 0.5;
+        }
+    }
+    .rightButton {
+        width: 130px;
+        height: 60px;
+        color: white;
+        border: solid 1px white;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+    }
+}
+.feedbackNav {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+.feedbackTabDisableMobile,
+.feedbackTabMobile,
+.feedbackTabDisable,
+.feedbackTab {
+    font-size: 28px;
+    color: #ab9060;
+    cursor: pointer;
+    height: 50px;
+    border-bottom: solid 1px #ab9060;
+}
+.feedbackTabDisableMobile,
+.feedbackTabDisable {
+    color: white;
+    margin-left: 50px;
+    border-bottom: none;
+}
+
+.leftBotTitle {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.leftBotText {
+    color: white;
+    font-size: 24px;
+}
+
+.feedbackLeft {
+    width: 45%;
+    ul {
+        padding-left: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+.feedbackRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBot {
+    display: flex;
+    flex-direction: column;
+}
+
+.li {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    &::marker {
+        color: #ab9060;
+    }
+}
+.feedbackTabDisableMobile,
+.feedbackTabMobile {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .terms {
+        padding: 80px 10px 5px 10px;
+        .termsImage {
             height: 120px;
             margin-bottom: 20px;
         }
+        .termsTitle {
+            font-size: 25px;
+        }
+        .termsText {
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .termsTextWrapper {
+            flex-direction: column;
+        }
+        .feedbackTabDisable,
+        .feedbackTab {
+            font-size: 16px;
+        }
+        .feedbackNav {
+            margin-top: 50px;
+            justify-content: center;
+        }
+        .feedbackTabDisableMobile,
+        .feedbackTabMobile {
+            display: block;
+            font-size: 14px;
+            height: 20px;
+        }
+        .feedbackTabDisable,
+        .feedbackTab {
+            display: none;
+        }
+    }
+    .feedback {
+        input,
+        textarea{
+            font-size: 14px;
+        }
+        height: 700px;
+        padding: 30px 10px 50px 10px;
+        .rightButton {
+            height: 40px;
+            width: 100px;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .inputName {
+            width: calc(100% - 25px);
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        .rightInputs {
+            width: 100%;
+        }
+        .inputEmail,
+        .inputPhone {
+            width: calc(100% - 25px);
+        }
+        .feedbackTitle {
+            font-size: 20px;
+        }
+        .inputPhone {
+            margin-bottom: 15px;
+        }
+        .feedbackLeft {
+            width: 100%;
+        }
+        .feedbackLeft ul{
+            margin-bottom: 40px;
+        }
+        .rightShortInputs {
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .rightMessage {
+            width: calc(100% - 25px);
+            height: 80px;
+        }
+        .feedbackForm {
+            flex-direction: column;
+        }
+        li {
+            font-size: 16px;
+        }
+        .leftBotText,
+        .leftBotTitle {
+            display: none;
+        }
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    .terms{
-        .termsImage{
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .terms {
+        padding: 90px 40px 5px 40px;
+        .termsImage {
             height: 240px;
         }
+        .feedbackTabDisable,
+        .feedbackTab {
+            font-size: 20px;
+            height: 30px;
+        }
+        .termsTitle {
+            font-size: 35px;
+        }
+        .termsText {
+            font-size: 24px;
+            width: 100%;
+            margin-top: 35px;
+        }
+        .termsTextWrapper {
+            flex-direction: column;
+        }
+        .feedbackTabDisableMobile,
+        .feedbackTabMobile {
+            display: none;
+        }
+    }
+    .feedback {
+        height: 490px;
+        padding: 90px 40px 50px 40px;
+        .rightInputs {
+            width: 320px;
+        }
+        .rightMessage {
+            height: 70px;
+        }
+        .rightMessage,
+        .inputName {
+            width: 295px;
+        }
+        .inputPhone,
+        .inputEmail {
+            width: 121px;
+        }
+        .leftBotText,
+        li {
+            font-size: 18px;
+        }
+        .leftBotTitle,
+        .feedbackTitle {
+            font-size: 24px;
+        }
     }
 }
-@media screen and (min-width: 1024px) and (max-width: 1365px){
-    .terms{
-        .termsImage{
-            height: 280px
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    .terms {
+        padding: 120px 100px 5px 100px;
+        .termsImage {
+            height: 280px;
+        }
+        .feedbackTabDisable,
+        .feedbackTab {
+            font-size: 20px;
+            height: 40px;
+        }
+        .termsTitle {
+            font-size: 30px;
+        }
+        .termsText {
+            font-size: 24px;
+        }
+        .feedbackTabDisableMobile,
+        .feedbackTabMobile {
+            display: none;
+        }
+    }
+    .feedback {
+        padding: 120px 100px 60px 100px;
+        .rightInputs {
+            width: 420px;
+        }
+        .rightMessage,
+        .inputName {
+            width: 395px;
         }
     }
 }
 
-@media screen and (min-width: 1360px) and (max-width: 1919px){
-    .terms{
-        .termsImage{
+@media screen and (min-width: 1360px) and (max-width: 1919px) {
+    .terms {
+        padding: 120px 152px 10px 172px;
+        .termsImage {
             height: 400px;
+        }
+        .termsTitle {
+            font-size: 35px;
+        }
+        .termsText {
+            font-size: 24px;
+        }
+        .feedbackTabDisable,
+        .feedbackTab {
+            font-size: 24px;
+        }
+        .feedbackTabDisableMobile,
+        .feedbackTabMobile {
+            display: none;
+        }
+    }
+    .feedback {
+        padding: 120px 152px 10px 172px;
+        height: 500px;
+        .rightInputs {
+            width: 472px;
+        }
+        .feedbackTitle {
+            font-size: 24px;
+        }
+        .leftBotTitle {
+            font-size: 24px;
+        }
+        .leftBotText {
+            font-size: 18px;
+        }
+        li {
+            font-size: 18px;
+        }
+        .inputName {
+            width: 445px;
+            height: 44px;
+        }
+        .rightMessage {
+            width: 445px;
+            height: 70px;
         }
     }
 }
