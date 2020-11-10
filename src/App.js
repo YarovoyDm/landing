@@ -9,12 +9,16 @@ import Parking from './Container/Parking/Parking';
 import Contacts from './Container/Contacts/Contacts';
 import TermsOfPurchase from './Container/TermsOfPurchase/TermsOfPurchase';
 import ConstructionProgress from './Container/ConstructionProgress/ConstructionProgress';
+import News from './Container/News/News';
+import ScrollToTop from './Component/ScrollToTop/ScrollToTop';
+import NewsPage from './Container/NewsPage/NewsPage';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header />
+        <ScrollToTop />
         <Switch>
           <Route path='/' exact={true} component={Landing} />
           <Route path='/documents' component={Documents} />
@@ -22,9 +26,10 @@ class App extends React.Component {
           <Route path='/contacts' component={Contacts} />
           <Route path='/terms-of-purchase' component={TermsOfPurchase} />
           <Route path='/construction-progress' component={ConstructionProgress}/>
+          <Route path='/news/:id' component={NewsPage} />
+          <Route path='/news' component={News} />
         </Switch>
         <Footer />
-        
       </div>
     )
   }

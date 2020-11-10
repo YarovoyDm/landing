@@ -1,0 +1,295 @@
+
+.recNews{
+    padding: 120px 192px 130px 212px;
+    background: #222222;
+    .newsWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .newsItem{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: pointer;
+    }
+    .newsDate{
+        font-size: 14px;
+        color: #ab9060;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .newsItemTitle{
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .newsArrow{
+        height: 14px;
+        width: 22px;
+        background-image: url(../../Images/galleryArrowLanding.svg);
+        margin-left: 0;
+        cursor: pointer;
+    }
+    .newsFirstImage,
+    .newsSecondImage,
+    .newsThirdImage{
+        height: 350px;
+        width: 450px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+    .newsFirstImage{
+        background-image: url(../../Images/newsFirstLanding.jpg);
+    }
+    .newsSecondImage{
+        background-image: url(../../Images/newsSecondLanding.jpg);
+    }
+    .newsThirdImage{
+        background-image: url(../../Images/newsThirdLanding.jpg);
+    }
+    .recTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom:60px
+    }
+}
+.newsPage{
+    padding: 120px 192px 130px 212px;
+    background: #1c1c1c;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .share{
+        display: flex;
+        width: 60%;
+        align-items:center;
+        justify-content:flex-start
+    }
+    .shareText{
+        font-size: 16px;
+        color: white;
+        margin-right: 30px;
+    }
+    .social{
+        width:40px;
+        height: 40px;
+        border-radius: 40px;
+        background: #ab9060;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .newsPageLabel{
+        width: 120px;
+        height: 20px;
+        background: #33312d;
+        color: #ab9060;
+        font-size: 14px;
+        border: 1px solid #ab9060;
+        text-align: center;
+        line-height:20px;
+        margin-bottom: 30px;
+        border-radius: 2px
+    }
+    .newsPageMain,
+    .newsPageHeader{
+        width: 60%;
+    }
+    .newsPageHeader{
+        margin-bottom:100px
+    }
+    .newsPageTitle{
+        color: white;
+        font-size: 45px;
+        margin-bottom:30px
+    }
+    .newsPageDate{
+        font-size: 14px;
+        color: #ab9060;
+    }
+    .mainText{
+        font-size: 24px;
+        color: white;
+        margin-bottom:100px
+    }
+    .newsImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 100px;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .newsPage{
+        padding: 80px 10px 50px 10px;
+        .newsImage{
+            height: 120px;
+            margin-bottom: 40px;
+        }
+        .newsPageHeader{
+            margin-bottom: 50px;
+        }
+        .newsPageMain,
+        .share,
+        .newsPageHeader{
+            width: 100%
+        }
+        .newsPageTitle{
+            font-size: 20px;
+        }
+        .mainText{
+            font-size: 16px;
+            margin-bottom: 50px
+        }
+    }
+    .recNews{
+        padding: 80px 10px 10px 10px;
+        .newsWrapper{
+            flex-direction: column
+        }
+        .newsThirdImage,
+        .newsSecondImage,
+        .newsFirstImage{
+            height: 260px;
+            width: 310px;
+        }
+        .recTitle{
+            font-size: 25px;
+            margin-bottom: 40px;
+        }
+        .newsItemTitle{
+            font-size: 20px;
+        }
+        .newsItem{
+            margin-bottom: 50px
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .newsPage{
+        padding: 90px 40px 50px 40px;
+        .share,
+        .newsPageHeader,
+        .newsPageMain{
+            width: 100%;
+        }
+        .newsImage{
+            height: 240px;
+        }
+        .newsPageTitle{
+            font-size: 35px;
+        }
+        .mainText{
+            font-size: 18px;
+        }
+        .newsPageLabel{
+            font-size: 12px;
+            width: 105px;
+        }
+    }
+    .recNews{
+        padding: 90px 40px 50px 40px;
+        .newsItem:nth-child(3){
+            display: none;
+        }
+        .recTitle{
+            font-size: 35px;
+        }
+        .newsItemTitle{
+            font-size: 24px;
+            width: 80%;
+        }
+        .newsThirdImage,
+        .newsSecondImage,
+        .newsFirstImage{
+            height: 260px;
+            width: 310px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .newsPage{
+        padding: 120px 100px 60px 100px;
+        .share,
+        .newsPageHeader,
+        .newsPageMain{
+            width: 80%
+        }
+        .newsImage{
+            height: 280px;
+        }
+    }
+    .recNews{
+        padding: 120px 100px 60px 100px;
+        .newsThirdImage,
+        .newsSecondImage,
+        .newsFirstImage{
+            height: 230px;
+            width: 250px;
+        }
+        .recTitle{
+            font-size: 35px;
+        }
+        .newsItemTitle{
+            font-size: 24px;
+            width: 80%;
+        }
+        .newsDate{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .newsPage{
+        padding: 120px 152px 80px 172px;
+        .newsPageTitle{
+            font-size: 35px;
+        }
+        .newsImage{
+            height: 400px;
+        }
+        .newsPageDate{
+            font-size: 12px;
+        }
+        .newsPageLabel{
+            width:105px;
+            height: 20px;
+            font-size: 12px;
+        }
+        .mainText{
+            font-size: 18px;
+        }
+        .shareText{
+            font-size: 14px;
+        }
+    }
+    .recNews{
+        padding: 120px 152px 10px 172px;
+        .newsThirdImage,
+        .newsSecondImage,
+        .newsFirstImage{
+            height: 230px;
+            width: 300px;
+        }
+        .recTitle{
+            font-size: 35px;
+        }
+        .newsItemTitle{
+            font-size: 24px;
+            width: 80%;
+        }
+        .newsDate{
+            font-size: 12px;
+        }
+    }
+}
