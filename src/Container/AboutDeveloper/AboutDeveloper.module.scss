@@ -1,0 +1,51 @@
+.aboutDeveloper{
+    padding: 120px 192px 10px 212px;
+    background: #1c1c1c;
+    position: relative;
+    .aboutImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        background-size: cover;
+    }
+    .aboutTitleBlock{
+        display: flex;
+        height: 350px;
+    }
+    .title{
+        font-size: 45px;
+        color: white;
+        margin-right: 260px;
+        width: 420px;
+    }
+    .logo{
+        background-image: url(../../Images/otherLogo.svg);
+        height: 90px;
+        width: 90px;
+    }
+    .titleLeft{
+        height: 50%;
+    }
+    .titleLeft,
+    .titleRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .text{
+        font-size: 28px;
+        color: white
+    }
+    .button{
+        width: 172px;
+        height: 60px;
+        line-height:60px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        text-align:center;
+        border: solid 1px white;
+    }
+}

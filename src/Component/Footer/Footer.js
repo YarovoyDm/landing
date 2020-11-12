@@ -40,18 +40,18 @@ class Footer extends React.Component {
                             <div className='footer_sitemap-left'>
                                 <div className='footer_sitemap-item'>Про комплекс</div>
                                 <div className='footer_sitemap-item'>Вибір планування</div>
-                                <div className='footer_sitemap-item'>Інфраструктура</div>
-                                <Link to='/construction-progress' className='footer_sitemap-item'>Хід будивництва</Link>
+                                <div to='/infrastructure' className='footer_sitemap-item'>Інфраструктура</div>{/* */}
+                                <div to='/construction-progress' className='footer_sitemap-item'>Хід будивництва</div>{/* */}
                                 <div className='footer_sitemap-item'>Галерея</div>
                                 <div className='footer_sitemap-item'>Забудовник</div>
                             </div>
                             <div className='footer_sitemap-right'>
-                                <Link to='/parking' className='footer_sitemap-item'>Паркінг</Link> {/**/}
-                                <div className='footer_sitemap-item'>Комерційна нерухомість</div>
-                                <Link to='/documents' className='footer_sitemap-item'>Документи</Link>{/**/}
-                                <Link to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</Link>{/**/}
-                                <Link to='/news'className='footer_sitemap-item'>Новини та акції</Link>
-                                <Link to='/contacts' className='footer_sitemap-item'>Контакти</Link>{/**/}
+                                <div to='/parking' className='footer_sitemap-item'>Паркінг</div>{/* */}
+                                <div to='/commercial-property' className='footer_sitemap-item'>Комерційна нерухомість</div>{/* */}
+                                <div to='/documents' className='footer_sitemap-item'>Документи</div>{/* */}
+                                <div to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</div>{/* */}
+                                <div to='/news'className='footer_sitemap-item'>Новини та акції</div>{/* */}
+                                <div to='/contacts' className='footer_sitemap-item'>Контакти</div>{/* */}
                             </div>
                         </div>
                     </div>

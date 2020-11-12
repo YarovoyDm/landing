@@ -12,6 +12,9 @@ import ConstructionProgress from './Container/ConstructionProgress/ConstructionP
 import News from './Container/News/News';
 import ScrollToTop from './Component/ScrollToTop/ScrollToTop';
 import NewsPage from './Container/NewsPage/NewsPage';
+import Infrastructure from './Container/Infrastructure/Infrastructure';
+import AboutDeveloper from './Container/AboutDeveloper/AboutDeveloper';
+import CommercialProperty from './Container/CommercialProperty/CommercialProperty';
 
 class App extends React.Component {
   render() {
@@ -28,6 +31,9 @@ class App extends React.Component {
           <Route path='/construction-progress' component={ConstructionProgress}/>
           <Route path='/news/:id' component={NewsPage} />
           <Route path='/news' component={News} />
+          <Route path='/infrastructure' component={Infrastructure} />
+          <Route path='/about-us/about-developer' component={AboutDeveloper} />
+          <Route path='/commercial-property' component={CommercialProperty} />
         </Switch>
         <Footer />
       </div>

@@ -60,6 +60,9 @@
     align-items: center;
     margin-bottom: 50px;
 }
+.landing_intro-BotTitle{
+    margin-top: 40px;
+}
 .landingMobile .landing_intro-BotTitle{
     margin-top:80px
 }
@@ -343,7 +346,8 @@
 }
 
 .landing_intro-right {
-    margin-right: 130px;
+    margin-right: 100px;
+    width: 32%;
 }
 
 .landingMobile .landing_intro-right{
@@ -512,7 +516,6 @@
     font-size: 18px;
     color: white;
     font-weight: 600;
-    opacity: 0;
 }
 
 .landing_news-wrapper,
@@ -522,7 +525,6 @@
     cursor: pointer;
     padding-bottom: 5px;
     border-bottom: solid 1px white;
-    opacity: 0;
 }
 
 .landing_news-wrapper:hover,
@@ -706,7 +708,6 @@
 
 .landingMobile .landing_intro-text{
     text-align: center;
-    width: 60%;
 }
 
 .landingMobile .landing_other-titleText,
@@ -759,10 +760,12 @@
 }
 
 .landingMobile-secondBlock {
-    height: 730px;
+    height: 1180px;
     background: #1c1c1c;
     position: relative;
     padding-top: 35px;
+    padding-left:10px;
+    padding-right: 10px;
 }
 
 .thirdBlock .landing-house-topImage {
@@ -1126,6 +1129,9 @@
 }
 
 @media screen and (min-width: 1920px) {
+    .landing_intro-BotTitle{
+        margin-top: 240px;
+    }
     .landing_intro-title {
         font-size: 95px;
     }
@@ -1173,9 +1179,10 @@
     }
     .landing_intro-right {
         margin-right: 330px;
+        width:40%
     }
     .landing_intro {
-        height: 1500px;
+        height: 1700px;
     }
     .landing_other-titleText,
     .landing_house-botTitleText,
@@ -1389,6 +1396,9 @@
     .landingMobile {
         display: block;
     }
+    .landing_intro-right{
+        width:100%
+    }
 }
 @media screen and (min-width: 600px) {
     .landingMobile {
@@ -1407,6 +1417,20 @@
     .landing-intro-topImage {
         height: 460px;
         width: 510px;
+    }
+    .landing_house{
+        height: 1230px;
+    }
+    .landing_house-bottom{
+        height: 44%;
+    }
+    .landing_intro{
+        height: 1600px;
+    }
+    .landing_intro-BotTitle,
+    .landing_intro-subtitle,
+    .landing_intro-text{
+        padding-left: 112px
     }
     .landing_intro-title {
         font-size: 30px;
@@ -1434,6 +1458,7 @@
     .landing_intro-right {
         margin-right: 30px;
         margin-top: 260px;
+        width: 100%;
     }
     .landing-house-topImage {
         background-size: 100% 100%;
@@ -1445,7 +1470,7 @@
         top: -40px;
     }
     .landing_house-topLeft {
-        margin-top: 490px;
+        margin-top: 370px;
     }
 
     .landing_house-topRight {
@@ -1524,6 +1549,9 @@
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
     .landing-other-left{
         padding-left:0px
+    }
+    .landing_intro-right{
+        width:39%
     }
     .landing-intro-houseType {
         display: none;

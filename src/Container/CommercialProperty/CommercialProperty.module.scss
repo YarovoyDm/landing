@@ -1,0 +1,125 @@
+.commercialProperty{
+    padding: 120px 192px 10px 212px;
+    background: #1c1c1c;
+    position: relative;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .topTitle{
+        font-size: 45px;
+        color: white;
+    }
+    .topFilter{
+        display: flex;
+    }
+    .filterValue,
+    .filterTitle{
+        font-size: 14px;
+        color: white;
+    }
+    .filterValue{
+        color: #ab9060;
+        margin-left: 15px;
+    }
+    .item{
+        width:440px;
+        height: 487px;
+        cursor: pointer;
+        &:nth-child(1){
+            margin-right: 30px;
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .roomsWrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .roomsTitle{
+        font-size: 14px;
+        color: #ab9060;
+        margin-bottom:25px
+    }
+    .exampletrack{
+        background: red
+    }
+    .roomsButton{
+        text-align: center;
+        padding: 0 40px;
+        height: 55px;
+        line-height:55px;
+        background: #282828;
+        border: solid 1px #464646;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            background: #ab9060;
+            border: solid 1px #ab9060;
+        }
+    }
+    
+    .bottomData{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottomDataWrapper{
+        display: flex;
+        margin-bottom:30px
+    }
+    .bottomFilter{
+        width: 450px;
+    }
+    .itemTop{
+        width:100%;
+        height: 365px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: white;
+        justify-content: center;
+    }
+    .itemBottom{
+        background: #232323;
+        padding:30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .itemWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .itemWrapper:nth-child(1){margin-bottom: 20px;}
+    .botTitle{
+        font-size: 16px;
+        color: white;
+    }
+    .botValue{
+        font-size: 16px;
+        color: #ab9060;
+    }
+    .itemLine{
+        height: 1px;
+        flex-grow: 1;
+        border-top: dashed 1px rgba(255, 255, 255, 0.2);
+        margin: 0 15px;
+    }
+    .itemImage{
+        background-image: url(../../Images/commercialA02.jpg);
+        height: 260px;
+        width:219px;
+        background-repeat: no-repeat;
+    }
+    .itemType{
+        font-size: 28px;
+        font-weight: 800;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #373f41;
+    }
+}
