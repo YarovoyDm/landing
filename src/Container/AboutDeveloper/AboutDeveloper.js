@@ -31,7 +31,74 @@ class AboutDeveloper extends React.Component {
                     
                 </div>
                 <div className={style.firstBlock}>
-                        
+                    <div className={style.firstImage}/>
+                    <div className={style.firstWrapper}>
+                        <div className={style.firstInfro}>
+                            <div className={style.infoItem}>
+                                <div className={style.itemTitle}>
+                                    2006
+                                </div>
+                                <div className={style.itemText}>
+                                    Рік заснування
+                                </div>
+                            </div>
+                            <div className={style.infoItem}>
+                                <div className={style.itemTitle}>
+                                    12 ЖК
+                                </div>
+                                <div className={style.itemText}>
+                                    Побудовано
+                                </div>
+                            </div>
+                            <div className={style.infoItem}>
+                                <div className={style.itemTitle}>
+                                    16 ЖК
+                                </div>
+                                <div className={style.itemText}>
+                                    Будується
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.firstText}>
+                            За 14 років успішної роботи на ринку нерухомості України
+                            підприємство зарекомендовало себе надійним партнером, який завжди
+                            виконує зобов'язання. Ми сфокусовані на будівництві
+                            житлової та комерційної нерухомості, в портфелі Кретор-Буд
+                            поняд 50 проектів.
+                        </div>
+                    </div>
+                </div>
+                <div className={style.secondBlock}>
+                    <div className={style.secondTop}>
+                        <div className={style.toptextWrapper}>
+                            <div className={style.topTitle}>
+                                Клубність
+                            </div>
+                            <div className={style.topText}>
+                                За 14 років успішної роботи на ринку нерухомості України
+                                підприємство зарекомендовало себе надійним партнером, який завжди
+                                виконує зобов'язання. Ми сфокусовані на будівництві
+                                житлової та комерційної нерухомості, в портфелі Кретор-Буд
+                                поняд 50 проектів.
+                            </div>
+                        </div>
+                        <div className={style.topImage}/>
+                    </div>
+                    <div className={style.secondBottom}>
+                        <div className={style.botImage}/>
+                        <div className={style.toptextWrapper}>
+                            <div className={style.topTitle}>
+                                Іновації
+                            </div>
+                            <div className={style.topText}>
+                                Ми знаємо, що ваш найцінніший ресурс - це час.
+                                Саме тому житловий комплекс Krauss матиме власну
+                                розвинену інфраструктура на перших поверхах,
+                                а все необхідне для життя, роботи та відпочинку
+                                розташоване у пішій доступності
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='landing_news'>
                     <div className='landing_news-header'>
@@ -84,11 +151,32 @@ class AboutDeveloper extends React.Component {
                             Інші проекти<br />
                             від забудовника<br />
                             &#171;Креатор-Буд&#187;
+                            <div className='landing_other-logo' />
                         </div>
-                        <div className='landing_other-logo' />
+                        
                     </div>
                     <div className='landing-other-right'>
-                        <OtherSlider />
+                        <OtherSlider/>
+                        <div className='landing-other-rightWrapper'>
+                                    <div className='landing-other-wrapper'>
+                                        <div className='landing-house-buttonWrapper'>
+                                            <div className='landing-house-ArrowButton'>
+                                                &#8594;
+                                            </div>
+                                            <div className='landing-house-ArrowButton'>
+                                                &#8592;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a a href='https://creatorcity.com.ua/' className='landing-other-projectBlock'>
+                                        <div className='landing-other-imageFirst' />
+                                        <div className='landing-other-imageText'>ЖК Creator City</div>
+                                    </a>
+                                    <a href='http://nauki58.com.ua/' className='landing-other-projectBlock'>
+                                        <div className='landing-other-imageSecond' />
+                                        <div className='landing-other-imageText'>ЖК Науки 58</div>
+                                    </a>
+                                </div>
                     </div>
                 </div>
             </>
