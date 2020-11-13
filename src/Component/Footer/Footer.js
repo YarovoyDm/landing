@@ -38,7 +38,7 @@ class Footer extends React.Component {
                         </div>
                         <div className='footer_sitemap-info'>
                             <div className='footer_sitemap-left'>
-                                <div className='footer_sitemap-item'>Про комплекс</div>
+                                <Link to='/about-the-complex' className='footer_sitemap-item'>Про комплекс</Link>
                                 <div className='footer_sitemap-item'>Вибір планування</div>
                                 <Link to='/infrastructure' className='footer_sitemap-item'>Інфраструктура</Link>{/* */}
                                 <Link to='/construction-progress' className='footer_sitemap-item'>Хід будивництва</Link>{/* */}

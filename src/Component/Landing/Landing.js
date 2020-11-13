@@ -11,9 +11,6 @@ import OtherSlider from '../OtherSlider/OtherSlider';
 const sliders = []
 
 class Landing extends React.Component {
-
-
-
     render() {
         return (
             <><div className='landing'>

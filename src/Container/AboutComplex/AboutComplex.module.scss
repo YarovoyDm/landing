@@ -1,0 +1,284 @@
+.aboutComplex{
+    padding: 120px 192px 10px 212px;
+    background: #1c1c1c;
+    position: relative;
+    .complexImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        background-size: cover;
+    }
+    .complexHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .complexTitle{
+        font-size: 45px;
+        color: white
+    }
+    .complexText{
+        font-size: 28px;
+        color: white;
+        width:800px
+    }
+}
+.firstBlock{
+    background: #1c1c1c;
+    padding: 50px 192px 250px 0px;
+    display: flex;
+    .highlightText{
+        font-size: 28px;
+        color: #ab9060
+    }
+    .firstText{
+        color: white;
+        font-size: 28px;
+        margin-bottom:65px
+    }
+    .firstWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .firstButton{
+        width:180px;
+        height: 60px;
+        color: white;
+        line-height: 60px;
+        cursor: pointer;
+        text-align: center;
+        border: solid 1px white;
+    }
+    .firstInfro{
+        width:900px;
+        height: 200px;
+        display: flex;
+        margin-bottom: 130px;
+        background: #222222;
+        box-shadow: 0px 4px 60px rgba(0,0,0,0.6);
+        z-index: 99;
+        margin-left: -150px;
+        margin-top: 70px;
+    }
+    .firstImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 900px;
+        height: 650px;    
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .infoItem{
+        width: calc(100% / 3);
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .itemTitle{
+        font-size: 40px;
+        color: #ab9060
+    }
+    .itemText{
+        font-size: 24px;
+        color: white;
+    }
+}
+.secondBlock{
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0px 300px 212px;
+    .secondLeft{
+        display: flex;
+        flex-direction: column;
+    }
+    .leftTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom:45px
+    }
+    .secondText{
+        color: white;
+        font-size: 24px;
+        margin-bottom:90px;
+        width:700px
+    }
+    .secondButton{
+        width:133px;
+        height: 60px;
+        line-height:60px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        border: solid 1px white;
+    }
+    .secondRightImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 900px;
+        height: 800px;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -270px;
+    }
+    .imageLabel{
+        position: absolute;
+        left:-16%;
+        bottom:50px;
+        height: 230px;
+        width:303px;
+        background:#222222;
+        box-shadow: 0px 4px 60px rgba(0,0,0,0.6);
+        z-index: 99;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .logo{
+        background-image: url(../../Images/otherLogo.svg);
+        height: 130px;
+        width: 130px;
+        background-size: cover;
+    }
+}
+.thirdBlock{
+    background:#1c1c1c;
+    padding: 120px 192px 10px 212px;
+    .thirdTop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:-200px
+    }
+    .thirdMiddle{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding-top: 150px;
+    }
+    .thirdBottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 100px;
+    }
+    .infoTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom: 40px
+    }
+    .infoText{
+        color: white;
+        font-size: 24px;
+    }
+    .thirdInfo{
+        display: flex;
+        flex-direction: column;
+        width:600px
+    }
+    .thirdImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 500px;
+        height: 600px;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 150px;
+    }
+    .middleImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 500px;
+        height: 450px;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 150px
+    }
+    .botImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 500px;
+        height: 500px;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -130px;
+        z-index: 1;
+    }
+}
+
+.fourthBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 120px 192px 10px 500px;
+    background: #222222;
+    align-items:flex-start;
+    justify-content: center;
+    height: 720px;
+    .fourthText{
+        font-size: 28px;
+        color: white;
+        width:950px;
+        margin-bottom:90px
+    }
+    .fourthButton{
+        width:167px;
+        height: 60px;
+        line-height: 60px;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        border: solid 1px white;
+        font-size: 16px;
+    }
+}
+.fifthBlock{
+    background: #2c2c2c;
+    padding: 120px 192px 120px 212px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    .fifthImage{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 700px;
+        height: 700px;
+        position: relative;    
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .fifthInfo{
+        width:600px
+    }
+    .fifthTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom:40px
+    }
+    .fifthText{
+        font-size: 24px;
+        color: white;
+        margin-bottom:91px
+    }
+    .fifthButton{
+        width:133px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        border: solid 1px white;
+        color: white
+    }
+}
+.sixthBlock{
+    background-image: url(../../Images/aboutComplexBotImage.jpg);
+    background-size: cover;
+    height: 1000px;
+}

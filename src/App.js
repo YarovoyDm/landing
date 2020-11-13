@@ -15,6 +15,7 @@ import NewsPage from './Container/NewsPage/NewsPage';
 import Infrastructure from './Container/Infrastructure/Infrastructure';
 import AboutDeveloper from './Container/AboutDeveloper/AboutDeveloper';
 import CommercialProperty from './Container/CommercialProperty/CommercialProperty';
+import AboutComplex from './Container/AboutComplex/AboutComplex';
 
 class App extends React.Component {
   render() {
@@ -34,6 +35,7 @@ class App extends React.Component {
           <Route path='/infrastructure' component={Infrastructure} />
           <Route path='/about-us/about-developer' component={AboutDeveloper} />
           <Route path='/commercial-property' component={CommercialProperty} />
+          <Route path='/about-the-complex' component={AboutComplex} />
         </Switch>
         <Footer />
       </div>
