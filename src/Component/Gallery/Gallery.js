@@ -19,8 +19,6 @@ import gallery5 from '../../Images/gallery5.jpg'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 class Gallery extends React.Component {
-
-
     render() {
         const isMobile = window.screen.width >= 360 && window.screen.width <= 425
         return (
@@ -34,8 +32,8 @@ class Gallery extends React.Component {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide zoom={true}><img src={gallery1}width="700"  height="500"></img></SwiperSlide>
-                    <SwiperSlide><img src={gallery2}width="450"  height="500"/></SwiperSlide>
+                    <SwiperSlide><img src={gallery1}width="700"  height="500" /></SwiperSlide>
+                    <SwiperSlide><img src={gallery2}width="450"  height="500" /></SwiperSlide>
                     <SwiperSlide><img src={gallery3}width="450"  height="500" /></SwiperSlide>
                     <SwiperSlide><img src={gallery4}width="650"  height="500" /></SwiperSlide>
                     <SwiperSlide><img src={gallery5}width="550"  height="500" /></SwiperSlide>

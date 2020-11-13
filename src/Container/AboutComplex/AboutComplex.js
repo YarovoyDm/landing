@@ -155,7 +155,10 @@ class AboutComplex extends React.Component {
                     <div className='landing_gallery-header'>
                         <div className='landing_gallery-title'>Галерея</div>
                         <div className='landing_gallery-wrapper'>
-                            <div className='landing_gallery-all'>Дивитись усі рендери</div>
+                            <div className='landing_gallery-all'>
+                                <div className={style.PcText}>Дивитись усі</div>
+                                <div className={style.mobileText}>Усі</div> рендери
+                            </div>
                             <div className='landing_gallery-arrowIcon' />
                         </div>
                     </div>

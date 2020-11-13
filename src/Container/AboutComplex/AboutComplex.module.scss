@@ -240,6 +240,12 @@
         font-size: 16px;
     }
 }
+.PcText{
+    display: block;
+}
+.mobileText{
+    display: none;
+}
 .fifthBlock{
     background: #2c2c2c;
     padding: 120px 192px 120px 212px;
@@ -282,3 +288,609 @@
     background-size: cover;
     height: 1000px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .aboutComplex{
+        padding: 80px 10px 10px 10px;
+        .complexHeader{
+            display: flex;
+            flex-direction: column;
+        }
+        .complexImage{
+            height: 120px;
+        }
+        .complexTitle{
+            font-size: 25px;
+            margin-bottom:35px
+        }
+        .complexText{
+            font-size: 18px;
+            width: 100%;
+        }
+    }
+    .firstBlock{
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding: 80px 10px 80px 10px;
+        .firstImage{
+            width: 250px;
+            height: 200px;
+        }
+        .firstButton{
+            width: 144px;
+            height: 40px;
+            line-height: 40px;
+        }
+        .firstInfro{
+            width: 180px;
+            height: 254px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            margin-top: -30px;
+            padding: 30px 35px;
+            margin-bottom: 40px;
+        }
+        .highlightText,
+        .firstText{
+            font-size: 20px;
+        }
+        .infoItem{
+            width: 100%;
+            align-items: flex-start;
+        }
+        .itemTitle{
+            font-size: 30px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
+    }
+    .secondBlock{
+        padding: 80px 0px 180px 10px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .secondRightImage{
+            width: 220px;
+            height: 220px;
+            margin-top: -120px;
+            margin-bottom: 100px;
+        }
+        .imageLabel{
+            height: 116px;
+            width: 130px;
+            left: -29%;
+            bottom: -50px;
+        }
+        .logo{
+            height: 56px;
+            width: 56px;
+        }
+        .secondText{
+            width: calc(100% - 10px);
+            padding-right: 10px;
+            margin-bottom: 30px;
+        }
+        .leftTitle{
+            font-size: 25px;
+        }
+        .secondText{
+            font-size: 16px;
+        }
+        .secondButton{
+            width: 105px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .thirdBlock{
+        padding: 80px 0px 80px 10px;
+        .thirdImage{
+            width: 240px;
+            height: 250px;
+            margin-left: unset;
+            margin-bottom: 50px;
+        }
+        .thirdBottom,
+        .thirdTop{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .thirdMiddle{
+            flex-direction: column-reverse;
+            padding-top: 80px;
+        }
+        .thirdInfo{
+            width: calc(100% - 10px);
+            padding-right: 10px;
+        }
+        .infoTitle{
+            font-size: 25px;
+        }
+        .infoText{
+            font-size: 16px;
+        }
+        .thirdMiddle{
+            align-items: flex-end;
+        }
+        .middleImage{
+            margin-right: unset;
+            margin-bottom: 50px;
+            width: 240px;
+            height: 210px;
+        }
+        .botImage{
+            width: 240px;
+            height: 270px;
+            margin-bottom: 50px;
+        }
+    }
+    .fourthBlock{
+        padding: 50px 10px 10px 10px;
+        height: 350px;
+        .fourthText{
+            width:100%;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        .fourthButton{
+            width: 132px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .fifthBlock{
+        padding: 80px 10px 50px 10px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .fifthImage{
+            width: 240px;
+            height: 220px;
+            margin-bottom: 50px;
+        }
+        .fifthTitle{
+            font-size: 25px;
+        }
+        .fifthText{
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+        .fifthInfo{
+            width: 100%;
+        }
+        .fifthButton{
+            width: 102px;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .sixthBlock{
+        background-position-x: -580px;
+        height: 320px;
+    }
+    .PcText{
+        display: none;
+    }
+    .mobileText{
+        display: block;
+        margin-right: 5px;
+    }
+    :global(.landing_gallery){
+        height: 350px;
+        padding: 0;
+        padding-top: 28px;
+        padding-left: 10px;
+    }
+    :global(.landing_gallery-all){
+        font-size: 14px;
+        display: flex;
+    }
+    :global(.landing_news-header){
+        padding: 0;
+        margin: 0 10px 0 10px;
+    }
+    :global(.landing_gallery-header){
+        padding: 0;
+        margin: 0 10px -70px 10px;
+    }
+    :global(.landing_news-title){
+        font-size: 25px;
+    }
+    :global(.landing_gallery-title){
+        font-size: 25px;
+    }
+    :global(.landing_gallery-header){
+        margin-bottom: 40px;
+    }
+    :global(.landing-gallery-nav){
+        display: none;
+    }
+    :global(.landing-gallery-imageFirst){
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 240px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    :global(.landing-gallery-imageSecond){
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 170px;
+        margin: 0;
+    }
+    :global(.landing-gallery-progressLine){
+        height: 3px;
+        width: 77px;
+        top: 0;
+    }
+    
+    
+    // .sixthBlock ,
+    // .sixthBlock  {
+    //     font-size: 25px;
+    // }
+    
+    // .sixthBlock  {
+    //     width: 300px;
+    //     margin-left: 10px;
+    // }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .aboutComplex{
+        padding: 120px 40px 10px 40px;
+        .complexHeader{
+            display: flex;
+            flex-direction: column;
+        }
+        .complexImage{
+            height: 240px;
+        }
+        .complexTitle{
+            font-size: 35px;
+            margin-bottom:35px
+        }
+        .complexText{
+            font-size: 24px;
+            width: 100%;
+        }
+    }
+    .firstBlock{
+        flex-direction: column;
+        padding-bottom: 50px;
+        .firstImage{
+            width: 550px;
+            height: 450px;
+        }
+        .firstInfro{
+            width: 451px;
+            height: 170px;
+            margin-left: 310px;
+            margin-top: -80px;
+        }
+        .itemTitle{
+            font-size: 30px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
+    }
+    .secondBlock{
+        padding: 120px 0px 180px 40px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .secondRightImage{
+            width: 560px;
+            height: 650px;
+            margin-top:unset;
+            margin-bottom:50px;
+        }
+        .imageLabel{
+            height: 170px;
+            width: 216px;
+        }
+        .logo{
+            height: 90px;
+            width: 90px;
+        }
+        .secondText{
+            width: 510px;
+            padding-right: 50px;
+        }
+        .leftTitle{
+            font-size: 35px;
+        }
+        .secondText{
+            font-size: 18px;
+        }
+    }
+    .thirdBlock{
+        padding: 120px 0px 180px 40px;
+        .thirdImage{
+            margin-left: unset;
+            margin-bottom: 50px;
+        }
+        .thirdBottom,
+        .thirdTop{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .thirdMiddle{
+            flex-direction: column-reverse;
+        }
+        .thirdInfo{
+            width: 60%;
+            padding-right: 50px;
+        }
+        .infoTitle{
+            font-size: 35px;
+        }
+        .infoText{
+            font-size: 18px;
+        }
+        .thirdMiddle{
+            align-items: flex-end;
+        }
+        .middleImage{
+            margin-right: unset;
+            margin-bottom: 50px;
+        }
+        .botImage{
+            width: 450px;
+            height: 450px;
+            margin-bottom: 50px;
+        }
+    }
+    .fourthBlock{
+        padding: 120px 40px 180px 40px;
+        height: 220px;
+        .fourthText{
+            width:100%;
+            font-size: 24px;
+        }
+    }
+    .fifthBlock{
+        padding: 120px 40px 100px 40px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .fifthImage{
+            width: 600px;
+            height: 600px;
+            margin-bottom: 50px;
+        }
+        .fifthTitle{
+            font-size: 35px;
+        }
+        .fifthText{
+            font-size: 18px;
+        }
+        .fifthInfo{
+            width: 70%;
+        }
+    }
+    .sixthBlock{
+        background-position-x: -580px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .aboutComplex{
+        padding: 120px 100px 10px 100px;
+        .complexImage{
+            height: 280px
+        }
+        .complexTitle{
+            font-size: 35px;
+        }
+        .complexText{
+            font-size: 24px;
+            width: 470px;
+        }
+    }
+    .firstBlock{
+        padding: 50px 100px 250px 0px;
+        .firstInfro{
+            width: 550px;   
+            height: 170px;
+        }
+        .itemTitle{
+            font-size: 30px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
+        .highlightText,
+        .firstText{
+            font-size: 24px;
+        }
+        .firstImage{
+            height: 450px;
+            margin-right: 50px;
+        }
+    }
+    .secondBlock{
+        padding: 120px 0px 170px 100px;
+        .leftTitle{
+            font-size: 35px;
+        }
+        .secondText{
+            font-size: 18px;
+            width: 380px;
+        }
+        .secondRightImage{
+            width: 400px;
+            margin-top: -190px;
+            height: 500px;
+        }
+        .imageLabel{
+            height: 140px;
+            width: 194px;
+        }
+        .logo{
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .thirdBlock{
+        padding: 120px 100px 10px 100px;
+        .infoTitle{
+            font-size: 30px;
+        }
+        .infoText{
+            font-size: 18px;
+        }
+        .thirdImage{
+            width: 350px;
+            height: 410px;
+            margin-left: 50px;
+        }
+        .thirdInfo{
+            width: 380px;
+        }
+        .middleImage{
+            width: 350px;
+            height: 400px;
+            margin-right: 50px;
+        }
+        .botImage{
+            width: 400px;
+            height: 450px;
+        }
+    }
+    .fourthBlock{
+        padding: 120px 100px 10px 200px;
+        height: 550px;
+        .fourthText{
+            font-size: 24px;
+            width: 630px;
+        }
+    }
+    .fifthBlock{
+        padding: 120px 100px 120px 100px;
+        .fifthTitle{
+            font-size: 35px;
+        }
+        .fifthInfo{
+            width: 500px;
+        }
+        .fifthText{
+            font-size: 18px;
+        }
+        .fifthImage{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .sixthBlock{
+        height: 570px;
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .aboutComplex{
+        padding: 120px 152px 10px 172px;
+        .complexImage{
+            height: 400px;
+        }
+        .complexTitle{
+            font-size: 35px;
+        }
+        .complexText{
+            font-size: 24px;
+            width: 650px;
+        }
+    }
+    .firstBlock{
+        padding: 50px 152px 250px 0px;
+        .firstInfro{
+            width:670px;
+            height: 170px;
+        }
+        .itemTitle{
+            font-size: 30px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
+        .highlightText,
+        .firstText{
+            font-size: 24px;
+        }
+        .firstImage{
+            margin-right: 50px;
+        }
+    }
+    .secondBlock{
+        padding: 120px 0px 170px 172px;
+        .leftTitle{
+            font-size: 35px;
+        }
+        .secondText{
+            font-size: 18px;
+            width: 500px;
+        }
+        .secondRightImage{
+            width: 600px;
+            height: 700px;
+        }
+        .imageLabel{
+            height: 170px;
+            width: 224px;
+        }
+        .logo{
+            height: 90px;
+            width: 90px;
+        }
+    }
+    .thirdBlock{
+        padding: 120px 152px 10px 172px;
+        .infoTitle{
+            font-size: 30px;
+        }
+        .infoText{
+            font-size: 18px;
+        }
+        .thirdImage{
+            width: 400px;
+            height: 500px;
+            margin-left: 100px;
+        }
+        .thirdInfo{
+            width: 450px;
+        }
+        .middleImage{
+            width: 450px;
+            height: 400px;
+            margin-right: 100px;
+        }
+    }
+    .fourthBlock{
+        padding: 120px 192px 10px 300px;
+        height: 550px;
+        .fourthText{
+            font-size: 24px;
+        }
+    }
+    .fifthBlock{
+        padding: 120px 152px 120px 172px;
+        .fifthTitle{
+            font-size: 35px;
+        }
+        .fifthInfo{
+            width: 500px;
+        }
+        .fifthText{
+            font-size: 18px;
+        }
+        .fifthImage{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .sixthBlock{
+        height: 810px;
+    }
+}
+
