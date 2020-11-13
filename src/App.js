@@ -16,6 +16,7 @@ import Infrastructure from './Container/Infrastructure/Infrastructure';
 import AboutDeveloper from './Container/AboutDeveloper/AboutDeveloper';
 import CommercialProperty from './Container/CommercialProperty/CommercialProperty';
 import AboutComplex from './Container/AboutComplex/AboutComplex';
+import GalleryPage from './Container/Gallery/Gallery';
 
 class App extends React.Component {
   render() {
@@ -36,6 +37,7 @@ class App extends React.Component {
           <Route path='/about-us/about-developer' component={AboutDeveloper} />
           <Route path='/commercial-property' component={CommercialProperty} />
           <Route path='/about-the-complex' component={AboutComplex} />
+          <Route path='/gallery' component={GalleryPage} />
         </Switch>
         <Footer />
       </div>

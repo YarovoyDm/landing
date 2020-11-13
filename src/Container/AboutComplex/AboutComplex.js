@@ -19,7 +19,6 @@ class AboutComplex extends React.Component {
                             органічно поєднуються у житловому комплексі &#171;Krauss Gallery&#187;
                         </div>
                     </div>
-                    {/* <Gallery /> */}
                 </div>
                 <div className={style.firstBlock}>
                     <div className={style.firstImage}/>
