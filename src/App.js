@@ -17,6 +17,7 @@ import AboutDeveloper from './Container/AboutDeveloper/AboutDeveloper';
 import CommercialProperty from './Container/CommercialProperty/CommercialProperty';
 import AboutComplex from './Container/AboutComplex/AboutComplex';
 import GalleryPage from './Container/Gallery/Gallery';
+import House from './Container/House/House';
 
 class App extends React.Component {
   render() {
@@ -38,6 +39,7 @@ class App extends React.Component {
           <Route path='/commercial-property' component={CommercialProperty} />
           <Route path='/about-the-complex' component={AboutComplex} />
           <Route path='/gallery' component={GalleryPage} />
+          <Route path='/house' component={House} />
         </Switch>
         <Footer />
       </div>

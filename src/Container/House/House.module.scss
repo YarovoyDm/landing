@@ -1,0 +1,101 @@
+.house{
+    padding: 120px 192px 10px 212px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .houseTitle{
+        font-size: 45px;
+    }
+    .houseImage{
+        background-image: url(../../Images/house.jpg);
+        background-size: cover;
+        width:850px;
+        height: 840px;
+        margin-top: -80px;
+    }
+}
+
+@media screen and (width: 320px){
+    .house{
+        .houseImage{
+            width: 100%;
+            height: 280px;  
+            padding-bottom: 50px;    
+        }
+    }
+}
+
+@media screen and (width: 375px){
+    .house{
+        .houseImage{
+            width: 100%;
+            height: 300px;  
+            padding-bottom: 50px;    
+        }
+    }
+}
+
+@media screen and (width: 425px){
+    .house{
+        .houseImage{
+            width: 100%;
+            height: 350px;  
+            padding-bottom: 50px;    
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .house{
+        padding: 80px 10px 10px 10px;
+        flex-direction: column;
+        .houseTitle{
+            font-size: 25px;
+            margin-bottom:100px
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .house{
+        padding: 120px 40px 10px 40px;
+        flex-direction: column;
+        .houseTitle{
+            font-size: 35px;
+            margin-bottom:100px
+        }
+        .houseImage{
+            width: 100%;
+            height: 680px;        
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .house{
+        padding: 120px 100px 10px 100px;
+        .houseImage{
+            width:550px;
+            height: 540px;
+        }
+        .houseTitle{
+            font-size: 35px;
+            width: 310px;
+            margin-right: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .house{
+        padding: 120px 152px 10px 172px;
+        .houseImage{
+            width:650px;
+            height: 640px;
+        }
+        .houseTitle{
+            font-size: 35px;
+        }
+    }
+    
+}
