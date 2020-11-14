@@ -6,6 +6,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom:50px
     }
     .topTitle{
         font-size: 45px;
@@ -13,6 +14,12 @@
     }
     .topFilter{
         display: flex;
+    }
+    .filterRooms{
+        margin-bottom: 60px
+    }
+    .filterSquere{
+        margin-bottom:60px
     }
     .filterValue,
     .filterTitle{
@@ -30,6 +37,55 @@
         &:nth-child(1){
             margin-right: 30px;
         }
+    }
+    .Min,
+    .Max{
+        color: white;
+        font-size: 16px;
+    }
+    .squereTitle{
+        font-size: 14px;
+        color:#ab9060
+    }
+    .squereInfo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .filterCheckbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .filterAccept{
+        width:100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        margin-top:90px;
+        background: #ab9060
+    }
+    :global(.MuiCheckbox-root){
+        color: #ab9060
+    }
+    :global(.MuiTypography-body1){
+        color: white;
+        font-size: 16px;
+    }
+    :global(.MuiSlider-track){
+        background: #ab9060;
+        height: 8px;
+    }
+    :global(.MuiSlider-rail){
+        background: #454545;
+        height: 8px;
+    }
+    :global(.MuiSlider-thumb){
+        background: #dbc7a3;
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
     }
     .bottom{
         display: flex;
@@ -121,5 +177,212 @@
         top: 30px;
         left: 30px;
         color: #373f41;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .commercialProperty{
+        padding: 80px 10px 10px 10px;
+        flex-direction: column;
+        .bottomDataWrapper{
+            flex-direction: column;
+            &:nth-child(2){
+                display: none;
+            }
+            &:nth-child(3){
+                display: none;
+            }
+        }
+        .item{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .filterAccept{
+            margin-top: 30px;
+        }
+        .topFilter{
+            display: none;
+        }
+        .modileBotWrapper{
+            flex-direction: row-reverse;
+        }
+        .bottomFilter{
+            width: 100%;
+        }
+        .filterSquere{
+            width: 100%;
+        }
+        .roomsButton{
+            padding: 0 19px;
+            height: 40px;
+            line-height: 40px;
+            min-width: 10px;
+            margin-right: 5px;
+        }
+        .squereTitle,
+        .roomsTitle{
+            font-size: 12px;
+        }
+        .topTitle{
+            font-size: 25px;
+        }
+        .bottom{
+            flex-direction: column;
+        }
+        .filterAccept{
+            margin-bottom:50px
+        }
+        .itemType{
+            font-size: 24px;
+        }
+        .itemImage{
+            height: 280px;
+        }
+        .botTitle,
+        .botValue{
+            font-size: 14px;
+        }
+        .filterRooms{
+            width: 100%;
+        }
+        .modileBotWrapper,
+        .modileTopWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .filterCheckbox{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .commercialProperty{
+        padding: 120px 40px 10px 40px;
+        flex-direction: column;
+        .modileBotWrapper,
+        .modileTopWrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .modileBotWrapper{
+            flex-direction: row-reverse;
+        }
+        .bottomFilter{
+            width: 100%;
+        }
+        .filterSquere{
+            width: 300px;
+        }
+        .roomsButton{
+            padding: 0 30px;
+            height: 40px;
+            line-height: 40px;
+            min-width: 10px;
+            margin-right: 5px;
+        }
+        .topTitle{
+            font-size: 35px;
+        }
+        .bottom{
+            flex-direction: column;
+        }
+        .filterAccept{
+            margin-bottom:50px
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .commercialProperty{
+        padding: 120px 100px 10px 100px;
+        .item{
+            width: 242px;
+            height: 200px;
+            margin-bottom: 15px;
+            &:nth-child(1){
+                margin-right: 15px;
+            }
+            
+        }
+        .itemTop{
+            height: 163px;
+        }
+        .itemType{
+            font-size: 20px;
+            top: 15px;
+            left: 15px;
+        }
+        .bottomFilter{
+            width: 300px;
+        }
+        .itemBottom{
+            padding:10px
+        }
+        .botValue,
+        .botTitle{
+            font-size: 14px;
+        }
+        .topTitle{
+            font-size: 35px;
+        }
+        .squereTitle{
+            font-size: 12px;
+        }
+        .roomsButton{
+            height: 40px;
+            line-height: 40px;
+            min-width: 40px;
+            padding: 0 10px;
+        }
+        .itemImage{
+            background-size: cover;
+            height: 151px;
+            width: 109px;
+        }
+        :global(.MuiTypography-body1){
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .commercialProperty{
+        padding: 120px 152px 10px 172px;
+        .item{
+            width:320px;
+            height: 350px;
+            margin-bottom: 30px;
+        }
+        .itemTop{
+            height: 263px;
+        }
+        .itemType{
+            font-size: 24px;
+        }
+        .bottomFilter{
+            width: 300px;
+        }
+        .topTitle{
+            font-size: 35px;
+        }
+        .squereTitle{
+            font-size: 12px;
+        }
+        .roomsButton{
+            height: 40px;
+            line-height: 40px;
+            min-width: 40px;
+            padding: 0 10px;
+        }
+        .itemImage{
+            background-size: cover;
+            height: 220px;
+            width: 159px;
+        }
+        :global(.MuiTypography-body1){
+            font-size: 12px;
+        }
     }
 }

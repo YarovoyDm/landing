@@ -133,9 +133,9 @@ class AboutComplex extends React.Component {
                         та найкраще розташування в центрі міста - всі ці переваги 
                         органічно поєднуються у житловому комплексі &#171;Krauss Gallery&#187;
                     </div>
-                    <div className={style.fourthButton}>
+                    <Link to='/infrastructure' className={style.fourthButton}>
                         Інфраструктура
-                    </div>
+                    </Link>
                 </div>
                 <div className={style.fifthBlock}>
                     <div className={style.fifthInfo}>
