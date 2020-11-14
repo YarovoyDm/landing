@@ -11,8 +11,7 @@ class Infrastructure extends React.Component {
                     <div className={style.infrastructureImage} />
                     <div className={style.infrastructureMainText}>
                         <div className={style.infrastructureTitle}>
-                            ТЕХНОЛОГІЯ <br />
-                            БУДІВНИЦТВА
+                            ІНФРАСТРУКТУРА ПОРЯД
                         </div>
                         <div className={style.infrastructureText}>
                             Стриманість та функціональність сучасної архітектури,
@@ -20,79 +19,86 @@ class Infrastructure extends React.Component {
                             комфорту мешканців та найкраще розташування в центрі міста - 
                             всі ці переваги органічно поєднуються у житловому комплексі Krauss Gallery 
                         </div>
-                    </div>
-                    
+                    </div>   
                 </div>
-                <div className={style.infrastructureFirstBlock}>
-                    <div className={style.firstBlockImage}/>
-                    <div className={style.firstBlockText}>
-                        <div className={style.textTitle}>
-                            Архітектурно-тенхічні рішення
+                <div className={style.infrastructureFirst}>
+                    <div className={style.firstTop}>
+                        <div className={style.topImage}/>
+                        <div className={style.toptextWrapper}>
+                            <div className={style.wrapperTitle}>
+                                У центрі подій
+                            </div>
+                            <div className={style.wrapperText}>
+                                Ми знаємо, що ваш найцінніший ресурс - це час.
+                                Саме тому житловий комплекс Krauss матиме власну
+                                розвинену інфраструктура на перших поверхах,
+                                а все необхідне для життя, роботи та відпочинку
+                                розташоване у пішій доступності
+                            </div>
                         </div>
-                        <ul>
-                            <li className={style.li}>Технологія будівництва - монолітно-каркасна</li>
-                            <li className={style.li}>Внутрішні та зовнішні стіни - керамічна цегла 250мм</li>
-                            <li className={style.li}>Вікна - енергозберігаючий склопакет</li>
-                            <li className={style.li}>Утеплювач - мінеральна вата товщиною 150мм</li>
-                        </ul>
+                    </div>
+                    <div className={style.firstMiddle}>
+                        <div className={style.toptextWrapper}>
+                            <div className={style.wrapperTitle}>
+                                Усе що потрібно поряд
+                            </div>
+                            <div className={style.wrapperText}>
+                                Ми знаємо, що ваш найцінніший ресурс - це час.
+                                Саме тому житловий комплекс Krauss матиме власну
+                                розвинену інфраструктура на перших поверхах,
+                                а все необхідне для життя, роботи та відпочинку
+                                розташоване у пішій доступності
+                            </div>
+                        </div>
+                        <div className={style.middleImage}/>
+                    </div>
+                    <div className={style.firstBottom}>
+                        <div className={style.botImage}/>
+                        <div className={style.toptextWrapper}>
+                            <div className={style.wrapperTitle}>
+                                Магазин
+                            </div>
+                            <div className={style.wrapperText}>
+                                Ми знаємо, що ваш найцінніший ресурс - це час.
+                                Саме тому житловий комплекс Krauss матиме власну
+                                розвинену інфраструктура на перших поверхах,
+                                а все необхідне для життя, роботи та відпочинку
+                                розташоване у пішій доступності
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className={style.specifications}>
-                    <div className={style.specificationLeft}>
-                        <div className={style.leftTitle}>Технічні характеристики</div>
-                        <ul>
-                            <li className={style.li}>
-                                <div className={style.specificationsWrapper}>
-                                    <div>Кількість поверхів</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        10
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={style.li}><div className={style.specificationsWrapper}>
-                                    <div>Квартир на поверсі</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        12
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={style.li}><div className={style.specificationsWrapper}>
-                                    <div>Кількість квартир</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        100
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={style.li}><div className={style.specificationsWrapper}>
-                                    <div>Висота стель</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        3,3м
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={style.li}><div className={style.specificationsWrapper}>
-                                    <div>Опалення</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        автономне (в будинку)
-                                    </div>
-                                </div>
-                            </li>
-                            <li className={style.li}><div className={style.specificationsWrapper}>
-                                    <div>Паркінг</div>
-                                    <div className={style.line}/>
-                                    <div className={style.specificationsValue}>
-                                        підземний
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                <div className={style.infrastructureSecond}>
+                    <div className={style.secondWrapper}>
+                        <div className={style.planTitle}>Генплан території</div>
+                        <div className={style.planTextWrapper}>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>Територія для відпочинку</div>
+                            </div>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>Контроль доступу до авто</div>
+                            </div>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>Гостьові парковки</div>
+                            </div>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>В'їзд / виїзд з паркінгу</div>
+                            </div>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>Вхід / вихід з будинку</div>
+                            </div>
+                            <div className={style.planItem}>
+                                <div className={style.itemCircle}/>
+                                <div className={style.itemText}>Територія для відпочинку</div>
+                            </div>
+                        </div>
                     </div>
-                    <div className={style.specificationRight} />
+                    <div className={style.secondimage}/>
                 </div>
             </>
         )

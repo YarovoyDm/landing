@@ -1,5 +1,5 @@
 .infrastructure{
-    padding: 120px 192px 130px 212px;
+    padding: 120px 192px 160px 212px;
     background: #1c1c1c;
     position: relative;
     .infrastructureImage{
@@ -10,6 +10,7 @@
         margin-bottom: 80px;
         background-size: cover;
     }
+    
     .infrastructureTitle{
         font-size: 45px;
         color: white
@@ -26,6 +27,110 @@
     }
     
 }
+
+.infrastructureFirst{
+    background: #222222;
+    padding: 0px 192px 150px 212px;
+    .firstBottom,
+    .firstMiddle,
+    .firstTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .firstMiddle{
+        margin-bottom:100px
+    }
+    .topImage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 500px;
+        width: 650px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 100px;
+        z-index: 1;
+    }
+    .toptextWrapper{
+        width:700px
+    }
+    .wrapperTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .wrapperText{
+        font-size: 24px;
+        color: white;
+    }
+    .middleImage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 500px;
+        width: 500px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+    .botImage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 400px;
+        width: 650px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.infrastructureSecond{
+    background: #1c1c1c;
+    padding: 100px 0px 100px 212px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .secondWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .planTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom: 45px;
+    }
+    .itemCircle{
+        width:40px;
+        height: 40px;
+        border-radius: 40px;
+        border: solid 2px #ab9060;
+        margin-right: 25px;
+        background: #2f2f2f
+    }
+    .itemText{
+        font-size: 24px;
+        color: white;
+    }
+    .planTextWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .planItem{
+        display: flex;
+        align-items:center;
+        margin-bottom:30px
+    }
+    .secondimage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 850px;
+        width: 850px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 200px;
+        z-index: 1;
+    }
+}
+
 
 .infrastructureFirstBlock{
     background: #222222;
@@ -133,26 +238,88 @@
             align-items: flex-start;
         }
     }
-    .infrastructureFirstBlock{
-        padding: 60px 10px 50px 10px;
+    .infrastructureFirst{
+        padding: 120px 10px 80px 10px;
         flex-direction: column;
         height: unset;
         align-items:flex-start;
-        .firstBlockImage{
-            height: 300px;
+        .firstTop{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 50px
+        }
+        .toptextWrapper{
+            width:unset
+        }
+        .wrapperTitle{
+            font-size: 25px;
+        }
+        .wrapperText{
+            font-size: 16px;
+            width:100%
+        }
+        .firstMiddle{
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+        .middleImage{
+            height: 250px;
+            width: 250px;        
+            margin-bottom:50px
+        }
+        .firstBottom{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .botImage{
+            height: 200px;
             width: 250px;
+            margin-bottom:50px
+        }
+        .topImage{
+            width: 250px;
+            height: 300px;
+            margin-bottom: -60px;
+        }
+        .firstBlockImage{
+            height: 400px;
+            width: 350px;
             position: unset;
             margin-bottom: 50px;
-            margin-top: -100px;
         }
         .textTitle{
-            font-size: 25px;
+            font-size: 35px;
         }
         ul{
             padding-left: 20px;
         }
         li{
+            font-size: 18px;
+        }
+    }
+    .infrastructureSecond{
+        padding: 60px 0px 50px 10px;
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        .secondimage{
+            height: 200px;
+            width: 200px;
+            margin-bottom: -70px;
+            bottom: 100px;
+        }
+        .secondWrapper{
+            width: 100%;
+            align-items: center;
+        }
+        .planTitle{
+            font-size: 25px;
+        }
+        .itemText{
             font-size: 16px;
+        }
+        .itemCircle{
+            width:24px;
+            height: 24px;
         }
     }
     .infrastructure{
@@ -186,7 +353,7 @@
     .specifications,
     .infrastructureFirstBlock,
     .infrastructure{
-        padding: 120px 40px 50px 40px;
+        padding: 120px 40px 120px 40px;
     }
     .specifications{
         flex-direction: column-reverse;
@@ -211,11 +378,35 @@
             margin-bottom:50px
         }
     }
-    .infrastructureFirstBlock{
-        padding: 60px 40px 50px 40px;
+    .infrastructureFirst{
+        padding: 60px 40px 120px 40px;
         flex-direction: column;
         height: unset;
         align-items:flex-start;
+        .firstTop{
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 50px
+        }
+        .firstMiddle{
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+        .middleImage{
+            margin-bottom:50px
+        }
+        .firstBottom{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .botImage{
+            height: 300px;
+            width: 550px;
+            margin-bottom:50px
+        }
+        .topImage{
+            width: 450px;
+        }
         .firstBlockImage{
             height: 400px;
             width: 350px;
@@ -229,6 +420,26 @@
             padding-left: 20px;
         }
         li{
+            font-size: 18px;
+        }
+    }
+    .infrastructureSecond{
+        padding: 60px 0px 50px 40px;
+        flex-direction: column-reverse;
+        align-items:flex-end;
+        .secondimage{
+            height: 550px;
+            width: 550px;
+            bottom: 130px;
+        }
+        .secondWrapper{
+            width: 100%;
+            align-items: center;
+        }
+        .planTitle{
+            font-size: 35px;
+        }
+        .itemText{
             font-size: 18px;
         }
     }
@@ -261,15 +472,46 @@
             height: 280px
         }
     }
-    .infrastructureFirstBlock{
-        padding: 20px 100px 40px 100px;
-        .firstBlockImage{
-            height: 450px;
+    .infrastructureFirst{
+        padding: 120px 100px 60px 100px;
+        .wrapperTitle{
+            font-size: 35px;
+        }
+        .wrapperText{
+            font-size: 18px;
+        }
+        .toptextWrapper{
             width: 400px;
         }
+        .topImage{
+            width: 360px;
+            height: 450px;
+        }
+        .botImage{
+            height: 200px;
+            width: 350px;
+        }
+        .middleImage{
+            height: 380px;
+            width: 380px;
+        }
+    }
+    .infrastructureSecond{
+        padding: 120px 0px 60px 100px;
+        .secondimage{
+            height: 500px;
+            bottom: 150px;
+            width: 500px;
+        }
+        .planTitle{
+            font-size: 35px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
+    }
     .firstBlockText{
         width: 44%;
-    }
     }
     .specifications{
         padding: 120px 100px 60px 100px;
@@ -312,8 +554,37 @@
     .infrastructure{
         padding: 120px 152px 100px 172px;
     }
-    .infrastructureFirstBlock{
+    .infrastructureFirst{
         padding: 50px 152px 50px 172px;
+        .wrapperTitle{
+            font-size: 35px;
+        }
+        .wrapperText{
+            font-size: 18px;
+        }
+        .toptextWrapper{
+            width: 400px;
+        }
+        .topImage{
+            width:550px
+        }
+        .botImage{
+            width: 550px;
+        }
+    }
+    .infrastructureSecond{
+        padding: 50px 0px 50px 172px;
+        .secondimage{
+            height: 600px;
+            bottom: 100px;
+            width: 600px;
+        }
+        .planTitle{
+            font-size: 35px;
+        }
+        .itemText{
+            font-size: 18px;
+        }
     }
     .specifications{
         padding: 140px 152px 100px 172px;
@@ -331,9 +602,11 @@
     .infrastructure{
         .infrastructureText{
             font-size: 24px;
+            width: 50%;
         }
         .infrastructureTitle{
             font-size: 35px;
+            width: 30%;
         }
     }
     .infrastructureFirstBlock{

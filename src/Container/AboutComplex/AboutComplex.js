@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Gallery from '../../Component/Gallery/Gallery';
 import style from './AboutComplex.module.scss'
 
@@ -70,7 +71,7 @@ class AboutComplex extends React.Component {
                             житлової та комерційної нерухомості, в портфелі Кретор-Буд
                             поняд 50 проектів.
                         </div>
-                        <div className={style.secondButton}>Детальніше</div>
+                        <Link to='/about-developer' className={style.secondButton}>Детальніше</Link>
                     </div>
                     <div className={style.secondRightImage}>
                         <div className={style.imageLabel}>
@@ -146,7 +147,7 @@ class AboutComplex extends React.Component {
                             житлової та комерційної нерухомості, в портфелі Кретор-Буд
                             поняд 50 проектів.
                         </div>
-                        <div className={style.fifthButton}>Детальніше</div>
+                        <Link to='construction-technology' className={style.fifthButton}>Детальніше</Link>
                     </div>
                     <div className={style.fifthImage}/>
                 </div>

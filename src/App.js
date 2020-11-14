@@ -18,6 +18,8 @@ import CommercialProperty from './Container/CommercialProperty/CommercialPropert
 import AboutComplex from './Container/AboutComplex/AboutComplex';
 import GalleryPage from './Container/Gallery/Gallery';
 import House from './Container/House/House';
+import FloorPlan from './Container/FloorPlan/FloorPlan';
+import ConstructionTechnology from './Container/ConstructionTechnology/ConstructionTechnology';
 
 class App extends React.Component {
   render() {
@@ -35,11 +37,13 @@ class App extends React.Component {
           <Route path='/news/:id' component={NewsPage} />
           <Route path='/news' component={News} />
           <Route path='/infrastructure' component={Infrastructure} />
-          <Route path='/about-us/about-developer' component={AboutDeveloper} />
+          <Route path='/about-developer' component={AboutDeveloper} />
           <Route path='/commercial-property' component={CommercialProperty} />
           <Route path='/about-the-complex' component={AboutComplex} />
           <Route path='/gallery' component={GalleryPage} />
+          <Route path='/house/floor-plan' component={FloorPlan} />
           <Route path='/house' component={House} />
+          <Route path='/construction-technology' component={ConstructionTechnology} />
         </Switch>
         <Footer />
       </div>

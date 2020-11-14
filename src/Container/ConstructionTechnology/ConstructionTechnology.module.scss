@@ -1,0 +1,352 @@
+.technology{
+    padding: 120px 192px 130px 212px;
+    background: #1c1c1c;
+    position: relative;
+    .technologyImage{
+        width: 100%;
+        background-image: url(../../Images/docImage.jpg);
+        height: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        background-size: cover;
+    }
+    .infrastructureTitle{
+        font-size: 45px;
+        color: white
+    }
+    .technologyText{
+        font-size: 28px;
+        color: white;
+        width:60%
+    }
+    .technologyMainText{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+.technologyFirstBlock{
+    background: #222222;
+    padding: 0px 192px 0px 212px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .firstBlockImage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 700px;
+        width: 650px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: -100px;
+        z-index: 1;
+    }
+    .textTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+
+.li {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+    &::marker {
+        color: #ab9060;
+    }
+}
+
+.specifications{
+    display: flex;
+    padding: 220px 192px 130px 212px;
+    background: #1c1c1c;
+    .leftTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .specificationRight{
+        background-image: url(../../Images/introBotLanding.jpg);
+        width: 600px;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .line{
+        height: 1px;
+        flex-grow: 1;
+        border-top: dashed 1px rgba(255, 255, 255, 0.2);
+        margin: 0 15px;
+    }
+    .specificationLeft{
+        width: 570px;
+        margin-right: 200px;
+    }
+    .specificationsWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .specificationsValue{
+        font-size: 24px;
+        color: #ab9060;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .specifications,
+    .technologyFirstBlock,
+    .technology{
+        padding: 120px 10px 80px 10px;
+    }
+    .specifications{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 120px 10px 30px 10px;
+        .leftTitle{
+            font-size: 25px;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .specificationsValue,
+        li{
+            font-size: 18px;
+        }
+        .specificationLeft{
+            margin:0;
+            width:unset
+        }
+        .specificationRight{
+            width: 230px;
+            height: 190px;
+            margin-bottom:50px;
+            margin-left: 70px;
+            margin-top: -160px;
+        }
+        .specificationsWrapper{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .technologyFirstBlock{
+        padding: 60px 10px 50px 10px;
+        flex-direction: column;
+        height: unset;
+        align-items:flex-start;
+        .firstBlockImage{
+            height: 300px;
+            width: 250px;
+            position: unset;
+            margin-bottom: 50px;
+            margin-top: -100px;
+        }
+        .textTitle{
+            font-size: 25px;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        li{
+            font-size: 16px;
+        }
+    }
+    .technology{
+        padding: 80px 10px 80px 10px;
+        .technologyMainText{
+            flex-direction: column
+        }
+        .technologyImage{
+            height: 120px;
+            margin-bottom: 30px;
+        }
+        .technologyTitle{
+            font-size: 25px;
+            width:100%;
+            margin-bottom:35px;
+            br{
+                display: none;
+            }
+        }
+        .technologyText{
+            width:100%;
+            font-size: 18px;
+        }
+        .leftTitle{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .specifications,
+    .technologyFirstBlock,
+    .technology{
+        padding: 120px 40px 50px 40px;
+    }
+    .specifications{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .leftTitle{
+            font-size: 35px;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        .specificationsValue,
+        li{
+            font-size: 18px;
+        }
+        .specificationLeft{
+            margin:0;
+            width:60%
+        }
+        .specificationRight{
+            width: 410px;
+            height: 350px;
+            margin-bottom:50px
+        }
+    }
+    .technologyFirstBlock{
+        padding: 60px 40px 50px 40px;
+        flex-direction: column;
+        height: unset;
+        align-items:flex-start;
+        .firstBlockImage{
+            height: 400px;
+            width: 350px;
+            position: unset;
+            margin-bottom: 50px;
+        }
+        .textTitle{
+            font-size: 35px;
+        }
+        ul{
+            padding-left: 20px;
+        }
+        li{
+            font-size: 18px;
+        }
+    }
+    .technology{
+        .technologyMainText{
+            flex-direction: column
+        }
+        .technologyImage{
+            height: 280px
+        }
+        .technologyTitle{
+            font-size: 35px;
+            width:100%;
+            margin-bottom:35px;
+            br{
+                display: none;
+            }
+        }
+        .technologyText{
+            width:100%;
+            font-size: 24px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .technology{
+        padding: 120px 100px 60px 100px;
+        .technologyImage{
+            height: 280px
+        }
+    }
+    .technologyFirstBlock{
+        padding: 20px 100px 40px 100px;
+        .firstBlockImage{
+            height: 450px;
+            width: 400px;
+        }
+    .firstBlockText{
+        width: 44%;
+    }
+    }
+    .specifications{
+        padding: 120px 100px 60px 100px;
+        .leftTitle{
+            font-size: 35px;
+        }
+        .specificationsValue{
+            font-size: 18px;
+        }
+        .specificationRight{
+            width: 450px;
+            height: 300px;
+        }
+        .specificationLeft{
+            width: 570px;
+            margin-right:80px
+        }
+    }
+    .technology{
+        .technologyText{
+            font-size: 24px;
+        }
+        .technologyTitle{
+            font-size: 35px;
+        }
+    }
+    .technologyFirstBlock{
+        height: 500px;
+        .textTitle{
+            font-size: 35px;
+        }
+
+    }
+    .li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .technology{
+        padding: 120px 152px 100px 172px;
+    }
+    .technologyFirstBlock{
+        padding: 50px 152px 50px 172px;
+    }
+    .specifications{
+        padding: 140px 152px 100px 172px;
+        .leftTitle{
+            font-size: 35px;
+        }
+        .specificationsValue{
+            font-size: 18px;
+        }
+        .specificationRight{
+            width: 500px;
+            height: 350px;
+        }
+    }
+    .technology{
+        .technologyText{
+            font-size: 24px;
+        }
+        .technologyTitle{
+            font-size: 35px;
+        }
+    }
+    .technologyFirstBlock{
+        height: 500px;
+        .textTitle{
+            font-size: 35px;
+        }
+        .firstBlockImage{
+            height: 500px;
+            width: 450px;
+        }
+    }
+    .li{
+        font-size: 18px;
+    }
+}
