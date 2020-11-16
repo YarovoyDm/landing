@@ -28,6 +28,18 @@
     
 }
 
+.maps{
+    height: 600px;
+    background: #1c1c1c;
+    .noMapsImage{
+        background-image: url(../../Images/infraNoMaps.jpg);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .infrastructureFirst{
     background: #222222;
     padding: 0px 192px 150px 212px;
@@ -89,6 +101,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .bottonImage{
+        background-image: url(../../Images/gallery2.jpg);
+        height: 800px;
+        width: 750px;
+        margin-top: -190px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
     .secondWrapper{
         display: flex;
         flex-direction: column;
@@ -203,6 +223,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
+    .maps{
+        height: 500px;
+    }
     .specifications,
     .infrastructureFirstBlock,
     .infrastructure{
@@ -307,12 +330,19 @@
             margin-bottom: -70px;
             bottom: 100px;
         }
+        .bottonImage{
+            height: 250px;
+            width: 250px;
+            margin-top: -100px;
+            margin-bottom: 50px;
+        }
         .secondWrapper{
             width: 100%;
-            align-items: center;
+            align-items: flex-start;
         }
         .planTitle{
             font-size: 25px;
+            margin-bottom: 12px;
         }
         .itemText{
             font-size: 16px;
@@ -436,6 +466,12 @@
             width: 100%;
             align-items: center;
         }
+        .bottonImage{
+            height: 500px;
+            width: 550px;
+            margin-top: -130px;
+            margin-bottom: 50px;
+        }
         .planTitle{
             font-size: 35px;
         }
@@ -466,6 +502,9 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1365px){
+    .maps{
+        height: 450px;
+    }
     .infrastructure{
         padding: 120px 100px 60px 100px;
         .infrastructureImage{
@@ -505,6 +544,11 @@
         }
         .planTitle{
             font-size: 35px;
+        }
+        .bottonImage{
+            height: 500px;
+            width: 450px;
+            margin-top: -320px;
         }
         .itemText{
             font-size: 18px;
@@ -551,6 +595,9 @@
 }
 
 @media screen and (min-width: 1360px) and (max-width: 1919px){
+    .maps{
+        height: 440px;
+    }
     .infrastructure{
         padding: 120px 152px 100px 172px;
     }
@@ -584,6 +631,10 @@
         }
         .itemText{
             font-size: 18px;
+        }
+        .bottonImage{
+            height: 600px;
+            width: 550px;
         }
     }
     .specifications{

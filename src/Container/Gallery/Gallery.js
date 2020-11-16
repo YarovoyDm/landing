@@ -37,7 +37,7 @@ class GalleryPage extends React.Component {
                     </div>
                 </div>
                 <div className={style.galleryWrapper}>
-                <div>
+                    <div className={style.backDiv}>
                         <div className='landing-gallery-imagesWrapper'>
                             <div className='landing-gallery-nav'>
                                 <div className='gallery_nav-arrow' />

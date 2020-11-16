@@ -61,7 +61,11 @@
     background: #1c1c1c;
     padding-bottom: 300px;
     :global(.landing-gallery-imagesWrapper){
-        margin-top:unset
+        margin-top:unset;
+        margin-bottom:unset;
+    }
+    .backDiv{
+        background: #1c1c1c;
     }
 }
 

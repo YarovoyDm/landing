@@ -160,7 +160,7 @@ class Landing extends React.Component {
                                 центри і магазини, клініка та фітнес-клуби - у &#171;Krauss Gallery&#187;
                                 все необхідне на відстані кількох кроків. 
                             </div>
-                            {/* <div className='landing-itro-button'>Детальніше</div> */}
+                            <Link to='news' className='landing-itro-button'>Детальніше</Link>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@ class Landing extends React.Component {
                                 квартирах зі зручними плануваннями, високими<br />
                                 стелями та панорамними вікнами.<br />
                             </div>
-                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
+                            <Link to='/house' className='landing-house-button'>Обрати квартиру</Link>
                         </div>
                         <div className='landing-house-wrapper'>
                             <div className='landing-house-buttonWrapper'>
@@ -214,7 +214,7 @@ class Landing extends React.Component {
                                     за сучасними технологіями<br /> будівництва з
                                     використанням матеріалів<br /> високої якості<br />
                             </div>
-                            {/* <div className='landing-house-botButton'>Більше інформації</div> */}
+                            <Link to='/about-the-complex' className='landing-house-botButton'>Більше інформації</Link>
                         </div>
                     </div>
                 </div>
@@ -230,9 +230,9 @@ class Landing extends React.Component {
                             Статус Будівництва <br />
                             ЖК Krauss Gallery
                         </div>
-                        {/* <div className='landing_constractionStatus-button'>
+                        <Link to='/construction-progress' className='landing_constractionStatus-button'>
                             Детальніше
-                        </div> */}
+                        </Link>
                     </div>
                     <div className='landing_constractionStatus-image' />
                 </div>
@@ -262,10 +262,10 @@ class Landing extends React.Component {
                 <div className='landing_gallery'>
                     <div className='landing_gallery-header'>
                         <div className='landing_gallery-title'>Галерея</div>
-                        <div className='landing_gallery-wrapper'>
+                        <Link to='/gallery' className='landing_gallery-wrapper'>
                             <div className='landing_gallery-all'>Дивитись усі рендери</div>
                             <div className='landing_gallery-arrowIcon' />
-                        </div>
+                        </Link>
                     </div>
                     <div>
                         {/* <div className='landing-gallery-imagesWrapper'>
@@ -395,7 +395,7 @@ class Landing extends React.Component {
                                     центри і магазини, клініка та фітнес-клуби - у &#171;Krauss Gallery&#187;
                                     все необхідне на відстані кількох кроків. <br />
                                 </div>
-                                {/* <div className='landing-itro-button'>Детальніше</div> */}
+                                <Link to='news' className='landing-itro-button'>Детальніше</Link>
                             </div>
                         </div>
                     </div>
@@ -429,7 +429,7 @@ class Landing extends React.Component {
                                     квартирах зі зручними плануваннями, високими<br />
                                     стелями та панорамними вікнами.<br />
                             </div>
-                                {/* <div className='landing-house-button'>Обрати квартиру</div> */}
+                            <Link to='/house' className='landing-house-button'>Обрати квартиру</Link>
                             </div>
                             
                         </div>
@@ -453,7 +453,7 @@ class Landing extends React.Component {
                                     за сучасними технологіями будівництва з<br />
                                     використанням матеріалів високої якості<br />
                                 </div>
-                                {/* <div className='landing-house-botButton'>Більше інформації</div> */}
+                                <Link to='/about-the-complex' className='landing-house-botButton'>Більше інформації</Link>
                             </div>
                         </div>
                     </div>
@@ -471,9 +471,9 @@ class Landing extends React.Component {
                                 Статус Будівництва <br />
                                     ЖК Krauss Gallery
                             </div>
-                            {/* <div className='landing_constractionStatus-button'>
-                                Детальніше
-                                </div> */}
+                            <Link to='/construction-progress' className='landing_constractionStatus-button'>
+                            Детальніше
+                        </Link>
                         </div>
                     </div>
                     <div className='fifthBlock'>
@@ -506,10 +506,10 @@ class Landing extends React.Component {
                         <div className='landing_gallery'>
                             <div className='landing_gallery-header'>
                                 <div className='landing_gallery-title'>Галерея</div>
-                                <div className='landing_gallery-wrapper'>
-                                    <div className='landing_gallery-all'>Усі рендери</div>
-                                    <div className='landing_gallery-arrowIcon' />
-                                </div>
+                                <Link to='/gallery' className='landing_gallery-wrapper'>
+                            <div className='landing_gallery-all'>Дивитись усі рендери</div>
+                            <div className='landing_gallery-arrowIcon' />
+                        </Link>
                             </div>
                             <div>
                                 <Gallery />

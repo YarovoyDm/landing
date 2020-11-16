@@ -245,11 +245,11 @@
 
 .landing_house-topRight {
     margin-right: 152px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .landing_intro {
-    height: 1300px;
+    height: 1500px;
     background: #1c1c1c;
 }
 
@@ -812,7 +812,8 @@
     width: 230px;
     height: 250px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .secondBlock-absolute .landing_intro-title {
     margin: 25px 20px;
@@ -842,12 +843,12 @@
 }
 
 .thirdBlock {
-    height: 1380px;
+    height: 1580px;
     background: #222222;
 }
 
 .fourthBlock {
-    height: 460px;
+    height: 560px;
 }
 
 .fourthBlock .landing_constractionStatus-image {
@@ -891,7 +892,7 @@
 }
 
 .fifthBlock {
-    height: 710px;
+    height: 810px;
     background: #222222;
 }
 
