@@ -5,6 +5,9 @@ import GoogleMapReact from 'google-map-react';
 import style from './Contacts.module.scss'
 
 class Contacts extends React.Component {
+    state={
+        isGoogleMapsLoad: false
+    }
     static defaultProps = {
         center: {
             lat: 59.95,
@@ -12,6 +15,11 @@ class Contacts extends React.Component {
         },
         zoom: 11
     };
+
+    onMapChange =() => {
+        this.setState({isGoogleMapsLoad: true})
+    }
+
     render() {
         return (
             <>
@@ -61,14 +69,14 @@ class Contacts extends React.Component {
                         </div>
                     </div>
                 </div>
-                {/* <div className={style.maps}>
-                    <GoogleMapReact
-                        bootstrapURLKeys={{ key: 'AIzaSyBPgn79D6ksltA7YnaVr-Cr3zp1Kxe9Xsg'}}
+                <div className={style.maps}>
+                    {this.state.isGoogleMapsLoad ? <GoogleMapReact
+                        bootstrapURLKeys={{ key: 'AIzaSyA0iOxpzr8dGr-6kZ5p-daTSNPub-6Tpt4'}}
                         defaultCenter={this.props.center}
                         defaultZoom={this.props.zoom}
                     >
-                    </GoogleMapReact>
-                </div> */}
+                    </GoogleMapReact> : <div className={style.noMapsImage} onClick={()=> this.onMapChange()}/>}
+                </div>
                 <div className={style.advice}>
                     <div className={style.adviceLeft}>
                         <div className={style.leftTitle}>

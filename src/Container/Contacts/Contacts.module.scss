@@ -2,7 +2,7 @@
     padding: 120px 192px 130px 212px;
     background: #1c1c1c;
     position: relative;
-    
+
     .contactsHead{
         width: 100%;
         display: flex;
@@ -185,6 +185,14 @@
 }
 .maps{
     height: 600px;
+    background: #1c1c1c;
+    .noMapsImage{
+        background-image: url(../../Images/noMapsImage.jpg);
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){

@@ -6,8 +6,11 @@
     justify-content: space-between;
     color: white;
     padding-left: 30px;
-    padding-right: 30px;
     position: relative;
+}
+
+.header a{
+    color: white;
 }
 
 .header_info {
@@ -33,7 +36,6 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    display: none;
     justify-content: center;
     flex-direction: column;
 }

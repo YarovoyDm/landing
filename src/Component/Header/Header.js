@@ -1,5 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
+import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo'
 import './Header.css'
 
@@ -10,16 +11,17 @@ class Header extends React.Component {
         isHeaderMenuOpen: false
     }
 
-    componentDidMount(){
-        
+    onMenuLinkChange = () => {
+        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen})
+        document.body.style.overflow = 'visible'
     }
 
     onMenuChange = () => {
-        // const isMobile = window.screen.width <= 1024
-        // this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
-        //     this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
-        //     if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
-        // })
+        const isMobile = window.screen.width <= 1024
+        this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen },() => {
+            this.state.isHeaderMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+            if(!isMobile){this.state.isHeaderMenuOpen ? document.body.style.paddingRight = '17px' : document.body.style.paddingRight = '0px'}
+        })
     }
 
     render() {
@@ -29,20 +31,20 @@ class Header extends React.Component {
                     <div className='header_menu_left'>
                         <div className='footer_sitemap-info'>
                             <div className='footer_sitemap-left'>
-                                <div className='footer_sitemap-item'>Про комплекс</div>
-                                <div className='footer_sitemap-item'>Вибір планування</div>
-                                <div className='footer_sitemap-item'>Інфраструктура</div>
-                                <div className='footer_sitemap-item'>Хід будивництва</div>
-                                <div className='footer_sitemap-item'>Галерея</div>
-                                <div className='footer_sitemap-item'>Забудовник</div>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/about-the-complex' className='footer_sitemap-item'>Про комплекс</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/house' className='footer_sitemap-item'>Вибір планування</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/infrastructure' className='footer_sitemap-item'>Інфраструктура</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/construction-progress' className='footer_sitemap-item'>Хід будивництва</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/gallery' className='footer_sitemap-item'>Галерея</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/about-developer' className='footer_sitemap-item'>Забудовник</Link>
                             </div>
                             <div className='footer_sitemap-right'>
-                                <div className='footer_sitemap-item'>Паркінг</div>
-                                <div className='footer_sitemap-item'>Комерційна нерухомість</div>
-                                <div className='footer_sitemap-item'>Документи</div>
-                                <div className='footer_sitemap-item'>Умови придбання</div>
-                                <div className='footer_sitemap-item'>Новини та акції</div>
-                                <div className='footer_sitemap-item'>Контакти</div>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/parking' className='footer_sitemap-item'>Паркінг</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/commercial-property' className='footer_sitemap-item'>Комерційна нерухомість</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/documents' className='footer_sitemap-item'>Документи</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/news' className='footer_sitemap-item'>Новини та акції</Link>
+                                <Link onClick={() => this.onMenuLinkChange()} to='/contacts' className='footer_sitemap-item'>Контакти</Link>
                             </div>
                         </div>
                     </div>
@@ -63,9 +65,9 @@ class Header extends React.Component {
                         </div>
                         <div className='menu-right-button'>Замовити дзвінок</div>
                         <div className='menu-right-icons'>
-                            <div className='menu-right-wrap'><div className='menu-right-facebook' /></div>
-                            <div className='menu-right-wrap'><div className='menu-right-instagram' /></div>
-                            <div className='menu-right-wrap'><div className='menu-right-telegram' /></div>
+                            <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='menu-right-wrap'><div className='menu-right-facebook' /></a>
+                            <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='menu-right-wrap'><div className='menu-right-instagram' /></a>
+                            <a target='_blank' href='https://t.me/kreator_bud' className='menu-right-wrap'><div className='menu-right-telegram' /></a>
                         </div>
                     </div>
                     <div className='header_menu_bottomMobile'>
@@ -85,9 +87,9 @@ class Header extends React.Component {
                             </div>
                             <div>
                                 <div className='menu-right-icons'>
-                                    <div className='menu-right-wrap'><div className='menu-right-facebook' /></div>
-                                    <div className='menu-right-wrap'><div className='menu-right-instagram' /></div>
-                                    <div className='menu-right-wrap'><div className='menu-right-telegram' /></div>
+                                    <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='menu-right-wrap'><div className='menu-right-facebook' /></a>
+                                    <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='menu-right-wrap'><div className='menu-right-instagram' /></a>
+                                    <a target='_blank' href='https://t.me/kreator_bud' className='menu-right-wrap'><div className='menu-right-telegram' /></a>
                                 </div>
                                 <div className='menu-right-button'>Замовити дзвінок</div>
                             </div>

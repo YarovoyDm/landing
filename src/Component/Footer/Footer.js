@@ -50,7 +50,7 @@ class Footer extends React.Component {
                                 <Link to='/commercial-property' className='footer_sitemap-item'>Комерційна нерухомість</Link>
                                 <Link to='/documents' className='footer_sitemap-item'>Документи</Link>
                                 <Link to='/terms-of-purchase' className='footer_sitemap-item'>Умови придбання</Link>
-                                <Link to='/news'className='footer_sitemap-item'>Новини та акції</Link>
+                                <Link to='/news' className='footer_sitemap-item'>Новини та акції</Link>
                                 <Link to='/contacts' className='footer_sitemap-item'>Контакти</Link>
                             </div>
                         </div>
