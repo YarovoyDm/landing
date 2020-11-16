@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
 import Subscribe from '../../Component/Subscribe/Subscribe'
 import style from './NewsPage.module.scss'
 
@@ -8,6 +9,7 @@ class NewsPage extends React.Component {
         return (
             <>
                 <div className={style.newsPage}>
+                <Breadcrumbs current='ЗМІНИ В ГРАФІКУ РОБОТИ' steps={3} secondStep={"НОВИНИ ТА АКЦІЇ"} secondStepUrl={'/news'}/>
                     <div className={style.newsPageHeader}>
                         <div className={style.newsPageLabel}>
                             Знижки та акції
@@ -25,19 +27,26 @@ class NewsPage extends React.Component {
                             <br />
                             <br />
                             Поштова площа з неймовірними краєвидами на Дніпро; Контрактова площа
-                            , на якій завжди вирує життя; колесо огляду, яке покаже Вам Поділ 
+                            , на якій завжди вирує життя; колесо огляду, яке покаже Вам Поділ
                             із нових ракурсів; Андріївський узвіз із своїм неповторним колоритом
                             створить романтичний та творчий настрій на всі вихідні!
                             <br />
                             <br />
-                            Чудове розташування комплексу &#171;Krauss Gallery&#187; - це можливість насолоджуватись 
+                            Чудове розташування комплексу &#171;Krauss Gallery&#187; - це можливість насолоджуватись
                             столицею і вдень і вночі
                         </div>
                     </div>
                     <div className={style.share}>
                         <div className={style.shareText}>Поділитись:</div>
-                        <div className={style.social}/>
-                        <div className={style.social}/>
+                        <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className={style.socialFacebook}>
+                            <div className={style.facebookIcon} />
+                        </a>
+                        <a target='_blank' href='https://www.instagram.com/krauss.gallery' className={style.socialInstagram}>
+                            <div className={style.instagramIcon} />
+                        </a>
+                        <a target='_blank' href='https://t.me/kreator_bud' className={style.socialTelegram}>
+                            <div className={style.telegramIcon} />
+                        </a>
                     </div>
                 </div>
                 <div className={style.recNews}>

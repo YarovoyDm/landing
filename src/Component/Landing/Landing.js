@@ -1,5 +1,6 @@
 import React from 'react'
 import Subscribe from '../Subscribe/Subscribe';
+import { Link } from 'react-router-dom';
 
 import './Landing.css'
 
@@ -27,7 +28,7 @@ class Landing extends React.Component {
                                 БУТИ<br />
                                 ОСОБИСТІСТЮ
                             </div>
-                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
+                            <Link to='/house' className='landing-house-button'>Обрати квартиру</Link>
                             <div className='landing-intro-goDownButton'>
                                 <Arrow />
                             </div>
@@ -253,9 +254,9 @@ class Landing extends React.Component {
                             <br />Від великих торгово-розважальних<br /> центрів
                             до невеликих затишних кав'ярень<br />
                         </div>
-                        {/* <div className='landing-infrastructure-button'>
+                        <Link to='/infrastructure' className='landing-infrastructure-button'>
                             Більше інформації
-                        </div> */}
+                        </Link>
                     </div>
                 </div>
                 <div className='landing_gallery'>
@@ -363,7 +364,7 @@ class Landing extends React.Component {
                                 БУТИ<br />
                                 ОСОБИСТІСТЮ
                             </div>
-                            {/* <div className='landing-house-button'>Обрати квартиру</div> */}
+                            <Link to='/house' className='landing-house-button'>Обрати квартиру</Link>
                         </div>
                         <div className="secondBlock-data">
                             
@@ -495,9 +496,9 @@ class Landing extends React.Component {
                                     Від великих торгово-розважальних центрів<br />
                                     до невеликих затишних кав'ярень<br />
                                 </div>
-                                {/* <div className='landing-infrastructure-button'>
+                                <Link to='/infrastructure' className='landing-infrastructure-button'>
                                     Більше інформації
-                        </div> */}
+                                </Link>
                             </div>
                         </div>
                     </div>

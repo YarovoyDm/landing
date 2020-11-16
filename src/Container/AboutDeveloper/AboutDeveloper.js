@@ -3,12 +3,14 @@ import OtherSlider from '../../Component/OtherSlider/OtherSlider';
 import Subscribe from '../../Component/Subscribe/Subscribe';
 import { Link } from 'react-router-dom';
 import style from './AboutDeveloper.module.scss'
+import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
 
 class AboutDeveloper extends React.Component {
     render() {
         return (
             <>
                 <div className={style.aboutDeveloper}>
+                    <Breadcrumbs current='ПРО ЗАБУДОВНИКА'/>
                     <div className={style.aboutImage} />
                     <div className={style.aboutTitleBlock}>
                         <div className={style.titleLeft}>

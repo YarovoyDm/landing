@@ -8,6 +8,7 @@
         align-items: center;
         margin-bottom: 70px;
     }
+    
     .newsItem{
         display: flex;
         flex-direction: column;
@@ -64,6 +65,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .facebookIcon{
+        background-image: url(../../Images/contactFacebook.svg);
+        background-size: cover;
+        width: 8px;
+        height: 16px;
+    }
+    .instagramIcon{
+        background-image: url(../../Images/contactInstagram.svg);
+        width: 16px;
+        height: 16px;
+    }
+    .telegramIcon{
+        background-image: url(../../Images/contactTelegram.svg);
+        width: 16px;
+        height: 14px;
+    }
+    .socialFacebook,
+    .socialInstagram,
+    .socialTelegram{
+        cursor: pointer;
+        width:40px;
+        height: 40px;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ab9060;
+        margin-right: 20px;
+    }
     .share{
         display: flex;
         width: 60%;
@@ -133,6 +163,7 @@
             height: 120px;
             margin-bottom: 40px;
         }
+        
         .newsPageHeader{
             margin-bottom: 50px;
         }

@@ -7,6 +7,45 @@
         margin-left: 5px;
         margin-right: 5px;
     }
+    .parkingPopup{
+        z-index: 9999999999;
+        left:0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .popupHeader{
+        width: 100%;
+        height:100px;
+        display: flex;
+        justify-content:flex-end;
+    }
+    .closeIcon{
+        background-image: url(../../Images/menuCross.svg);
+        background-repeat: no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+    .headerClose{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        cursor: pointer;
+    }
+    .popupImage{
+        background-image: url(../../Images/newsFirstLanding.jpg);
+        width: 400px;
+        height: 400px;
+        background-size: cover;
+    }
     .parkingHead{
         display: flex;
         width: 100%;
@@ -22,6 +61,12 @@
         font-size: 45px;
         color: white;
         margin-bottom:80px
+    }
+    .chooseArrow{
+        background-image: url(../../Images/galleryArrowLanding.svg);
+        height: 14px;
+        width: 22px;
+        margin-left: 15px;
     }
     .sortTitle,
     .sortValue{
@@ -40,6 +85,7 @@
     }
     .mainItem{
         font-size: 28px;
+        cursor: pointer;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -72,10 +118,9 @@
     }
     .itemChoose{
         font-size: 24px;
-    }
-    .itemChoose{
-        display: block;
-        width:10%;
+        display: flex;
+        width:15%;
+        align-items: center;
         cursor: pointer;
         height: 100%;
         text-align: right;

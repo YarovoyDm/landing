@@ -7,13 +7,22 @@
         font-size: 45px;
     }
     .floorImage{
-        background-image: url(../../Images/floorPlan.jpg);
-        background-size: cover;
         width:850px;
         height: 760px;
         margin-top: -80px;
     }
 }
+
+:global(.floorPlan){
+    fill:#ab9060;
+    opacity: 0.01;
+    cursor: pointer;
+    &:hover{
+        fill:#ab9060;
+        opacity: 0.5;
+    }
+}
+
 @media screen and (width: 320px){
     .floorPlan{
         .floorImage{

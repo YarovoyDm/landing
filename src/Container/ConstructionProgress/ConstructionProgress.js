@@ -1,10 +1,19 @@
 import React from 'react'
+import ReactPlayer from 'react-player'
 import style from './ConstructionProgress.module.scss'
 
 import constructionVideo from '../../Images/constractionStatus.jpg'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
 
 class ConstructionProgress extends React.Component {
+
+    state={
+        camera: 1
+    }
+
+    onCameraChange = (cameraType) => {
+        this.setState({ camera: cameraType})
+    }
     render() {
         return (
             <div className={style.constructionProgress}>
@@ -18,11 +27,13 @@ class ConstructionProgress extends React.Component {
                             землю до самого горизонту.
                         </div>
                         <div className={style.leftButtons}>
-                            <div className={style.cameraButton}>Камера 1</div>
-                            <div className={style.cameraButton}>Камера 2</div>
+                            <div className={style.cameraButton} onClick={() => this.onCameraChange(1)}>Камера 1</div>
+                            <div className={style.cameraButton} onClick={() => this.onCameraChange(2)}>Камера 2</div>
                         </div>
                     </div>
-                    <img src={constructionVideo} className={style.video}/>
+                    <div className={style.video}>
+                        <ReactPlayer className={style.player} url={this.state.camera === 1 ? 'https://www.youtube.com/watch?v=ysz5S6PUM-U' : 'https://www.youtube.com/watch?v=saQBW9Xs5eI'} />
+                    </div>
                 </div>
                 <div className={style.bottom}>
                     <div className={style.otherWrapper}>

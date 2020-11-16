@@ -1,0 +1,418 @@
+.apartament{
+    padding: 0px 0px 0px 212px;
+    background: #1c1c1c;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .apartamentLeft{
+        display: flex;
+        flex-direction: column;
+        width: 560px;
+        padding-top: 120px;
+        padding-bottom:100px
+    }
+    .leftHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:30px
+    }
+    .headerType{
+        font-size: 45px;
+        color: white
+    }
+    .headerPrice{
+        font-size: 16px;
+        color:#ab9060
+    }
+    .leftTitle{
+        display: flex;
+        align-items:flex-start;
+        padding-left: 20px;
+        height: 100px;
+        width:100%;
+        background: #222222;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.6);
+        margin-bottom:40px
+    }
+    .titleItem{
+        width: calc(100% / 3);
+        padding:25px;
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .titleHead{
+        font-size: 14px;
+        color: white;
+    }
+    .titleValue{
+        font-size: 28px;
+        color:#ab9060
+    }
+    .specificationsWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:20px
+    }
+    .specificationsValue{
+        font-size: 24px;
+        color: #ab9060;
+    }
+    .line{
+        height: 1px;
+        flex-grow: 1;
+        border-top: dashed 1px rgba(255, 255, 255, 0.2);
+        margin: 0 15px;
+    }
+    .mainTitle{
+        font-size: 16px;
+        color: white;
+    }
+    .leftRequestButton{
+        width:100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        margin-top:70px;
+        background:#ab9060;
+        margin-bottom:20px
+    }
+    .buttonsWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .leftConditionsButton,
+    .leftPdfButton{
+        width:calc((100% - 20px) / 2);
+        height: 60px;
+        line-height: 60px;
+        color: white;
+        border: solid 1px white;
+        text-align: center;
+        cursor: pointer;
+    }
+    .leftConditionsButton{
+        margin-right: 20px;
+    }
+    .apartamentRight{
+        width:900px;
+        background:white;
+        padding: 40px 80px 180px 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rightImage{
+        width:400px;
+        height:560px;
+        background-image: url(../../Images/commercialA02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-self: center;
+    }
+    .righHeader{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .headerWindowButton{
+        height: 100%;
+        width:130px;
+        border: solid 1px black;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px
+    }
+    .headerButtons{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .buttonTechnical{
+        height: 60%;
+        font-size: 24px;
+        color:#ab9060;
+        border-bottom: solid 1px #ab9060;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    .button3D{
+        height: 60%;
+        font-size: 24px;
+        color:#c8c8c8;
+        border-bottom: solid 1px rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    .windIcon{
+        position: absolute;
+        background-image: url(../../Images/windIcon.svg);
+        width:71px;
+        height: 46px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 150px;
+        left: 50px;
+    }
+    .currenApartamentIcon{
+        position: absolute;
+        background-image: url(../../Images/currentApartamentIcon.svg);
+        width:72px;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 50px;
+        left: 50px;
+    }
+    .saleBlock{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 127px;
+        left: 50px;
+        width:220px;
+        height: 40px;
+        border-radius: 40px;
+        background: rgba(171, 144, 96, 0.2)
+    }
+    .starIcon{
+        background-image: url(../../Images/starIcon.svg);
+        width:14px;
+        height: 14px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 15px;
+    }
+    .saleText{
+        color: #ab9060
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .apartament{
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        .apartamentLeft{
+            width: calc(100% - 20px);
+            padding-right: 10px;
+            padding-left:10px
+        }
+        .leftTitle{
+            padding-left: 0px;
+        }
+        .apartamentRight{
+            width: calc(100% - 20px);
+            padding: 50px 10px 100px 10px;
+            height: 450px;
+        }
+        .titleValue{
+            font-size: 24px;
+        }
+        .titleHead{
+            font-size: 12px;
+        }
+        .titleItem{
+            padding:25px 10px
+        }
+        .headerType{
+            font-size: 35px;
+        }
+        .specificationsValue,
+        .mainTitle{
+            font-size: 14px;
+        }
+        .leftRequestButton{
+            margin-top: 30px;
+        }
+        .button3D,
+        .buttonTechnical{
+            font-size: 14px;
+        }
+        .saleBlock,
+        .headerWindowButton{
+            display: none;
+        }
+        .saleBlock{
+            left: 40px
+        }
+        .rightImage{
+            width: 230px;
+            height: 340px;
+        }
+        .windIcon{
+            bottom: 22px;
+            left: 10px;
+            width: 51px;
+            height: 33px;
+        }
+        .currenApartamentIcon{
+            bottom: 22px;
+            left: 110px;
+            width: 51px;
+            height: 46px;
+        }
+        .titleValue{
+            font-size: 18px;
+        }
+        .leftTitle{
+            height: 80px;
+        }
+        .leftConditionsButton,
+        .leftPdfButton{font-size: 14px;}
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .apartament{
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        .apartamentLeft{
+            width: 560px;
+        }
+        .mobileWrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .mobileGroup{
+            width:calc((100% - 20px) / 2);
+            &:nth-child(1){
+                margin-right:20px
+            }
+        }
+        .buttonsWrapper,
+        .leftRequestButton{
+            display: none;
+        }
+        .apartamentRight{
+            width: calc(100% - 80px);
+            padding: 50px 40px 100px 40px;
+            height: 710px;
+        }
+        .titleValue{
+            font-size: 24px;
+        }
+        .titleHead{
+            font-size: 12px;
+        }
+        .titleItem{
+            padding:25px 10px
+        }
+        .headerType{
+            font-size: 35px;
+        }
+        .specificationsValue,
+        .mainTitle{
+            font-size: 14px;
+        }
+        .leftRequestButton{
+            margin-top: 30px;
+        }
+        .button3D,
+        .buttonTechnical{
+            font-size: 18px;
+        }
+        .saleBlock{
+            left: 40px
+        }
+        .rightImage{
+            width: 370px;
+            height: 510px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .apartament{
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        .apartamentLeft{
+            width: 560px;
+        }
+        .apartamentRight{
+            width: calc(100% - 200px);
+            padding: 50px 100px 100px 100px;
+            height: 710px;
+        }
+        .titleValue{
+            font-size: 24px;
+        }
+        .titleHead{
+            font-size: 12px;
+        }
+        .titleItem{
+            padding:25px 10px
+        }
+        .headerType{
+            font-size: 35px;
+        }
+        .specificationsValue,
+        .mainTitle{
+            font-size: 14px;
+        }
+        .leftRequestButton{
+            margin-top: 30px;
+        }
+        .button3D,
+        .buttonTechnical{
+            font-size: 18px;
+        }
+        .saleBlock{
+            left: 100px
+        }
+        .rightImage{
+            width: 370px;
+            height: 510px;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .apartament{
+        padding: 0px 0px 0px 172px;
+        .apartamentLeft{
+            width:355px
+        }
+        .apartamentRight{
+            width: 600px;
+            padding: 40px 50px 180px 50px;
+        }
+        .titleValue{
+            font-size: 24px;
+        }
+        .titleHead{
+            font-size: 12px;
+        }
+        .titleItem{
+            padding:25px 10px
+        }
+        .headerType{
+            font-size: 35px;
+        }
+        .specificationsValue,
+        .mainTitle{
+            font-size: 14px;
+        }
+        .leftRequestButton{
+            margin-top: 30px;
+        }
+        .button3D,
+        .buttonTechnical{
+            font-size: 18px;
+        }
+        .rightImage{
+            width: 370px;
+            height: 510px;
+        }
+    }
+}

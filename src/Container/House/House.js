@@ -1,14 +1,25 @@
 import React from 'react'
+import * as _ from 'lodash'
+import { ReactComponent as HouseSvg } from '../../Images/house.svg';
+import {createBrowserHistory} from '../../history'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
 import style from './House.module.scss'
 
 class House extends React.Component {
+
+    componentDidMount(){
+        const paths = document.getElementsByClassName('floor');
+        _.forEach(paths, path => path.addEventListener('click',() => {
+            this.props.history.push('/house/floor-plan');
+        }))
+    }
+
     render() {
         return (
             <div className={style.house}>
-                <Breadcrumbs current='БУДИНОК'/>
+                <Breadcrumbs current='БУДИНОК' blackMode/>
                 <div className={style.houseTitle}>ОБЕРІТЬ ПОВЕРХ</div>
-                <div className={style.houseImage}/>
+                <HouseSvg className={style.houseImage}/>
             </div>
         )
     }

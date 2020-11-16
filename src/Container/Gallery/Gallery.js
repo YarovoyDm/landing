@@ -1,5 +1,6 @@
 import React from 'react'
 import cn from 'classnames'
+import ReactPlayer from 'react-player'
 import Gallery from '../../Component/Gallery/Gallery';
 import style from './Gallery.module.scss'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
@@ -23,7 +24,9 @@ class GalleryPage extends React.Component {
                                 поняд 50 проектів.
                             </div>
                         </div>
-                        <div className={style.topBottom}/>
+                        <div className={style.topBottom}>
+                            <ReactPlayer className={style.player} url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+                        </div>
                     </div>
                     <div className={style.galleryBottom}>
                         <div className={style.botomHeader}>

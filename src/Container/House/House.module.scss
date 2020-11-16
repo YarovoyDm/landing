@@ -7,11 +7,20 @@
         font-size: 45px;
     }
     .houseImage{
-        background-image: url(../../Images/house.jpg);
-        background-size: cover;
-        width:850px;
-        height: 840px;
+        width:600px;
+        height: 600px;
         margin-top: -80px;
+    }
+    
+}
+
+:global(.floor){
+    fill:#ab9060;
+    opacity: 0.01;
+    cursor: pointer;
+    &:hover{
+        fill:#ab9060;
+        opacity: 0.5;
     }
 }
 

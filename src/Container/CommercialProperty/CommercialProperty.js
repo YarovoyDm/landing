@@ -3,9 +3,11 @@ import ReactSlider from 'react-slider'
 import { Range } from 'rc-slider';
 import { Slider } from '@material-ui/core'
 import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
 import Checkbox from '@material-ui/core/Checkbox';
 import 'rc-slider/assets/index.css';
 import style from './CommercialProperty.module.scss'
+import { Link } from 'react-router-dom';
 
 class CommercialProperty extends React.Component {
 
@@ -38,12 +40,13 @@ class CommercialProperty extends React.Component {
     }
 
     render() {
+        console.log({con: this.props.match})
         return (
             <div className={style.commercialProperty}>
+                <Breadcrumbs current={this.props.match.path === '/layot' ? "ПЛАНУВАННЯ КВАРТИР" : "КОМЕРЦІЙНА НЕРУХОМІСТЬ"}/>
                 <div className={style.top}>
                     <div className={style.topTitle}>
-                        КОМЕРЦІЙНА
-                        НЕРУХОМІСТЬ
+                    {this.props.match.path === '/layot' ? 'ПЛАНУВАННЯ КВАРТИР' : 'КОМЕРЦІЙНА НЕРУХОМІСТЬ'}
                     </div>
                     <div className={style.topFilter}>
                         <div className={style.filterTitle}>
@@ -137,7 +140,7 @@ class CommercialProperty extends React.Component {
                     </div>
                     <div className={style.bottomData}>
                         <div className={style.bottomDataWrapper}>
-                            <div className={style.item}>
+                            <Link to={this.props.match.path === '/layot' ? '/layot/A0' : '/commercial-property/A0'} className={style.item}>
                                 <div className={style.itemTop}>
                                     <div className={style.itemImage} />
                                     <div className={style.itemType}>A02</div>
@@ -154,7 +157,7 @@ class CommercialProperty extends React.Component {
                                         <div className={style.botValue}>від 2 000 000</div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className={style.item}>
                                 <div className={style.itemTop}>
                                     <div className={style.itemImage} />

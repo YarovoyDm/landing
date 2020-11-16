@@ -7,6 +7,10 @@
     flex-direction: column;
 }
 
+.footer a{
+    color: white;
+}
+
 .footer_bottom {
     height: 80px;
     display: flex;

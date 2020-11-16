@@ -7,7 +7,7 @@ class ConstructionTechnology extends React.Component {
         return (
             <>
                 <div className={style.technology}>
-                    <Breadcrumbs current='ИНФРАСТРУКТУРА'/>
+                    <Breadcrumbs current='ТЕХНОЛОГІЯ БУДІВНИЦТВА'/>
                     <div className={style.technologyImage} />
                     <div className={style.technologyMainText}>
                         <div className={style.technologyTitle}>

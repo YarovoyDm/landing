@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
 import Gallery from '../../Component/Gallery/Gallery';
 import style from './AboutComplex.module.scss'
 
@@ -8,6 +9,7 @@ class AboutComplex extends React.Component {
         return (
             <>
                 <div className={style.aboutComplex}>
+                <Breadcrumbs current='ПРО КОМПЛЕКС' />
                     <div className={style.complexImage} />
                     <div className={style.complexHeader}>
                         <div className={style.complexTitle}>
@@ -154,13 +156,13 @@ class AboutComplex extends React.Component {
                 <div className='landing_gallery'>
                     <div className='landing_gallery-header'>
                         <div className='landing_gallery-title'>Галерея</div>
-                        <div className='landing_gallery-wrapper'>
+                        <Link to='/gallery' className='landing_gallery-wrapper'>
                             <div className='landing_gallery-all'>
                                 <div className={style.PcText}>Дивитись усі</div>
                                 <div className={style.mobileText}>Усі</div> рендери
                             </div>
                             <div className='landing_gallery-arrowIcon' />
-                        </div>
+                        </Link>
                     </div>
                     <div>
                         <div className='landing-gallery-imagesWrapper'>
