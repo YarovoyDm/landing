@@ -39,6 +39,16 @@
     .infoEmailPhone{
         margin-bottom: 35px
     }
+    .infoAddress{
+        a{
+            color:white
+        }
+    }
+    .infoEmailPhone{
+        a{
+            color:white
+        }
+    }
     .infoCallButton{
         width:177px;
         height: 60px;
@@ -181,6 +191,8 @@
         text-align: center;
         line-height:60px;
         cursor: pointer;
+        background: #ab9060;
+        outline: none;
     }
 }
 .maps{

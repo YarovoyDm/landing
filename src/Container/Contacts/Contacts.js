@@ -36,7 +36,7 @@ class Contacts extends React.Component {
                             <div className={style.infoLine} />
                             <div className={style.infoAddress}>
                                 09100<br />
-                                м. Київ, вул. Круглоуніверситетська, 5-7
+                                <a target='_blank' href='https://maps.google.com/maps?q=Дегтярівська, 17-19'>м. Київ, вул. Круглоуніверситетська, 5-7</a>
                             </div>
                             <div className={style.infoSchedule}>
                                 Пн-Пт: 10:00 - 19:00<br />
@@ -49,8 +49,8 @@ class Contacts extends React.Component {
                             </div>
                             <div className={style.infoLine} />
                             <div className={style.infoEmailPhone}>
-                                krauss@gmail.com<br />
-                                096 453 45 64
+                                <a href="mailto:krauss@gmail.com">krauss@gmail.com</a><br />
+                                <a href='tel:+38 (044) 299 56 62'>096 453 45 64</a>
                             </div>
                             <div className={style.infoCallButton}>
                                 Замовити дзвінок
@@ -88,17 +88,17 @@ class Contacts extends React.Component {
                             отримайте відповідь протягом робочого дня
                         </div>
                     </div>
-                    <div className={style.adviceRight}>
+                    <form className={style.adviceRight}>
                         <div className={style.rightInputs}>
-                            <input placeholder="Ім'я" className={style.inputName}/>
+                            <input type='text' placeholder="Ім'я" className={style.inputName} required/>
                             <div className={style.rightShortInputs}>
-                                <input placeholder="Телефон" className={style.inputPhone}/>
-                                <input placeholder="Email" className={style.inputEmail}/>
+                                <input type='tel' placeholder="Телефон" className={style.inputPhone} required/>
+                                <input type='email' placeholder="Email" className={style.inputEmail} required/>
                             </div>
                             <textarea placeholder="Повідомлення" className={style.rightMessage}/>
                         </div>
-                        <div className={style.rightButton}>Відправити</div>
-                    </div>
+                        <button className={style.rightButton}>Відправити</button>
+                    </form>
                 </div>
             </>
         )

@@ -56,18 +56,18 @@ class TermsOfPurchase extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={style.feedbackRight}>
+                        <form className={style.feedbackRight}>
                             <div className={style.feedbackTitle}>Зворотній зв'язок</div>
                             <div className={style.rightInputs}>
-                                <input placeholder="Ім'я" className={style.inputName} />
+                                <input type='text' required placeholder="Ім'я" className={style.inputName} />
                                 <div className={style.rightShortInputs}>
-                                    <input placeholder="Телефон" className={style.inputPhone} />
-                                    <input placeholder="Email" className={style.inputEmail} />
+                                    <input type='tel' required placeholder="Телефон" className={style.inputPhone} />
+                                    <input type='email' required placeholder="Email" className={style.inputEmail} />
                                 </div>
                                 <textarea placeholder="Повідомлення" className={style.rightMessage} />
                             </div>
-                            <div className={style.rightButton}>Відправити</div>
-                        </div>
+                            <button className={style.rightButton}>Відправити</button>
+                        </form>
                     </div>
                 </div>
             </>

@@ -53,15 +53,14 @@ class Header extends React.Component {
                         <div className='menu-right-title'>Офіс продажу:</div>
                         <div className='menu-right-text'>
                             09100 м. Київ,<br />
-                            вул. Круглоуніверситетська,<br />
-                            будинок 5-7<br /><br />
+                            <a target='_blank' href='https://maps.google.com/maps?q=Дегтярівська, 17-19'>м. Київ, вул. Круглоуніверситетська,<br /> 5-7</a><br /><br />
                             Пн-Пт: 10:00 - 19:00<br />
                             Сб-Нд: 10:00 - 18:00
                         </div>
                         <div className='menu-right-title'>Зв'язок з нами:</div>
                         <div className='menu-right-text'>
-                            krauss@gmail.com<br />
-                            096 453 45 64
+                            <a href="mailto:krauss@gmail.com">krauss@gmail.com</a><br />
+                            <a href='tel:+38 (044) 299 56 62'>096 453 45 64</a>
                         </div>
                         <div className='menu-right-button'>Замовити дзвінок</div>
                         <div className='menu-right-icons'>
