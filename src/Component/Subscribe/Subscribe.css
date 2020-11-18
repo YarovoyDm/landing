@@ -45,7 +45,10 @@
     letter-spacing: 0.3px;
     cursor: pointer;
     text-align: center;
-    line-height: 50px
+    line-height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px){

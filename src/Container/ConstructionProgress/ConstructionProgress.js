@@ -4,6 +4,7 @@ import style from './ConstructionProgress.module.scss'
 
 import constructionVideo from '../../Images/constractionStatus.jpg'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
+import { Link } from 'react-router-dom'
 
 class ConstructionProgress extends React.Component {
 
@@ -37,30 +38,30 @@ class ConstructionProgress extends React.Component {
                 </div>
                 <div className={style.bottom}>
                     <div className={style.otherWrapper}>
-                        <div className={style.item}>
+                        <Link to='/construction-progress' className={style.item}>
                             <div className={style.otherImage}/>
                             <div className={style.date}>20/08/2020</div>
                             <div className={style.otherTitle}>
                                 Хід будівництва за серпень
                             </div>
                             <div className={style.arrow} />
-                        </div>
-                        <div className={style.item}>
+                        </Link>
+                        <Link to='/construction-progress'  className={style.item}>
                             <div className={style.otherImage} />
                             <div className={style.date}>20/08/2020</div>
                             <div className={style.otherTitle}>
                                 Хід будівництва за липень
                             </div>
                             <div className={style.arrow} />
-                        </div>
-                        <div className={style.item}>
+                        </Link>
+                        <Link to='/construction-progress'  className={style.item}>
                             <div className={style.otherImage} />
                             <div className={style.date}>20/08/2020</div>
                             <div className={style.otherTitle}>
                                 Хід будівництва за червень
                             </div>
                             <div className={style.arrow} />
-                        </div>
+                        </Link>
                     </div>
                     <div className={style.moreButton}>Показати більше</div>
                 </div>

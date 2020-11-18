@@ -4,12 +4,47 @@ import ReactPlayer from 'react-player'
 import Gallery from '../../Component/Gallery/Gallery';
 import style from './Gallery.module.scss'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
+import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 
 class GalleryPage extends React.Component {
+    state={
+        tabValue: 0
+    }
+
+    handleChange = (index) => {
+        this.setState({ tabValue: index })
+    }
+
+    rednerTabInfo = () => {
+        if (this.state.tabValue === 0) {
+            return <div className={style.backDiv}>
+                <div className='landing-gallery-imagesWrapper'>
+                    <div className='landing-gallery-nav'>
+                        <div className='gallery_nav-arrow' />
+                        <div className='gallery_nav-arrowRotate' />
+                    </div>
+                </div>
+                <Gallery />
+                <div>
+                    <div className='landing-gallery-progressLine'>
+                        <div className='landing-gallery-currentProgress' />
+                    </div>
+                </div>
+            </div>
+        }
+        if (this.state.tabValue === 1) {
+            return <div className={style.inImage} />
+        }
+        if (this.state.tabValue === 2) {
+            return <div className={style.inImage} />
+        }
+    }
+
     render() {
         return (
             <>
                 <div className={style.galleryPage}>
+                    {/* <GalleryPopup /> */}
                     <Breadcrumbs current='ГАЛЕРЕЯ'/>
                     <div className={style.galleryTop}>
                         <div className={style.topLeft}>
@@ -30,27 +65,14 @@ class GalleryPage extends React.Component {
                     </div>
                     <div className={style.galleryBottom}>
                         <div className={style.botomHeader}>
-                            <div className={style.headerItemActive}>Екстер'єр</div>
-                            <div className={style.headerItem}>Інтер'єр</div>
-                            <div className={style.headerItem}>Лобі</div>
+                            <div className={cn(style.headerItemActive, { [style.activeButton]: this.state.tabValue === 0 })} onClick={() => this.handleChange(0)}>Екстер'єр</div>
+                            <div className={cn(style.headerItem, {[style.activeButton]: this.state.tabValue === 1})} onClick={() => this.handleChange(1)}>Інтер'єр</div>
+                            <div className={cn(style.headerItem, {[style.activeButton]: this.state.tabValue === 2})} onClick={() => this.handleChange(2)}>Лобі</div>
                         </div>
                     </div>
                 </div>
                 <div className={style.galleryWrapper}>
-                    <div className={style.backDiv}>
-                        <div className='landing-gallery-imagesWrapper'>
-                            <div className='landing-gallery-nav'>
-                                <div className='gallery_nav-arrow' />
-                                <div className='gallery_nav-arrowRotate' />
-                            </div>
-                        </div>
-                        <Gallery />
-                        <div>
-                            <div className='landing-gallery-progressLine'>
-                                <div className='landing-gallery-currentProgress' />
-                            </div>
-                        </div>
-                    </div>
+                    {this.rednerTabInfo()}
                 </div>
                 
             </>

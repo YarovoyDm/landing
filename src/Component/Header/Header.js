@@ -3,17 +3,36 @@ import cn from 'classnames'
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo'
 import './Header.css'
+import Feedback from '../Feedback/Feedback';
 
 
 class Header extends React.Component {
 
     state = {
-        isHeaderMenuOpen: false
+        isHeaderMenuOpen: false,
+        popupIsOpen: false
+    }
+
+    popupHandle = () => {
+        this.setState({
+            popupIsOpen: false
+        })
+        document.body.style.overflow = 'visible'
+    }
+
+    popupOpen = () => {
+        const isMobile = window.screen.width <= 1024
+        this.setState({
+            popupIsOpen: true
+        }, () => {
+            if(isMobile){document.body.style.overflow = 'hidden'}
+        })
     }
 
     onMenuLinkChange = () => {
         this.setState({ isHeaderMenuOpen: !this.state.isHeaderMenuOpen})
         document.body.style.overflow = 'visible'
+        document.body.style.paddingRight = '0px'
     }
 
     onMenuChange = () => {
@@ -27,6 +46,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className='header'>
+                {this.state.popupIsOpen && <Feedback handle={this.popupHandle} />}
                 <div className={this.state.isHeaderMenuOpen ? 'header_menu' : 'header_menu menu-hide'}>
                     <div className='header_menu_left'>
                         <div className='footer_sitemap-info'>
@@ -62,7 +82,7 @@ class Header extends React.Component {
                             <a href="mailto:krauss@gmail.com">krauss@gmail.com</a><br />
                             <a href='tel:+38 (044) 299 56 62'>096 453 45 64</a>
                         </div>
-                        <div className='menu-right-button'>Замовити дзвінок</div>
+                        <div className='menu-right-button' onClick={() => this.popupOpen()}>Замовити дзвінок</div>
                         <div className='menu-right-icons'>
                             <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='menu-right-wrap'><div className='menu-right-facebook' /></a>
                             <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='menu-right-wrap'><div className='menu-right-instagram' /></a>
@@ -80,8 +100,8 @@ class Header extends React.Component {
                             <div className='header_contactBot-left'>
                                 <a href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='menu-right-text'>
-                                    krauss@gmail.com<br />
-                                    096 453 45 64
+                                    <a href="mailto:krauss@gmail.com">krauss@gmail.com</a><br />
+                                    <a href='tel:+38 (044) 299 56 62'>096 453 45 64</a>
                                 </div>
                             </div>
                             <div>
@@ -90,7 +110,7 @@ class Header extends React.Component {
                                     <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='menu-right-wrap'><div className='menu-right-instagram' /></a>
                                     <a target='_blank' href='https://t.me/kreator_bud' className='menu-right-wrap'><div className='menu-right-telegram' /></a>
                                 </div>
-                                <div className='menu-right-button'>Замовити дзвінок</div>
+                                <div className='menu-right-button' onClick={() => this.popupOpen()}>Замовити дзвінок</div>
                             </div>
                         </div>
                         <div className='header_closeButton' onClick={() => this.onMenuChange()}></div>

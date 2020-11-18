@@ -25,7 +25,7 @@ class Gallery extends React.Component {
             <div className='gallery'>
                 <Swiper
                     spaceBetween={isMobile ? 100 : 50}
-                    slidesPerView={2}
+                    slidesPerView={this.props.type === 'popup' ? 3 : 2}
                     navigation={true}
                     zoom
                     scrollbar={{ draggable: true }}

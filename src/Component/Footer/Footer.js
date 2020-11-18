@@ -3,11 +3,34 @@ import cn from 'classnames'
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo'
 import './Footer.css'
+import Feedback from '../Feedback/Feedback';
 
 class Footer extends React.Component {
+
+    state = {
+        popupIsOpen: false
+    }
+
+    popupHandle = () => {
+        this.setState({
+            popupIsOpen: false
+        })
+        document.body.style.overflow = 'visible'
+    }
+
+    popupOpen = () => {
+        const isMobile = window.screen.width <= 1024
+        this.setState({
+            popupIsOpen: true
+        }, () => {
+            if(isMobile){document.body.style.overflow = 'hidden'}
+        })
+    }
+
     render() {
         return (
             <div className='footer'>
+                {this.state.popupIsOpen && <Feedback handle={this.popupHandle} />}
                 <div className='footer_top'>
                     <Logo />
                     <div className='footer-left'>
@@ -18,7 +41,7 @@ class Footer extends React.Component {
                             <div className='footer_contact-text'>
                                 Офіс продажу: <br />
                                 м. Київ, <br />вул. Дегтярівська, 17-19 <br />
-                                <a target='_blank' href='https://maps.google.com/maps?q=Дегтярівська, 17-19' className='footer_contact-map'>Дивитись на карті</a>
+                                <a target='_blank' href='https://maps.google.com/maps?q=ЖК+Creator+City' className='footer_contact-map'>Дивитись на карті</a>
                                 <div className='socialIcons_wrapper'>
                                     <a target='_blank' href='https://www.facebook.com/%D0%96%D0%9A-Krauss-Gallery-107828174465021/' className='social-facebook' />
                                     <a target='_blank' href='https://www.instagram.com/krauss.gallery' className='social-instagram' />
@@ -28,7 +51,7 @@ class Footer extends React.Component {
                             <div className='footer_contact-text'>
                                 sales_manager@creatorcity.com.ua <br />
                                 <a href='tel:+38 (044) 299 56 62' className={cn('footer_contact-number ' + 'ad_saver_phone')}>+38 (044) 299 56 62</a>
-                                <div className='footer_contact-call'>Замовити дзвінок</div>
+                                <div onClick={() => this.popupOpen()} className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
                         </div>
                     </div>

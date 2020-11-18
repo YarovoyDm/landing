@@ -27,7 +27,7 @@ class AboutDeveloper extends React.Component {
                                 - всі ці переваги органічно поєднуються у житловому комплексі 
                                 &#171;Krauss Gallery&#187;
                             </div>
-                            <div className={style.button}>Перейти на сайт</div>
+                            <a href='http://www.kreator-bud.com/' target='_blank' className={style.button}>Перейти на сайт</a>
                         </div>
                     </div>
                     
@@ -111,7 +111,7 @@ class AboutDeveloper extends React.Component {
                         </div>
                     </div>
                     <div className='landing_news-itemWrapper'>
-                        <div className='landing_news-item'>
+                        <Link to='/news/change-in-work-schedule' className='landing_news-item'>
                             <div className='landing_news-firstImage' />
                             <div className='landing_news-date'>20/08/2020</div>
                             <div className='landing_news-text'>
@@ -119,8 +119,8 @@ class AboutDeveloper extends React.Component {
                                 продажів в День Незалежності
                             </div>
                             <div className='landing_news-arrowIcon' />
-                        </div>
-                        <div className='landing_news-item'>
+                        </Link>
+                        <Link to='/news/change-in-work-schedule' className='landing_news-item'>
                             <div className='landing_news-secondImage' />
                             <div className='landing_news-date'>20/08/2020</div>
                             <div className='landing_news-text'>
@@ -128,8 +128,8 @@ class AboutDeveloper extends React.Component {
                                 продажів в День Незалежності
                             </div>
                             <div className='landing_news-arrowIcon' />
-                        </div>
-                        <div className='landing_news-item'>
+                        </Link>
+                        <Link to='/news/change-in-work-schedule' className='landing_news-item'>
                             <div className='landing_news-thirdImage' />
                             <div className='landing_news-date'>20/08/2020</div>
                             <div className='landing_news-text'>
@@ -137,7 +137,7 @@ class AboutDeveloper extends React.Component {
                                 продажів в День Незалежності
                             </div>
                             <div className='landing_news-arrowIcon' />
-                        </div>
+                        </Link>
                     </div>
                 </div>
                 <Subscribe />

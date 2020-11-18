@@ -1,15 +1,56 @@
 import React from 'react'
 import * as _ from 'lodash'
+import cn from 'classnames'
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
 import style from './Apartament.module.scss'
+import Feedback from '../../Component/Feedback/Feedback'
 
 class Apartament extends React.Component {
+
+    state = {
+        tabValue: 0,
+        popupIsOpen: false
+    }
+
+    handleChange = (index) => {
+        this.setState({ tabValue: index })
+    }
+
+    rednerTabInfo = () => {
+        if (this.state.tabValue === 0) {
+            return <div className={style.rightImage} />
+        }
+        if (this.state.tabValue === 1) {
+            return <div className={style.image3D} />
+        }
+        if (this.state.tabValue === 2) {
+            return <div className={style.imageWindowView} />
+        }
+    }
+
+    popupHandle = () => {
+        this.setState({
+            popupIsOpen: false
+        })
+        document.body.style.overflow = 'visible'
+    }
+
+    popupOpen = () => {
+        const isMobile = window.screen.width <= 1024
+        this.setState({
+            popupIsOpen: true
+        }, () => {
+            if(isMobile){document.body.style.overflow = 'hidden'}
+        })
+    }
+
     render() {
         const correctPath = _.includes(this.props.match.path, '/layot')
-        console.log({correctPath: this.props.match})
+        
         return (
             <div className={style.apartament}>
-                    <Breadcrumbs current='A0' steps={3} secondStep={correctPath ? "ПЛАНУВАННЯ КВАРТИР" : "КОМЕРЦІЙНА НЕРУХОМІСТЬ"} secondStepUrl={correctPath ? '/layot' : '/commercial-property'}/>
+                {this.state.popupIsOpen && <Feedback handle={this.popupHandle} />}
+                <Breadcrumbs current='A0' steps={3} secondStep={correctPath ? "ПЛАНУВАННЯ КВАРТИР" : "КОМЕРЦІЙНА НЕРУХОМІСТЬ"} secondStepUrl={correctPath ? '/layot' : '/commercial-property'} />
                 <div className={style.apartamentLeft}>
                     <div className={style.leftHeader}>
                         <div className={style.headerType}>A0</div>
@@ -79,31 +120,31 @@ class Apartament extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className={style.leftRequestButton}>Залишити заявку</div>
+                    <div className={style.leftRequestButton} onClick={() => this.popupOpen()}>Залишити заявку</div>
                     <div className={style.buttonsWrapper}>
                         <div className={style.leftConditionsButton}>Умови розстрочки</div>
                         <div className={style.leftPdfButton}>Завантажити PDF</div>
                     </div>
                 </div>
                 <div className={style.apartamentRight}>
-                    <div className={style.windIcon}/>
-                    <div className={style.currenApartamentIcon}/>
+                    <div className={style.windIcon} />
+                    <div className={style.currenApartamentIcon} />
                     <div className={style.saleBlock}>
-                        <div className={style.starIcon}/>
+                        <div className={style.starIcon} />
                         <div className={style.saleText}>Акційна пропозиція</div>
                     </div>
                     <div className={style.righHeader}>
                         <div className={style.headerButtons}>
-                            <div className={style.buttonTechnical}>
+                            <div className={cn(style.buttonTechnical, { [style.buttonActive]: this.state.tabValue === 0 })} onClick={() => this.handleChange(0)}>
                                 Технічне планування
                             </div>
-                            <div className={style.button3D}>
+                            <div className={cn(style.button3D, { [style.buttonActive]: this.state.tabValue === 1 })} onClick={() => this.handleChange(1)}>
                                 3D планування
                             </div>
                         </div>
-                        <div className={style.headerWindowButton}>Вид з вікна</div>
+                        <div className={style.headerWindowButton} onClick={() => this.handleChange(2)}>Вид з вікна</div>
                     </div>
-                    <div className={style.rightImage} />
+                    {this.rednerTabInfo()}
                 </div>
             </div>
         )

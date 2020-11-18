@@ -12,7 +12,13 @@
 }
 
 body{
-  font-family: Gilroy
+  font-family: Gilroy;
+  -webkit-tap-highlight-color: rgb(255 255 255 / 0);
+  -moz-tap-highlight-color: rgb(255 255 255 / 0);
+  -ms-tap-highlight-color: rgb(255 255 255 / 0);
+}
+body input, textarea{
+  outline: none
 }
 
 a{

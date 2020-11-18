@@ -1,0 +1,197 @@
+.popupCrossWrapper{
+    width:75px;
+    height: 75px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer
+}
+.feedbackTitle {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+.popupCross{
+    width:25px;
+    height:23px;
+    background-image: url(../../Images/menuCross.svg);
+}
+.inputName {
+    width: calc(100% - 25px);
+    height: 50px;
+    background: #3e3e3e;
+    border: none;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    color: white;
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.5;
+    }
+}
+.rightShortInputs {
+    widows: 610px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.inputEmail,
+.inputPhone {
+    width: 275px;
+    padding-left: 25px;
+    color: white;
+    height: 50px;
+    background: #3e3e3e;
+    border: none;
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.5;
+    }
+}
+.inputPhone {
+    margin-right: 25px;
+}
+.rightMessage {
+    resize: none;
+    color: white;
+    margin-bottom: 35px;
+    width: calc(100% - 25px);
+    height: 110px;
+    padding-left: 25px;
+    padding-top: 15px;
+    background: #3e3e3e;
+    border: none;
+    &::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        opacity: 0.5;
+    }
+}
+.rightButton {
+    width: 130px;
+    height: 60px;
+    color: white;
+    border: solid 1px white;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    background: #2c2c2c;
+    outline: none;
+}
+.apartamentPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width:100%;
+    z-index: 99999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(19, 19, 19, 0.5)
+}
+.popupForm{
+    width:636px;
+    height: 480px;
+    background: #2c2c2c;
+    padding: 50px;
+    position: relative;
+}
+
+.popupArrow{
+    width: 7px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(../../Images/feddbackArrow.svg);
+}
+
+.popupArrowWrapper{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .popupForm{
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+    }
+    .popupArrowWrapper{
+        display: flex;
+    }
+    .popupCrossWrapper{
+        display: none;
+    }
+    .feedbackRight{
+        padding: 50px 10px;
+    }
+    .feedbackTitle{
+        font-size: 24px;
+        margin-left: 30px;
+    }
+    .rightButton{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+    .rightShortInputs{
+        flex-direction: column;
+    }
+    .inputName,
+    .inputPhone{
+        margin-bottom: 10px;
+        margin-right: unset;
+        width: calc(100% - 25px);
+    }
+    .inputName,
+    .rightMessage{
+        width: calc(100% - 25px);
+    }
+    .inputEmail{ margin-bottom: -15px;width: calc(100% - 25px);}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .popupForm{
+        width:416px;
+        height: unset
+    }
+    .feedbackTitle{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .popupForm{
+        width:526px;
+        height: unset
+    }
+    .feedbackTitle{
+        font-size: 24px;
+    }
+}
+
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .popupForm{
+        width:526px;
+        height: unset
+    }
+    .feedbackTitle{
+        font-size: 24px;
+    }
+}

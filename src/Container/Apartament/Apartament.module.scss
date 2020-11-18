@@ -4,6 +4,15 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    .feedbackRight {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .rightInputs {
+        width: 100%;
+    }
+    
     .apartamentLeft{
         display: flex;
         flex-direction: column;
@@ -109,6 +118,23 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    .imageWindowView{
+        width:400px;
+        height:460px;
+        background-image: url(../../Images/gallery2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-self: center;
+    }
+    .image3D{
+        width:400px;
+        height:460px;
+        background-image: url(../../Images/gallery2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        align-self: center;
+        
+    }
     .rightImage{
         width:400px;
         height:560px;
@@ -136,12 +162,13 @@
         height: 100%;
         align-items: center;
     }
+    
     .buttonTechnical{
         height: 60%;
         font-size: 24px;
-        color:#ab9060;
-        border-bottom: solid 1px #ab9060;
         margin-right: 30px;
+        color:#c8c8c8;
+        border-bottom: solid 1px rgba(255, 255, 255, 0);
         cursor: pointer;
     }
     .button3D{
@@ -150,6 +177,14 @@
         color:#c8c8c8;
         border-bottom: solid 1px rgba(255, 255, 255, 0);
         cursor: pointer;
+    }
+    .buttonActive{
+        height: 60%;
+        font-size: 24px;
+        color:#ab9060;
+        border-bottom: solid 1px #ab9060;
+        margin-right: 30px;
+        cursor: pointer; 
     }
     .windIcon{
         position: absolute;
@@ -201,6 +236,11 @@
         padding: 0px 0px 0px 0px;
         flex-direction: column;
         align-items: center;
+        .image3D,
+        .imageWindowView{
+            height: 370px;
+            width:80%
+        }
         .apartamentLeft{
             width: calc(100% - 20px);
             padding-right: 10px;
@@ -288,10 +328,6 @@
             &:nth-child(1){
                 margin-right:20px
             }
-        }
-        .buttonsWrapper,
-        .leftRequestButton{
-            display: none;
         }
         .apartamentRight{
             width: calc(100% - 80px);

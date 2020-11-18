@@ -8,12 +8,12 @@ class Subscribe extends React.Component {
                 <div className='subscribe_text'>
                     Підпишіться на наші новини
                 </div>
-                <div className='subscribe_inputs'>
-                    <input placeholder='Ваш Email' />
-                    {/* <div className='subscribe_button'>
+                <form className='subscribe_inputs'>
+                    <input type='email' required placeholder='Ваш Email' />
+                    <button className='subscribe_button'>
                         Підписатись
-                </div> */}
-                </div>
+                    </button>
+                </form>
             </div>
         )
     }
