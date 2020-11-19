@@ -1414,7 +1414,14 @@
 
 @media screen and (width: 1024px){
     .landing-intro-topImage{
-        background-position-x: 82px;
+        background-position-x: 2px;
+        background-size: 100% 80%;
+    }
+    .landing_intro-top{
+        padding-left: 132px;
+    }
+    .landing_intro-title{
+        margin-right: 20px;
     }
 }
 

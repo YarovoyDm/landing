@@ -57,7 +57,7 @@ class AboutComplex extends React.Component {
                                 Термін введення в експлуатацію
                                 <div className={style.highlightText}>4 кв. 2022 році</div>
                             </div>
-                            <div className={style.firstButton}>Генплан території</div>
+                            <Link to='/infrastructure' className={style.firstButton}>Генплан території</Link>
                         </div>
                     </div>
                 </div>

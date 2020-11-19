@@ -26,18 +26,18 @@ class Gallery extends React.Component {
             <div className={cn('gallery', {galleryPopup: this.props.type === 'popup'})}>
                 <Swiper
                     spaceBetween={isMobile ? 100 : 50}
-                    slidesPerView={this.props.type === 'popup' ? 2 : 2}
+                    slidesPerView={this.props.type === 'popup' ? 1.4 : 2}
                     navigation={true}
                     zoom
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><img src={gallery1}width="700"  height="500" /></SwiperSlide>
-                    <SwiperSlide><img src={gallery2}width="450"  height="500" /></SwiperSlide>
-                    <SwiperSlide><img src={gallery3}width="450"  height="500" /></SwiperSlide>
-                    <SwiperSlide><img src={gallery4}width="650"  height="500" /></SwiperSlide>
-                    <SwiperSlide><img src={gallery5}width="550"  height="500" /></SwiperSlide>
+                    <SwiperSlide><img src={gallery1} /></SwiperSlide>
+                    <SwiperSlide><img src={gallery2} /></SwiperSlide>
+                    <SwiperSlide><img src={gallery3} /></SwiperSlide>
+                    <SwiperSlide><img src={gallery4}/></SwiperSlide>
+                    <SwiperSlide><img src={gallery5}/></SwiperSlide>
                 </Swiper>
                 
             </div>

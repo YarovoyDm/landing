@@ -9,7 +9,7 @@ import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 class GalleryPage extends React.Component {
     state={
         tabValue: 0,
-        popupIsOpen: false
+        popupIsOpen: true
     }
 
     onPopupChange = () => {
@@ -55,7 +55,7 @@ class GalleryPage extends React.Component {
         return (
             <>
                 <div className={style.galleryPage}>
-                    {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
+                    {this.state.popupIsOpen && <div className={style.test}><GalleryPopup type='popup' handle={this.onPopupChange}/></div>}
                     <Breadcrumbs current='ГАЛЕРЕЯ'/>
                     <div className={style.galleryTop}>
                         <div className={style.topLeft}>

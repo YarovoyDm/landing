@@ -1,5 +1,5 @@
 .commercialProperty{
-    padding: 120px 192px 10px 212px;
+    padding: 120px 192px 50px 212px;
     background: #1c1c1c;
     position: relative;
     .top{
@@ -34,9 +34,7 @@
         width:440px;
         height: 487px;
         cursor: pointer;
-        &:nth-child(1){
-            margin-right: 30px;
-        }
+        margin-bottom:20px
     }
     .Min,
     .Max{
@@ -91,6 +89,7 @@
         display: flex;
         justify-content: space-between;
     }
+    
     .roomsWrapper{
         display: flex;
         justify-content: space-between;
@@ -117,10 +116,22 @@
             border: solid 1px #ab9060;
         }
     }
+    .active{
+        background: #ab9060;
+        border: solid 1px #ab9060;
+        text-align: center;
+        padding: 0 40px;
+        height: 55px;
+        line-height:55px;
+        color: white;
+        cursor: pointer;
+    }
     
     .bottomData{
         display: flex;
-        flex-direction: column;
+        width: 60%;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
     .bottomDataWrapper{
         display: flex;
@@ -245,6 +256,10 @@
         .filterRooms{
             width: 100%;
         }
+        .bottomData{
+            width: 100%;
+            justify-content: center;
+        }
         .modileBotWrapper,
         .modileTopWrapper{
             display: flex;
@@ -275,6 +290,10 @@
         .filterSquere{
             width: 300px;
         }
+        .bottomData{
+            width: 100%;
+            justify-content: center;
+        }
         .roomsButton{
             padding: 0 30px;
             height: 40px;
@@ -300,10 +319,7 @@
         .item{
             width: 242px;
             height: 200px;
-            margin-bottom: 15px;
-            &:nth-child(1){
-                margin-right: 15px;
-            }
+            margin-bottom: 65px;
             
         }
         .itemTop{
@@ -354,6 +370,9 @@
             width:320px;
             height: 350px;
             margin-bottom: 30px;
+        }
+        .bottomData{
+            width:64%
         }
         .itemTop{
             height: 263px;
