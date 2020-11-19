@@ -35,31 +35,31 @@ class Parking extends React.Component {
                         <div className={style.itemType}>Тип <div className={style.desktopText}>паркінгу</div> 1.2</div>
                         <div className={style.itemSquer}>16,2 м&#178;</div>
                         <div className={style.itemPrice}>550 000 грн</div>
-                        <div className={style.itemChoose}>Обрати<div className={style.chooseArrow}/></div>
+                        <div className={style.itemChoose}><div className={style.chooseHide}>Обрати</div><div className={style.chooseArrow}/></div>
                     </div>
                     <div className={style.mainItem} onClick={() => this.onPopupChange()}> 
                         <div className={style.itemType}>Тип <div className={style.desktopText}>паркінгу</div> 1.2</div>
                         <div className={style.itemSquer}>16,2 м&#178;</div>
                         <div className={style.itemPrice}>550 000 грн</div>
-                        <div className={style.itemChoose} >Обрати<div className={style.chooseArrow}/></div>
+                        <div className={style.itemChoose} ><div className={style.chooseHide}>Обрати</div><div className={style.chooseArrow}/></div>
                     </div>
                     <div className={style.mainItem} onClick={() => this.onPopupChange()}> 
                         <div className={style.itemType}>Тип <div className={style.desktopText}>паркінгу</div> 1.2</div>
                         <div className={style.itemSquer}>16,2 м&#178;</div>
                         <div className={style.itemPrice}>550 000 грн</div>
-                        <div className={style.itemChoose} >Обрати<div className={style.chooseArrow}/></div>
+                        <div className={style.itemChoose} ><div className={style.chooseHide}>Обрати</div><div className={style.chooseArrow}/></div>
                     </div>
                     <div className={style.mainItem} onClick={() => this.onPopupChange()}> 
                         <div className={style.itemType}>Тип <div className={style.desktopText}>паркінгу</div> 1.2</div>
                         <div className={style.itemSquer}>16,2 м&#178;</div>
                         <div className={style.itemPrice}>550 000 грн</div>
-                        <div className={style.itemChoose} >Обрати<div className={style.chooseArrow}/></div>
+                        <div className={style.itemChoose} ><div className={style.chooseHide}>Обрати</div><div className={style.chooseArrow}/></div>
                     </div>
                     <div className={style.mainItem} onClick={() => this.onPopupChange()}> 
                         <div className={style.itemType}>Тип <div className={style.desktopText}>паркінгу</div> 1.2</div>
                         <div className={style.itemSquer}>16,2 м&#178;</div>
                         <div className={style.itemPrice}>550 000 грн</div>
-                        <div className={style.itemChoose}>Обрати<div className={style.chooseArrow}/></div>
+                        <div className={style.itemChoose}><div className={style.chooseHide}>Обрати</div><div className={style.chooseArrow}/></div>
                     </div>
                 </div>
             </div>

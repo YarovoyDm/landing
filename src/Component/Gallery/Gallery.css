@@ -8,6 +8,8 @@
     background: #ab9060;
 }
 
+
+
 .gallery .landing-house-botImage,
 .gallery .landing-house-topImage {
     height: 400px;
@@ -18,6 +20,10 @@
 }
 .gallery .swiper-container {
     position: unset;
+}
+
+.galleryPopup .swiper-scrollbar{
+    display: none;
 }
 
 .gallery .swiper-slide:first-child{
@@ -195,6 +201,7 @@
 @media screen and (min-width: 1023px) {
 }
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
+    
     .gallery .swiper-slide:first-child img{
         width:550px;
         height: 400px;

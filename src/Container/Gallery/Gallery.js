@@ -8,7 +8,14 @@ import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 
 class GalleryPage extends React.Component {
     state={
-        tabValue: 0
+        tabValue: 0,
+        popupIsOpen: false
+    }
+
+    onPopupChange = () => {
+        this.setState({
+            popupIsOpen: !this.state.popupIsOpen
+        })
     }
 
     handleChange = (index) => {
@@ -17,7 +24,11 @@ class GalleryPage extends React.Component {
 
     rednerTabInfo = () => {
         if (this.state.tabValue === 0) {
-            return <div className={style.backDiv}>
+            return <div className={style.backDiv} onClick={() => {
+                this.setState({
+                    popupIsOpen: true
+                })
+            }}>
                 <div className='landing-gallery-imagesWrapper'>
                     <div className='landing-gallery-nav'>
                         <div className='gallery_nav-arrow' />
@@ -44,7 +55,7 @@ class GalleryPage extends React.Component {
         return (
             <>
                 <div className={style.galleryPage}>
-                    {/* <GalleryPopup /> */}
+                    {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
                     <Breadcrumbs current='ГАЛЕРЕЯ'/>
                     <div className={style.galleryTop}>
                         <div className={style.topLeft}>

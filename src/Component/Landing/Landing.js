@@ -8,13 +8,23 @@ import { ReactComponent as Arrow } from '../../Images/downArrowLanding.svg';
 import Slider from '../Slider/Slider';
 import Gallery from '../Gallery/Gallery';
 import OtherSlider from '../OtherSlider/OtherSlider';
+import GalleryPopup from '../GalleryPopup/GalleryPopup';
 
-const sliders = []
 
 class Landing extends React.Component {
+    state={
+        popupIsOpen: false
+    }
+
+    onPopupChange = () => {
+        this.setState({
+            popupIsOpen: !this.state.popupIsOpen
+        })
+    }
     render() {
         return (
             <><div className='landing'>
+                {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
                 <div className='landing_intro'>
                     <div className='landing_intro-top'>
                         <div className='socialIcons_wrapper'>
@@ -139,7 +149,7 @@ class Landing extends React.Component {
                             <div className='landing_intro-BotTitle'>
                                 <div className='landing_house-line' />
                                 <div className='landing_house-titleText'>
-                                    АКЦІЇ ТА ЗНИЖКИ
+                                    ПРО ЗАБУДОВНИКА
                                 </div>
                             </div>
                             <div className='landing_intro-subtitle'>
@@ -160,7 +170,7 @@ class Landing extends React.Component {
                                 центри і магазини, клініка та фітнес-клуби - у &#171;Krauss Gallery&#187;
                                 все необхідне на відстані кількох кроків. 
                             </div>
-                            <Link to='news' className='landing-itro-button'>Детальніше</Link>
+                            <Link to='/about-developer' className='landing-itro-button'>Детальніше</Link>
                         </div>
                     </div>
                 </div>
@@ -267,7 +277,11 @@ class Landing extends React.Component {
                             <div className='landing_gallery-arrowIcon' />
                         </Link>
                     </div>
-                    <div>
+                    <div onClick={() => {
+                this.setState({
+                    popupIsOpen: true
+                })
+            }}>
                         {/* <div className='landing-gallery-imagesWrapper'>
                             <div className='landing-gallery-nav'>
                                 <div className='gallery_nav-arrow' />
@@ -282,7 +296,7 @@ class Landing extends React.Component {
                                 <div className='gallery_nav-arrow' />
                                 <div className='gallery_nav-arrowRotate' />
                             </div>
-                            </div>
+                        </div>
                         <Gallery />
                         <div>
                             <div className='landing-gallery-progressLine'>
@@ -351,6 +365,7 @@ class Landing extends React.Component {
                 </div>
             </div>
                 <div className='landingMobile'>
+                    {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
                     <div>
                         <div className='landingMobile-itroImage' />
                     </div>
@@ -372,7 +387,7 @@ class Landing extends React.Component {
                                 <div className='landing_intro-BotTitle'>
                                     <div className='landing_house-line' />
                                     <div className='landing_house-titleText'>
-                                        АКЦІЇ ТА ЗНИЖКИ
+                                        ПРО ЗАБУДОВНИКА
                                     </div>
                                     <div className='landing_house-line' />
                                 </div>
@@ -511,7 +526,11 @@ class Landing extends React.Component {
                             <div className='landing_gallery-arrowIcon' />
                         </Link>
                             </div>
-                            <div>
+                            <div onClick={() => {
+                this.setState({
+                    popupIsOpen: true
+                })
+            }}>
                                 <Gallery />
                                 <div>
                                     <div className='landing-gallery-progressLine'>

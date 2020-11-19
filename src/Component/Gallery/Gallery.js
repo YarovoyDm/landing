@@ -1,5 +1,6 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import cn from 'classnames'
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import 'swiper/swiper.scss';
 import './Gallery.css'
@@ -22,10 +23,10 @@ class Gallery extends React.Component {
     render() {
         const isMobile = window.screen.width >= 360 && window.screen.width <= 425
         return (
-            <div className='gallery'>
+            <div className={cn('gallery', {galleryPopup: this.props.type === 'popup'})}>
                 <Swiper
                     spaceBetween={isMobile ? 100 : 50}
-                    slidesPerView={this.props.type === 'popup' ? 3 : 2}
+                    slidesPerView={this.props.type === 'popup' ? 2 : 2}
                     navigation={true}
                     zoom
                     scrollbar={{ draggable: true }}

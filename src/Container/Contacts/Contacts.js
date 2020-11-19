@@ -3,15 +3,33 @@ import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs'
 import GoogleMapReact from 'google-map-react';
 
 import style from './Contacts.module.scss'
+import Feedback from '../../Component/Feedback/Feedback';
 
 class Contacts extends React.Component {
     state={
-        isGoogleMapsLoad: false
+        isGoogleMapsLoad: false,
+        popupIsOpen: false
+    }
+
+    popupHandle = () => {
+        this.setState({
+            popupIsOpen: false
+        })
+        document.body.style.overflow = 'visible'
+    }
+
+    popupOpen = () => {
+        const isMobile = window.screen.width <= 1024
+        this.setState({
+            popupIsOpen: true
+        }, () => {
+            if(isMobile){document.body.style.overflow = 'hidden'}
+        })
     }
     static defaultProps = {
         center: {
-            lat: 59.95,
-            lng: 30.33
+            lat: 50.4624754,
+            lng: 30.4606355
         },
         zoom: 11
     };
@@ -24,6 +42,7 @@ class Contacts extends React.Component {
         return (
             <>
                 <div className={style.contacts}>
+                    {this.state.popupIsOpen && <Feedback handle={this.popupHandle} />}
                     <Breadcrumbs current='КОНТАКТИ'/>
                     <div className={style.contactsHead}>
                         КОНТАКТИ
@@ -52,7 +71,7 @@ class Contacts extends React.Component {
                                 <a href="mailto:krauss@gmail.com">krauss@gmail.com</a><br />
                                 <a href='tel:+38 (044) 299 56 62'>096 453 45 64</a>
                             </div>
-                            <div className={style.infoCallButton}>
+                            <div className={style.infoCallButton} onClick={() => this.popupOpen()}>
                                 Замовити дзвінок
                             </div>
                             <div className={style.infoSocial}>
