@@ -24,6 +24,7 @@
     color: white;
 }
 
+.text-mail:hover,
 .footer_contact-number:hover{
     text-decoration: underline;
 }

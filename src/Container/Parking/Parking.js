@@ -5,7 +5,9 @@ import style from './Parking.module.scss'
 class Parking extends React.Component {
 
     state={
-        popupShow: false
+        popupShow: false,
+        sortingPopupIsOpen: false,
+        sortingValue: 'БІЛЬШІЙ ЦІНІ'
     }
 
     onPopupChange= () => {
@@ -27,7 +29,25 @@ class Parking extends React.Component {
                     <div className={style.parkingTitle}>ПАРКІНГ</div>
                     <div className={style.parkingSort}>
                         <div className={style.sortTitle}>ФІЛЬТРУВАТИ ПО:</div>
-                        <div className={style.sortValue}>БІЛЬШІЙ ЦІНІ</div>
+                        <div className={style.sortValue} onClick={() => {
+                            this.setState({
+                                sortingPopupIsOpen: true
+                            })
+                        }}>{this.state.sortingValue}</div>
+                        {this.state.sortingPopupIsOpen && <div className={style.sortingPopup}>
+                            <div className={style.popupItem} onClick={() => {
+                                this.setState({
+                                    sortingPopupIsOpen: false,
+                                    sortingValue: 'БІЛЬШІЙ ЦІНІ'
+                                })
+                            }}>БІЛЬШІЙ ЦІНІ</div>
+                            <div className={style.popupItem} onClick={() => {
+                                this.setState({
+                                    sortingPopupIsOpen: false,
+                                    sortingValue: 'МЕНШІЙ ЦІНІ'
+                                })
+                            }}>МЕНШІЙ ЦІНІ</div>
+                        </div>}
                     </div>
                 </div>
                 <div className={style.parkingMain}>

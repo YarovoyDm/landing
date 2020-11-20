@@ -23,7 +23,7 @@ class Contacts extends React.Component {
         this.setState({
             popupIsOpen: true
         }, () => {
-            if(isMobile){document.body.style.overflow = 'hidden'}
+            document.body.style.overflow = 'hidden'
         })
     }
     static defaultProps = {

@@ -39,7 +39,9 @@ class CommercialProperty extends React.Component {
         roomsFiltered: null,
         checkboxFiltered: null,
         data: apartamentsData,
-        renderData: apartamentsData
+        renderData: apartamentsData,
+        sortingPopupIsOpen: false,
+        sortingValue: 'БІЛЬШІЙ ЦІНІ'
         
     }
 
@@ -156,9 +158,27 @@ class CommercialProperty extends React.Component {
                         <div className={style.filterTitle}>
                             ФІЛЬТРУВАТИ ПО:
                         </div>
-                        <div className={style.filterValue}>
-                            БІЛЬШІЙ ЦІНІ
+                        <div className={style.filterValue}onClick={() => {
+                            this.setState({
+                                sortingPopupIsOpen: true
+                            })
+                        }}>
+                            {this.state.sortingValue}
                         </div>
+                        {this.state.sortingPopupIsOpen && <div className={style.sortingPopup}>
+                            <div className={style.popupItem} onClick={() => {
+                                this.setState({
+                                    sortingPopupIsOpen: false,
+                                    sortingValue: 'БІЛЬШІЙ ЦІНІ'
+                                })
+                            }}>БІЛЬШІЙ ЦІНІ</div>
+                            <div className={style.popupItem} onClick={() => {
+                                this.setState({
+                                    sortingPopupIsOpen: false,
+                                    sortingValue: 'МЕНШІЙ ЦІНІ'
+                                })
+                            }}>МЕНШІЙ ЦІНІ</div>
+                        </div>}
                     </div>
                 </div>
                 <div className={style.bottom}>

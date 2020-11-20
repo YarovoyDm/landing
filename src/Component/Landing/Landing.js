@@ -20,8 +20,10 @@ class Landing extends React.Component {
         this.setState({
             popupIsOpen: !this.state.popupIsOpen
         })
+        
     }
     render() {
+        
         return (
             <><div className='landing'>
                 {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}

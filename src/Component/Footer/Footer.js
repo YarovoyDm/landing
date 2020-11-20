@@ -23,7 +23,7 @@ class Footer extends React.Component {
         this.setState({
             popupIsOpen: true
         }, () => {
-            if(isMobile){document.body.style.overflow = 'hidden'}
+            document.body.style.overflow = 'hidden'
         })
     }
 
@@ -49,7 +49,7 @@ class Footer extends React.Component {
                                 </div>
                             </div>
                             <div className='footer_contact-text'>
-                                sales_manager@creatorcity.com.ua <br />
+                                <a className='text-mail' href='mailto:sales_manager@creatorcity.com.ua'>sales_manager@creatorcity.com.ua</a> <br />
                                 <a href='tel:+38 (044) 299 56 62' className={cn('footer_contact-number ' + 'ad_saver_phone')}>+38 (044) 299 56 62</a>
                                 <div onClick={() => this.popupOpen()} className='footer_contact-call'>Замовити дзвінок</div>
                             </div>
