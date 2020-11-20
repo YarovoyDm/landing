@@ -9,13 +9,15 @@ import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 class GalleryPage extends React.Component {
     state={
         tabValue: 0,
-        popupIsOpen: true
+        popupIsOpen: false
     }
 
     onPopupChange = () => {
         this.setState({
             popupIsOpen: !this.state.popupIsOpen
-        })
+        }) 
+        document.body.style.overflow = 'visible'
+        
     }
 
     handleChange = (index) => {
@@ -28,6 +30,7 @@ class GalleryPage extends React.Component {
                 this.setState({
                     popupIsOpen: true
                 })
+                document.body.style.overflow = 'hidden'
             }}>
                 <div className='landing-gallery-imagesWrapper'>
                     <div className='landing-gallery-nav'>

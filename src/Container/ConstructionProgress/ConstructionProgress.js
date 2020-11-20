@@ -9,7 +9,8 @@ import { Link } from 'react-router-dom'
 class ConstructionProgress extends React.Component {
 
     state={
-        camera: 1
+        camera: 1,
+        showMore: false
     }
 
     onCameraChange = (cameraType) => {
@@ -63,7 +64,33 @@ class ConstructionProgress extends React.Component {
                             <div className={style.arrow} />
                         </Link>
                     </div>
-                    <div className={style.moreButton}>Показати більше</div>
+                    {this.state.showMore && <div className={style.otherWrapper}>
+                        <Link to='/construction-progress' className={style.item}>
+                            <div className={style.otherImage}/>
+                            <div className={style.date}>20/08/2020</div>
+                            <div className={style.otherTitle}>
+                                Хід будівництва за серпень
+                            </div>
+                            <div className={style.arrow} />
+                        </Link>
+                        <Link to='/construction-progress'  className={style.item}>
+                            <div className={style.otherImage} />
+                            <div className={style.date}>20/08/2020</div>
+                            <div className={style.otherTitle}>
+                                Хід будівництва за липень
+                            </div>
+                            <div className={style.arrow} />
+                        </Link>
+                        <Link to='/construction-progress'  className={style.item}>
+                            <div className={style.otherImage} />
+                            <div className={style.date}>20/08/2020</div>
+                            <div className={style.otherTitle}>
+                                Хід будівництва за червень
+                            </div>
+                            <div className={style.arrow} />
+                        </Link>
+                    </div>}
+                    {!this.state.showMore && <div className={style.moreButton} onClick={() => this.setState({showMore: true})}>Показати більше</div>}
                 </div>
             </div>
         )

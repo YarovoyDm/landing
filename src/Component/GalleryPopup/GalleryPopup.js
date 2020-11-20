@@ -14,20 +14,7 @@ class GalleryPopup extends React.Component {
 
     rednerTabInfo = () => {
         if (this.state.tabValue === 0) {
-            return <div className={style.popupWrapper}>
-            <div className='landing-gallery-imagesWrapper'>
-                <div className='landing-gallery-nav'>
-                    <div className='gallery_nav-arrow' />
-                    <div className='gallery_nav-arrowRotate' />
-                </div>
-            </div>
-            <Gallery type={'popup'}/>
-            <div>
-                <div className='landing-gallery-progressLine'>
-                    <div className='landing-gallery-currentProgress' />
-                </div>
-            </div>
-        </div>
+            return <div className={style.inImage} />
         }
         if (this.state.tabValue === 1) {
             return <div className={style.inImage} />
