@@ -79,6 +79,9 @@
     }
     .backDiv{
         background: #1c1c1c;
+        :global(.landing-gallery-nav){
+            top: 20px
+        }
     }
 }
 

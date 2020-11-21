@@ -254,12 +254,16 @@
 .mobileText{
     display: none;
 }
+:global(.landing-gallery-nav){
+    top: 60px
+}
 .fifthBlock{
     background: #2c2c2c;
     padding: 120px 192px 120px 212px;
     display: flex;
     align-items:center;
     justify-content:space-between;
+    
     .fifthImage{
         background-image: url(../../Images/introBotLanding.jpg);
         width: 700px;

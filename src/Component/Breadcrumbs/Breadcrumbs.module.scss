@@ -40,7 +40,6 @@
     text-decoration: none;
 }
 .currentPage{
-    max-width: 120px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -60,7 +59,6 @@
         width: calc(100% - 10px);
     }
     .secondStep{
-        max-width: 80px;
         overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

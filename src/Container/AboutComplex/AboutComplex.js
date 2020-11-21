@@ -2,13 +2,34 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Breadcrumbs from '../../Component/Breadcrumbs/Breadcrumbs';
 import Gallery from '../../Component/Gallery/Gallery';
+import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 import style from './AboutComplex.module.scss'
 
 class AboutComplex extends React.Component {
+    state={
+        popupIsOpen: false,
+        imageId: 0
+    }
+
+    popupOpen = (id) => {
+        this.setState({
+            popupIsOpen: true,
+            imageId: id
+        })
+        document.body.style.overflow = 'hidden'
+    }
+
+    onPopupChange = () => {
+        this.setState({
+            popupIsOpen: !this.state.popupIsOpen
+        })
+        document.body.style.overflow = 'visible'
+    }
     render() {
         return (
             <>
                 <div className={style.aboutComplex}>
+                {this.state.popupIsOpen && <GalleryPopup imageType={this.state.imageId} type='popup' handle={this.onPopupChange}/>}
                 <Breadcrumbs current='ПРО КОМПЛЕКС' />
                     <div className={style.complexImage} />
                     <div className={style.complexHeader}>
@@ -171,7 +192,7 @@ class AboutComplex extends React.Component {
                                 <div className='gallery_nav-arrowRotate' />
                             </div>
                             </div>
-                        <Gallery />
+                        <Gallery callback={this.popupOpen}/>
                         <div>
                             <div className='landing-gallery-progressLine'>
                                 <div className='landing-gallery-currentProgress' />
