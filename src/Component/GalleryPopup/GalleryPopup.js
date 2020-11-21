@@ -13,14 +13,20 @@ class GalleryPopup extends React.Component {
     }
 
     rednerTabInfo = () => {
-        if (this.state.tabValue === 0) {
-            return <div className={style.inImage} />
+        if (this.props.imageType === 1) {
+            return <div className={style.inImage1} />
         }
-        if (this.state.tabValue === 1) {
-            return <div className={style.inImage} />
+        if (this.props.imageType === 2) {
+            return <div className={style.inImage2} />
         }
-        if (this.state.tabValue === 2) {
-            return <div className={style.inImage} />
+        if (this.props.imageType === 3) {
+            return <div className={style.inImage3} />
+        }
+        if (this.props.imageType === 4) {
+            return <div className={style.inImage4} />
+        }
+        if (this.props.imageType === 5) {
+            return <div className={style.inImage5} />
         }
     }
 
@@ -32,11 +38,6 @@ class GalleryPopup extends React.Component {
                         <div className={style.popupCross} onClick={() => {
                             this.props.handle()
                         }}/> 
-                    </div>
-                    <div className={style.botomHeader}>
-                        <div className={cn(style.headerItemActive, { [style.activeButton]: this.state.tabValue === 0 })} onClick={() => this.handleChange(0)}>Екстер'єр</div>
-                        <div className={cn(style.headerItem, {[style.activeButton]: this.state.tabValue === 1})} onClick={() => this.handleChange(1)}>Інтер'єр</div>
-                        <div className={cn(style.headerItem, {[style.activeButton]: this.state.tabValue === 2})} onClick={() => this.handleChange(2)}>Лобі</div>
                     </div>
                     <div className={style.infoWrapper}>{this.rednerTabInfo()}</div>
                 </div>

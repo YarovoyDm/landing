@@ -12,11 +12,49 @@
     background: rgba(19, 19, 19, 1)
 }
 .popupWrapper{
-    position: relative
+    position: relative;
 }
-.infoWrapper{
-    height: 80%;
+.inImage5
+.inImage4,
+.inImage3,
+.inImage2,
+.inImage1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+
 }
+.inImage1{
+    width: 1200px;
+    height: 800px;
+    background-size: cover;
+    background-image: url(../../Images/gallery1.jpg);
+}
+.inImage2{
+    width: 850px;
+    height: 900px;
+    background-size: cover;
+    background-image: url(../../Images/gallery2.jpg);
+}
+.inImage3{
+    width: 900px;
+    height: 900px;
+    background-size: cover;
+    background-image: url(../../Images/gallery3.jpg);
+}
+.inImage4{
+    width: 1200px;
+    background-size: cover;
+    height: 900px;
+    background-image: url(../../Images/gallery4.jpg);
+}
+.inImage5{
+    width: 1200px;
+    background-size: cover;
+    height: 900px;
+    background-image: url(../../Images/gallery5.jpg);
+}
+
 .botomHeader{
     display: flex;
     align-items: center;
@@ -57,6 +95,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
@@ -78,6 +117,26 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px){
+    .inImage1{
+        width: 300px;
+        height: 250px;
+    }
+    .inImage2{
+        width: 300px;
+        height: 350px;
+    }
+    .inImage3{
+        width: 300px;
+        height: 350px;
+    }
+    .inImage4{
+        width: 300px;
+        height: 200px;
+    }
+    .inImage5{
+        width: 300px;
+        height: 300px;
+    }
     .headerItem,
     .headerItemActive{
         font-size: 16px;
@@ -93,9 +152,74 @@
         height: 170px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .inImage1{
+        width: 750px;
+        height: 450px;
+    }
+    .inImage2{
+        width: 700px;
+        height: 750px;
+    }
+    .inImage3{
+        width: 700px;
+        height: 750px;
+    }
+    .inImage4{
+        width: 750px;
+        height: 550px;
+    }
+    .inImage5{
+        width: 750px;
+        height: 570px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .inImage1{
+        width: 750px;
+        height: 450px;
+    }
+    .inImage2{
+        width: 700px;
+        height: 750px;
+    }
+    .inImage3{
+        width: 700px;
+        height: 750px;
+    }
+    .inImage4{
+        width: 770px;
+        height: 550px;
+    }
+    .inImage5{
+        width: 770px;
+        height: 570px;
+    }
+}
 
 @media screen and (min-width: 1360px) and (max-width: 1919px){
     .botomHeader{
         margin-bottom: -120px;
+    }
+    .inImage1{
+        width: 900px;
+        height: 550px;
+    }
+    .inImage2{
+        width: 500px;
+        height: 550px;
+    }
+    .inImage3{
+        width: 550px;
+        height: 550px;
+    }
+    .inImage4{
+        width: 750px;
+        height: 550px;
+    }
+    .inImage5{
+        width: 750px;
+        height: 550px;
     }
 }

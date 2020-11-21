@@ -141,6 +141,13 @@ background-size: 100% 100%;
         width:530px
     }
     
+    
+    .slider .swiper-button-prev{
+        bottom: 190px;
+    }
+    .slider .swiper-button-next{
+        bottom: 249px;
+    }
 }
 @media screen and (min-width: 1920px) {
     .slider {

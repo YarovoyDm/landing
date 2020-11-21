@@ -9,15 +9,29 @@ import GalleryPopup from '../../Component/GalleryPopup/GalleryPopup';
 class GalleryPage extends React.Component {
     state={
         tabValue: 0,
-        popupIsOpen: false
+        popupIsOpen: false,
+        imageId: 0
     }
 
     onPopupChange = () => {
         this.setState({
-            popupIsOpen: !this.state.popupIsOpen
+            popupIsOpen: !this.state.popupIsOpen,
+            imageId: 0
         }) 
         document.body.style.overflow = 'visible'
         
+    }
+
+    popupOpen = (id) => {
+        this.setState({
+            popupIsOpen: true,
+            imageId: id
+        })
+        document.body.style.overflow = 'hidden'
+    }
+
+    getCurrentImage = (id) => {
+        this.setState({ imageId: id})
     }
 
     handleChange = (index) => {
@@ -26,19 +40,14 @@ class GalleryPage extends React.Component {
 
     rednerTabInfo = () => {
         if (this.state.tabValue === 0) {
-            return <div className={style.backDiv} onClick={() => {
-                this.setState({
-                    popupIsOpen: true
-                })
-                document.body.style.overflow = 'hidden'
-            }}>
+            return <div className={style.backDiv} >
                 <div className='landing-gallery-imagesWrapper'>
                     <div className='landing-gallery-nav'>
                         <div className='gallery_nav-arrow' />
                         <div className='gallery_nav-arrowRotate' />
                     </div>
                 </div>
-                <Gallery />
+                <div><Gallery  callback={this.popupOpen}/></div>
                 <div>
                     <div className='landing-gallery-progressLine'>
                         <div className='landing-gallery-currentProgress' />
@@ -58,7 +67,7 @@ class GalleryPage extends React.Component {
         return (
             <>
                 <div className={style.galleryPage}>
-                    {this.state.popupIsOpen && <div className={style.test}><GalleryPopup type='popup' handle={this.onPopupChange}/></div>}
+                    {this.state.popupIsOpen && <div className={style.test}><GalleryPopup imageType={this.state.imageId} type='popup' handle={this.onPopupChange}/></div>}
                     <Breadcrumbs current='ГАЛЕРЕЯ'/>
                     <div className={style.galleryTop}>
                         <div className={style.topLeft}>

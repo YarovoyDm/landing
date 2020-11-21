@@ -580,7 +580,12 @@
     margin-left: 15px;
     background-image: url(../../Images/galleryNav2ArrowLanding.svg);
 }
-
+.landing .swiper-wrapper{
+    height: 540px;
+}
+.landing .landing-gallery-nav{
+    top: 60px;
+}
 .landing-gallery-nav {
     cursor: pointer;
     display: flex;
@@ -592,9 +597,9 @@
     color: #ab9060;
     position: absolute;
     border-radius: 60px;
-    top: 60px;
+    top: 20px;
     left: 20px;
-    z-index: 999;
+    z-index: 9999;
 }
 
 .landing-gallery-imageFirst {
@@ -1426,7 +1431,9 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-
+    .landing .swiper-wrapper{
+        height: 300px;
+    }
     .landing-intro-topImage {
         height: 460px;
         width: 510px;
@@ -1560,6 +1567,9 @@
 }
 
 @media screen and (min-width: 1023px) and (max-width: 1360px) {
+    .landing .swiper-wrapper{
+        height: 440px;
+    }
     .landing-other-left{
         padding-left:0px
     }

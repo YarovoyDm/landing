@@ -20,24 +20,40 @@ import gallery5 from '../../Images/gallery5.jpg'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 class Gallery extends React.Component {
+
+    componentDidMount(){
+        
+    }
+
     render() {
-        const isMobile = window.screen.width >= 360 && window.screen.width <= 425
+        const isMobile = window.screen.width >= 320 && window.screen.width <= 425
+        let getSlides = 0
+        if(window.screen.width === 320){
+            getSlides = 1.65
+        }
+        if(window.screen.width === 375){
+            getSlides = 1.9
+        }
+        if(window.screen.width === 425){
+            getSlides = 2.2
+        }
+        console.log({getSlides})
         return (
             <div className={cn('gallery', {galleryPopup: this.props.type === 'popup'})}>
                 <Swiper
-                    spaceBetween={isMobile ? 100 : 50}
-                    slidesPerView={this.props.type === 'popup' ? 1.4 : 2}
+                    spaceBetween={isMobile ? 10 : 50}
+                    slidesPerView={isMobile ? getSlides : 1.4}
                     navigation={true}
                     zoom
                     scrollbar={{ draggable: true }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                 >
-                    <SwiperSlide><img src={gallery1} width="700"  height="500"/></SwiperSlide>
-                    <SwiperSlide><img src={gallery2} width="700"  height="500"/></SwiperSlide>
-                    <SwiperSlide><img src={gallery3} width="700"  height="500"/></SwiperSlide>
-                    <SwiperSlide><img src={gallery4}width="700"  height="500"/></SwiperSlide>
-                    <SwiperSlide><img src={gallery5}width="700"  height="500"/></SwiperSlide>
+                    <SwiperSlide onClick={() => this.props.callback(1)}><img src={gallery1} /></SwiperSlide>
+                    <SwiperSlide onClick={() => this.props.callback(2)}><img src={gallery2} /></SwiperSlide>
+                    <SwiperSlide onClick={() => this.props.callback(3)}><img src={gallery3}/></SwiperSlide>
+                    <SwiperSlide onClick={() => this.props.callback(4)}><img src={gallery4}/></SwiperSlide>
+                    <SwiperSlide onClick={() => this.props.callback(5)}><img src={gallery5}/></SwiperSlide>
                 </Swiper>
                 
             </div>

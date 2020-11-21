@@ -13,20 +13,29 @@ import GalleryPopup from '../GalleryPopup/GalleryPopup';
 
 class Landing extends React.Component {
     state={
-        popupIsOpen: false
+        popupIsOpen: false,
+        imageId: 0
+    }
+
+    popupOpen = (id) => {
+        this.setState({
+            popupIsOpen: true,
+            imageId: id
+        })
+        document.body.style.overflow = 'hidden'
     }
 
     onPopupChange = () => {
         this.setState({
             popupIsOpen: !this.state.popupIsOpen
         })
-        
+        document.body.style.overflow = 'visible'
     }
     render() {
         
         return (
             <><div className='landing'>
-                {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
+                {this.state.popupIsOpen && <GalleryPopup imageType={this.state.imageId} type='popup' handle={this.onPopupChange}/>}
                 <div className='landing_intro'>
                     <div className='landing_intro-top'>
                         <div className='socialIcons_wrapper'>
@@ -279,11 +288,7 @@ class Landing extends React.Component {
                             <div className='landing_gallery-arrowIcon' />
                         </Link>
                     </div>
-                    <div onClick={() => {
-                this.setState({
-                    popupIsOpen: true
-                })
-            }}>
+                    <div >
                         {/* <div className='landing-gallery-imagesWrapper'>
                             <div className='landing-gallery-nav'>
                                 <div className='gallery_nav-arrow' />
@@ -299,7 +304,7 @@ class Landing extends React.Component {
                                 <div className='gallery_nav-arrowRotate' />
                             </div>
                         </div>
-                        <Gallery />
+                        <div><Gallery callback={this.popupOpen}/></div>
                         <div>
                             <div className='landing-gallery-progressLine'>
                                 <div className='landing-gallery-currentProgress' />
@@ -367,7 +372,7 @@ class Landing extends React.Component {
                 </div>
             </div>
                 <div className='landingMobile'>
-                    {this.state.popupIsOpen && <GalleryPopup type='popup' handle={this.onPopupChange}/>}
+                    {this.state.popupIsOpen && <GalleryPopup imageType={this.state.imageId} type='popup' handle={this.onPopupChange}/>}
                     <div>
                         <div className='landingMobile-itroImage' />
                     </div>
@@ -528,12 +533,8 @@ class Landing extends React.Component {
                             <div className='landing_gallery-arrowIcon' />
                         </Link>
                             </div>
-                            <div onClick={() => {
-                this.setState({
-                    popupIsOpen: true
-                })
-            }}>
-                                <Gallery />
+                            <div >
+                                <Gallery callback={this.popupOpen}/>
                                 <div>
                                     <div className='landing-gallery-progressLine'>
                                         <div className='landing-gallery-currentProgress' />
