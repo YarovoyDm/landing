@@ -118,18 +118,19 @@ class Header extends React.Component {
                 </div>
                 <Logo />
                 <div className="header_info">
-                    <a target='_blank' href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
-                        <div className="header_info-location" />Круглоуніверситетська, 5-7
-                    </a>
-                    <a className="header_info-locationMobile" href='https://maps.google.com/maps?q=Дегтярівська, 17-19'>
-                        <div />
-                    </a>
-                    <a href='tel:044 294 81 65' className={cn("header_info-phone "  + "ad_saver_phone")}>
-                        <div className="header_info-phoneIcon" />044 294 81 65
-                    </a>
-                    <a className="header_info-phoneIconMobile"  href='tel:0442948165'>
-                        <div />
-                    </a>
+                    <div className='header_infoMapWrapper'>
+                        <a target='_blank' href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-location" />
+                        <a target='_blank' href='https://maps.google.com/maps?q=Круглоуніверситетська, 5-7' className="header_info-address">
+                            Круглоуніверситетська, 5-7
+                        </a>
+                    </div>
+                    <div className='header_info-phoneWrapper'>
+                        <div className="header_info-phoneIcon" />
+                        <a href='tel:044 294 81 65' className={cn("header_info-phone "  + "ad_saver_phone")}>
+                            044 294 81 65
+                        </a>
+                    </div>
+                    
                     <div className="header_menu-button" onClick={() => this.onMenuChange()}>
                         <div className="header_menu-linesWrapper">
                             <div className="header_menu-line" />
