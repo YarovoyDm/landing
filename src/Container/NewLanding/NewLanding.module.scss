@@ -1,0 +1,555 @@
+.landing{
+    background: #222222;
+    position: relative;
+    .help{
+        display: none;
+    }
+    .otherWrapper{
+        display: none;
+    }
+    .blockTitle{
+        font-size: 45px;
+        color: white;
+        margin-bottom:40px
+    }
+    .blockText{
+        font-size: 24px;
+        color: white;
+        margin-bottom:60px
+    }
+    .secondTop{
+        display: flex;
+        padding-left: 212px;
+    }
+    .landing_secondBlock{
+        padding-bottom: 100px;
+    }
+    .infoWrapper{
+        margin-top: 60px;
+    }
+    .blockName{
+        display: flex;
+        align-items: center;
+        margin-bottom:50px
+    }
+    .nameLine{
+        height: 1px;
+        width: 75px;
+        background: #464646;
+    }
+    .secondBottom{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        .infoWrapper{
+            width:640px;
+            margin-left: 200px;
+        }
+    }
+    .nameText{
+        font-weight: 800;
+        font-size: 14px;
+        color: #ab9060;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .secondBottomImage{
+        background-image: url(../../Images/houseBotLanding.jpg);
+        width: 760px;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -50px;
+        background-size: 100% 100%;
+    }
+    .thirdBlock{
+        background: #2c2c2c;
+        padding: 0px 152px 100px 212px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .blockTitle{
+            width:430px
+        }
+    }
+    .thirdImage{
+        height: 624px;
+        width: 708px;
+        background-image: url(../../Images/constractionStatus.jpg);
+        margin-top: 100px;
+        box-shadow: 25px 25px 0px #222222;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .fourthBlock{
+        background: #1c1c1c;
+        .infoWrapper{
+            width:640px;
+            margin-left: 200px;
+        }
+        .fourthImage{
+            background-image: url(../../Images/infrastructureLanding.jpg);
+            width: 810px;
+            height: 800px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .fourthTop{
+            padding-top:100px;
+            background: #222222;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+:global(.secondBlock-absolute){
+    display: none;
+}
+.goDownButton{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    
+    :global(.landing_intro-BotTitle){
+        display: none;
+    }
+    :global(.landing-house-buttonWrapper){
+        margin-right: -2px;
+    }
+    :global(.landing_other){
+        align-items: center;
+    }
+    :global(.landing-other-left){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .goDownButton{
+        margin-top: 40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 70px;
+        background: #222222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        bottom: -80px;
+        left: 30px;
+    }
+    :global(.landing_intro-subtitle){
+        font-size: 25px;
+    }
+    :global(.landing_intro-right){
+        margin-top: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: unset;
+    }
+    :global(.secondBlock-absolute){
+        display: flex;
+        position: absolute;
+        bottom: -100px;
+        top: unset;
+        z-index: 999;
+        width: 231px;
+        height: 250px;
+    }
+    :global(.landing_intro-title){
+        font-size: 24px;
+    }
+    :global(.secondBlock-absolute){
+        justify-content: space-around;
+    }
+    :global(.landing_intro){
+        height: unset;
+    }
+    :global(.landing_intro-text){
+        padding-left:unset;
+        font-size: 16px;
+        text-align:center
+    }
+    :global(.socialIcons_wrapper){
+        display: none;
+    }
+    :global(.landing-intro-topImage){
+        height: 330px;
+        width: 100%;
+        position: relative;
+    }
+    :global(.landing_intro-bottom){
+        flex-direction: column;
+        align-items: center;
+        height: unset;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    :global(.landing_intro-top){
+        height: unset;
+        margin-bottom:50px;
+        margin-bottom: 150px;
+        padding-left: unset;
+    }
+    :global(.landing_intro-topLeft){
+        display: none;
+    }
+    :global(.landing_intro-botImage){
+        margin-top: unset;
+        width: 80%;
+        height: 260px;
+        margin-bottom: 50px;
+    }
+    :global(.landing_intro-right){
+        padding-left: unset;
+        width: 100%;
+    }
+    :global(.landing_intro-subtitle){
+        padding-left: unset;
+    }
+    :global(.landing_other-title){
+        display: none;
+    }
+    .landing{
+        .otherWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            width: 100%;
+        }
+        .help{
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .blockName{
+            display: none;
+        }
+        .nameText{
+            font-size: 12px;
+        }
+        .blockTitle{
+            font-size: 25px;
+            text-align: center;
+        }
+        .blockText{
+            font-size: 16px;
+            text-align: center;
+        }
+        .secondTop{
+            justify-content: space-between;
+            padding-left: 10px;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-top: 40px;
+            .help{
+                margin-bottom: 100px
+            }
+            .infoWrapper{
+                width: 100%;
+                padding-right: unset;
+            }
+        }
+        .landing_secondBlock{
+            padding-bottom: unset;
+            .infoWrapper{
+                padding-right: unset;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .secondBottom{
+            padding-bottom: 60px;
+            flex-direction: column;
+            align-items: center;
+            .infoWrapper{
+                width: 100%;
+                margin-left: unset;
+            }
+        }
+        .secondBottomImage{
+            width: 80%;
+            height: 260px;
+            margin-bottom: 20px;
+        }
+        .thirdImage{
+            height: 260px;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .thirdBlock{
+            padding: 50px 10px 100px 10px;
+            flex-direction: column-reverse;
+            .infoWrapper{
+                width:100%;
+                padding-right:unset;
+            }
+            .blockTitle{
+                width: 100%;
+            }
+        }
+        
+        .fourthBlock{
+            :global(.landing_house-line){
+                width:70px
+            }
+            .fourthTop{
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 50px;
+            }
+            .fourthImage{
+                width: 80%;
+                height: 300px;
+            }
+            
+            .infoWrapper{
+                width: 100%;
+                margin-left: unset;
+                padding-right: unset;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .goDownButton{
+        margin-top: 40px;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        background: #222222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        bottom: -160px;
+        left: 100px;
+    }
+    :global(.landing_intro-right){
+        margin-top: unset
+    }
+    :global(.secondBlock-absolute){
+        display: flex;
+        position: absolute;
+        bottom: -220px;
+        top: unset;
+        z-index: 999;
+        width: 492px;
+        height: 469px;
+    }
+    :global(.landing_intro-title){
+        font-size: 50px;
+    }
+    :global(.secondBlock-absolute){
+        justify-content: space-around;
+    }
+    :global(.landing_intro){
+        height: unset;
+    }
+    :global(.landing_intro-text){
+        padding-left:unset
+    }
+    :global(.socialIcons_wrapper){
+        display: none;
+    }
+    :global(.landing-intro-topImage){
+        height: 730px;
+        width: 100%;
+        position: relative;
+    }
+    :global(.landing_intro-bottom){
+        flex-direction: column;
+        align-items: flex-start;
+        height: unset;
+    }
+    :global(.landing_intro-top){
+        height: unset;
+        margin-bottom:50px;
+        margin-bottom: 280px;
+        padding-left: unset;
+    }
+    :global(.landing_intro-topLeft){
+        display: none;
+    }
+    :global(.landing_intro-botImage){
+        margin-top: unset;
+    }
+    :global(.landing_intro-right){
+        padding-left: 50px;
+        width: 500px;
+    }
+    :global(.landing_intro-subtitle){
+        padding-left: unset;
+    }
+    .landing{
+        .nameText{
+            font-size: 12px;
+        }
+        .blockTitle{
+            font-size: 35px;
+        }
+        .blockText{
+            font-size: 18px;
+        }
+        .secondTop{
+            justify-content: space-between;
+            padding-left: 80px;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            padding-top: 140px;
+            .infoWrapper{
+                width: 400px;
+            }
+        }
+        .landing_secondBlock{
+            .infoWrapper{
+                padding-right: 50px;
+            }
+        }
+        .secondBottom{
+            padding-bottom: 60px;
+            flex-direction: column;
+            align-items: flex-start;
+            .infoWrapper{
+                width: 420px;
+                margin-left: 70px;
+            }
+        }
+        .secondBottomImage{
+            width: 500px;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .thirdImage{
+            height: 424px;
+            width: 430px;
+        }
+        .thirdBlock{
+            padding: 0px 90px 100px 80px;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            .infoWrapper{
+                width:400px;
+                padding-right:unset;
+            }
+        }
+        
+        .fourthBlock{
+            .fourthTop{
+                align-items: flex-start;
+                flex-direction: column;
+                padding-bottom: 50px;
+            }
+            .fourthImage{
+                width: 510px;
+                height: 500px;
+            }
+            
+            .infoWrapper{
+                width: 500px;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .landing{
+        .nameText{
+            font-size: 12px;
+        }
+        .blockTitle{
+            font-size: 35px;
+        }
+        .blockText{
+            font-size: 18px;
+        }
+        .secondTop{
+            justify-content: space-between;
+            padding-left: 80px;
+            .infoWrapper{
+                width: 400px;
+            }
+        }
+        .secondBottom{
+            padding-bottom: 30px;
+            .infoWrapper{
+                width: 420px;
+                margin-left: 70px;
+            }
+        }
+        .secondBottomImage{
+            width: 500px;
+            height: 500px;
+        }
+        .thirdImage{
+            height: 424px;
+            width: 430px;
+        }
+        .thirdBlock{
+            padding: 0px 90px 100px 80px;
+        }
+        .fourthBlock{
+            .fourthImage{
+                width: 510px;
+                height: 500px;
+            }
+            .infoWrapper{
+                width: 500px;
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) and (max-width: 1919px){
+    .landing{
+        .nameText{
+            font-size: 12px;
+        }
+        .blockTitle{
+            font-size: 35px;
+        }
+        .blockText{
+            font-size: 18px;
+        }
+        .secondTop{
+            justify-content: space-between;
+            .infoWrapper{
+                width: 400px;
+            }
+        }
+        .secondBottom{
+            .infoWrapper{
+                width: 420px;
+            }
+        }
+        .secondBottomImage{
+            width: 710px;
+            height: 640px;
+        }
+        .thirdImage{
+            height: 474px;
+            width: 558px;
+        }
+        .fourthBlock{
+            .fourthImage{
+                width: 710px;
+                height: 700px;
+            }
+            .infoWrapper{
+                width: 500px;
+                margin-left: 160px;
+            }
+        }
+    }
+}

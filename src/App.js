@@ -21,6 +21,7 @@ import House from './Container/House/House';
 import FloorPlan from './Container/FloorPlan/FloorPlan';
 import ConstructionTechnology from './Container/ConstructionTechnology/ConstructionTechnology';
 import Apartament from './Container/Apartament/Apartament';
+import NewLanding from './Container/NewLanding/NewLanding';
 
 class App extends React.Component {
   render() {
@@ -29,7 +30,7 @@ class App extends React.Component {
         <Header />
         <ScrollToTop />
         <Switch>
-          <Route path='/' exact={true} component={Landing} />
+          <Route path='/' exact={true} component={NewLanding} />
           <Route path='/documents' component={Documents} />
           <Route path='/parking' component={Parking} />
           <Route path='/contacts' component={Contacts} />
